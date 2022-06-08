@@ -1,6 +1,5 @@
 import "./App.css";
 
-import { Controller, Scene } from "react-scrollmagic";
 import Home from "./Pages/Home";
 
 function App() {
