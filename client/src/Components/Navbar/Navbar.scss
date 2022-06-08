@@ -1,0 +1,57 @@
+#navbar {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5em;
+
+    border: 1px solid red;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    > .navbar-wrapper {
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        border: 1px dashed blue;
+
+        > .major {
+            display: block;
+            position: relative;
+            width: fit-content;
+            height: 100%;
+            height: fit-content;
+        }
+
+        > .navbar-flex {
+            display: flex;
+            position: relative;
+            height: 100%;
+
+            flex-grow: 1;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+
+            border: 1px solid yellow;
+
+            > .nav-menuitem {
+                display: block;
+                position: relative;
+                width: fit-content;
+                height: fit-content;
+                font-size: 1.2em;
+                padding: 10px 20px;
+
+                border: 1px solid orange;
+            }
+        }
+    }
+}
