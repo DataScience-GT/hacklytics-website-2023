@@ -10,7 +10,6 @@ const Home = (params) => {
     return (
         <div className="home-page">
             <Navbar />
-            <Section>fdsf</Section>
             <Controller>
                 <Scene indicators duration={1000} triggerHook={0} pin>
                     <Tween
