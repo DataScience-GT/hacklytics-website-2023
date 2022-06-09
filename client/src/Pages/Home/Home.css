@@ -1,0 +1,31 @@
+.home-page {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+#main-scene {
+  margin-top: 5em;
+  height: calc(100vh - 5em);
+}
+
+#main-scene .ground {
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-color: #0e4407;
+  z-index: 3;
+}
+
+#main-scene .telescope {
+  display: block;
+  height: 200px;
+  width: 100px;
+  background-color: black;
+  z-index: 4;
+}
+/*# sourceMappingURL=Home.css.map */

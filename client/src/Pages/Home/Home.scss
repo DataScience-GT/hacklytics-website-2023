@@ -1,0 +1,27 @@
+.home-page {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+#main-scene {
+    margin-top: 5em;
+    height: calc(100vh - 5em);
+    .ground {
+        display: block;
+        height: 200px;
+        width: 100%;
+        background-color: rgb(14, 68, 7);
+        z-index: 3;
+    }
+
+    .telescope {
+        display: block;
+        height: 200px;
+        width: 100px;
+        background-color: rgb(0, 0, 0);
+        z-index: 4;
+    }
+}
