@@ -1,13 +1,15 @@
 //imports
 import "./Home.css";
 
+import { useEffect, useState } from "react";
+
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 
 import Background from "../../Components/Background";
 import Section from "../../Components/Section";
 import Navbar from "../../Components/Navbar";
-import { useEffect, useState } from "react";
+import Faq from "../../Components/Faq";
 
 const Home = (params) => {
     const [width, setWidth] = useState(
@@ -94,6 +96,18 @@ const Home = (params) => {
                     </Tween>
                 </Scene> */}
             </Controller>
+            <Section>
+                <Faq
+                    identifier="faq1"
+                    question="who can apply?"
+                    answer="Any student currently enrolled in a University above the age of 18. For any discrepancies, feel free to reach out."
+                />
+                <Faq
+                    identifier="faq2"
+                    question="who can apply?"
+                    answer="Any student currently enrolled in a University above the age of 18. For any discrepancies, feel free to reach out."
+                />
+            </Section>
         </div>
     );
 };
