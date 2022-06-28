@@ -1,11 +1,11 @@
 //imports
 import "./Section.css";
 
-const Section = (params) => {
+const ScrollSection = (params) => {
     return (
-        <div className="section" {...params}>
+        <div className="scroll-section" {...params}>
             <div className="section-wrapper">{params.children}</div>
         </div>
     );
 };
-export default Section;
+export default ScrollSection;

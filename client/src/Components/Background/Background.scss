@@ -5,86 +5,455 @@
     height: 100%;
     z-index: -1;
 
-    //background: linear-gradient(0deg, rgb(24, 23, 34), rgb(70, 43, 14));
+    background-color: #050a20;
 
-    > .bg-blur2 {
+    > .background-wrapper {
         display: block;
-        position: absolute;
-        height: 100%;
+        position: relative;
         width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 3;
-
-        background: rgba($color: #000000, $alpha: 0.5);
-        backdrop-filter: blur(100px);
-    }
-    > .bg-blur {
-        display: block;
-        position: absolute;
         height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 2;
+        max-width: 1000px;
+        margin: 0 auto;
 
-        background: rgba($color: #000000, $alpha: 0.5);
-        backdrop-filter: blur(50px);
-    }
+        // overflow-x: visible;
+        // overflow-y: hidden;
 
-    > .bg {
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        top: 0;
-        left: 0;
+        // background-color: red;
 
-        background: rgba($color: #000000, $alpha: 1);
-    }
+        > .circle {
+            display: block;
+            border: 100%;
+            z-index: 1;
 
-    > .circle {
-        display: block;
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        z-index: 1;
+            border-radius: 100%;
+            filter: blur(350px);
+        }
 
-        border-radius: 100%;
+        //all of the circles
+        > .circle1 {
+            /* Blurred Circle 1 */
 
-        box-shadow: inset 0px 0px 50px 30px rgba($color: #000000, $alpha: 0.9);
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: -42px;
+            top: -26px;
 
-        // border: 1px dashed green;
-    }
+            background: #ffc100;
+        }
+        > .circle2 {
+            /* Blurred Circle 2 */
 
-    //all circle colors
-    > .circle-blue-bright {
-        background-color: rgb(50, 50, 188);
-        // background-color: rgba($color: #000000, $alpha: 1.0);
-        // background: radial-gradient(rgb(50, 50, 188) 50%, rgba($color: #000000, $alpha: 1) 80%);
-    }
-    > .circle-blue {
-        background-color: rgb(29, 29, 152);
-    }
-    > .circle-gold {
-        background-color: rgb(214, 168, 18);
-    }
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 195px;
+            top: 523.5px;
 
-    //all the circle positions
-    > .circle1 {
-        height: 700px;
-        width: 700px;
-        top: 100px;
-        right: 100px;
-        border-radius: 250px 0px 250px 200px;
-    }
+            background: #312cc2;
+        }
+        > .circle3 {
+            /* Blurred Circle 3 */
 
-    > .circle2 {
-        height: 400px;
-        width: 400px;
-        top: 600px;
-        left: 100px;
-        border-radius: 250px 0px 250px 200px;
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 861px;
+            top: 588px;
+
+            background: #ffc100;
+        }
+        > .circle4 {
+            /* Blurred Circle 4 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1291px;
+            top: 137px;
+
+            background: #312cc2;
+        }
+        > .circle5 {
+            /* Blurred Circle 5 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 331.98px;
+            top: 2137.16px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle6 {
+            /* Blurred Circle 6 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 574.13px;
+            top: 1562.99px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle7 {
+            /* Blurred Circle 7 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1219.73px;
+            top: 1387.16px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle8 {
+            /* Blurred Circle 8 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1636.17px;
+            top: 1816.92px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle9 {
+            /* Blurred Circle 9 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 677.79px;
+            top: 2115px;
+
+            background: #312cc2;
+
+            transform: rotate(10.89deg);
+        }
+        > .circle10 {
+            /* Blurred Circle 10 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1226.79px;
+            top: 2775px;
+
+            background: #312cc2;
+
+            transform: rotate(10.89deg);
+        }
+        > .circle11 {
+            /* Blurred Circle 11 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 120.79px;
+            top: 2544px;
+
+            background: #ffc100;
+
+            transform: rotate(10.89deg);
+        }
+        > .circle12 {
+        }
+        > .circle13 {
+        }
+        > .circle14 {
+            /* Blurred Circle 14 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 623.79px;
+            top: 3672px;
+
+            background: #312cc2;
+
+            transform: rotate(10.89deg);
+        }
+        > .circle15 {
+            /* Blurred Circle 15 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1582.17px;
+            top: 3373.92px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle16 {
+            /* Blurred Circle 16 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1165.73px;
+            top: 2944.16px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle17 {
+            /* Blurred Circle 17 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 520.13px;
+            top: 3119.99px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle18 {
+            /* Blurred Circle 18 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 277.98px;
+            top: 3694.16px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle19 {
+            /* Blurred Circle 19 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1589.17px;
+            top: 5137.16px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle20 {
+            /* Blurred Circle 20 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1535.17px;
+            top: 6694.16px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle21 {
+            /* Blurred Circle 21 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 1118.73px;
+            top: 6264.39px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle22 {
+            /* Blurred Circle 22 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 473.13px;
+            top: 6440.23px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle23 {
+            /* Blurred Circle 23 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 284.98px;
+            top: 5457.39px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle24 {
+            /* Blurred Circle 24 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 743.98px;
+            top: 6965.16px;
+
+            background: #312cc2;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle25 {
+            /* Blurred Circle 25 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 846.98px;
+            top: 5541.16px;
+
+            background: #ffc100;
+
+            transform: rotate(159.23deg);
+        }
+        > .circle26 {
+            /* Blurred Circle 26 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 134.36px;
+            top: 7428.09px;
+
+            background: #ffc100;
+
+            transform: rotate(-6.77deg);
+        }
+        > .circle27 {
+            /* Blurred Circle 27 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 434.45px;
+            top: 7945.84px;
+
+            background: #312cc2;
+
+            transform: rotate(-6.77deg);
+        }
+        > .circle28 {
+            /* Blurred Circle 28 */
+
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            left: 967.61px;
+            top: 7356.56px;
+
+            background: #312cc2;
+
+            transform: rotate(-6.77deg);
+        }
     }
 }
+
+// .background {
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -1;
+
+//     //background: linear-gradient(0deg, rgb(24, 23, 34), rgb(70, 43, 14));
+
+//     > .bg-blur2 {
+//         display: block;
+//         position: absolute;
+//         height: 100%;
+//         width: 100%;
+//         top: 0;
+//         left: 0;
+//         z-index: 3;
+
+//         background: rgba($color: #000000, $alpha: 0.5);
+//         backdrop-filter: blur(100px);
+//     }
+//     > .bg-blur {
+//         display: block;
+//         position: absolute;
+//         height: 100%;
+//         width: 100%;
+//         top: 0;
+//         left: 0;
+//         z-index: 2;
+
+//         background: rgba($color: #000000, $alpha: 0.5);
+//         backdrop-filter: blur(50px);
+//     }
+
+//     > .bg {
+//         display: block;
+//         position: absolute;
+//         height: 100%;
+//         width: 100%;
+//         z-index: -1;
+//         top: 0;
+//         left: 0;
+
+//         background: rgba($color: #000000, $alpha: 1);
+//     }
+
+//     > .circle {
+//         display: block;
+//         position: absolute;
+//         height: 100px;
+//         width: 100px;
+//         z-index: 1;
+
+//         border-radius: 100%;
+
+//         box-shadow: inset 0px 0px 50px 30px rgba($color: #000000, $alpha: 0.9);
+
+//         // border: 1px dashed green;
+//     }
+
+//     //all circle colors
+//     > .circle-blue-bright {
+//         background-color: rgb(50, 50, 188);
+//         // background-color: rgba($color: #000000, $alpha: 1.0);
+//         // background: radial-gradient(rgb(50, 50, 188) 50%, rgba($color: #000000, $alpha: 1) 80%);
+//     }
+//     > .circle-blue {
+//         background-color: rgb(29, 29, 152);
+//     }
+//     > .circle-gold {
+//         background-color: rgb(214, 168, 18);
+//     }
+
+//     //all the circle positions
+//     > .circle1 {
+//         height: 700px;
+//         width: 700px;
+//         top: 100px;
+//         right: 100px;
+//         border-radius: 250px 0px 250px 200px;
+//     }
+
+//     > .circle2 {
+//         height: 400px;
+//         width: 400px;
+//         top: 600px;
+//         left: 100px;
+//         border-radius: 250px 0px 250px 200px;
+//     }
+// }
