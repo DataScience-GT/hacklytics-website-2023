@@ -1,14 +1,12 @@
-.section {
+.scroll-section {
   display: block;
   position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   width: 100%;
   border: 1px solid black;
 }
 
-.section > .section-wrapper {
+.scroll-section > .section-wrapper {
   display: block;
   position: relative;
   width: 100%;

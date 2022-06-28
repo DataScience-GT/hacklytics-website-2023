@@ -5,11 +5,12 @@ const Navbar = (params) => {
     return (
         <div id="navbar">
             <div className="navbar-wrapper">
-                <h1 className="major">Hacklytics</h1>
+                <a className="nav-menuitem-left">Home</a>
                 <div className="navbar-flex">
-                    <p className="nav-menuitem">test1</p>
-                    <p className="nav-menuitem">test2</p>
-                    <p className="nav-menuitem">test3</p>
+                    <a className="nav-menuitem">About</a>
+                    <a className="nav-menuitem">Sponsors</a>
+                    <a className="nav-menuitem">FAQs</a>
+                    <a className="nav-menuitem">Sign In</a>
                 </div>
             </div>
         </div>

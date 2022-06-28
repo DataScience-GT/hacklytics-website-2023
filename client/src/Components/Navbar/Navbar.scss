@@ -1,13 +1,29 @@
 #navbar {
     display: block;
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 5em;
     z-index: 5;
 
-    border: 1px solid red;
+    // border: 1px solid red;
+
+    color: white;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.1s all ease;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
 
     > .navbar-wrapper {
         display: flex;
@@ -21,7 +37,7 @@
         justify-content: flex-start;
         align-items: center;
 
-        border: 1px dashed blue;
+        // border: 1px dashed blue;
 
         > .major {
             display: block;
@@ -29,6 +45,18 @@
             width: fit-content;
             height: 100%;
             height: fit-content;
+        }
+        > .nav-menuitem-left {
+            display: block;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            font-size: 1.2em;
+
+            font-weight: 500;
+            padding: 10px 20px;
+
+            // border: 1px solid orange;
         }
 
         > .navbar-flex {
@@ -41,7 +69,7 @@
             justify-content: flex-end;
             align-items: center;
 
-            border: 1px solid yellow;
+            // border: 1px solid yellow;
 
             > .nav-menuitem {
                 display: block;
@@ -49,9 +77,11 @@
                 width: fit-content;
                 height: fit-content;
                 font-size: 1.2em;
+
+                font-weight: 500;
                 padding: 10px 20px;
 
-                border: 1px solid orange;
+                // border: 1px solid orange;
             }
         }
     }
