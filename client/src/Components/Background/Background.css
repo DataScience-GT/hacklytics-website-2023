@@ -4,7 +4,81 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: -webkit-gradient(linear, left bottom, left top, from(#181722), to(#462b0e));
-  background: linear-gradient(0deg, #181722, #462b0e);
+}
+
+.background > .bg-blur2 {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+.background > .bg-blur {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+.background > .bg {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: black;
+}
+
+.background > .circle {
+  display: block;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 0px 0px 50px 30px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0px 0px 50px 30px rgba(0, 0, 0, 0.9);
+}
+
+.background > .circle-blue-bright {
+  background-color: #3232bc;
+}
+
+.background > .circle-blue {
+  background-color: #1d1d98;
+}
+
+.background > .circle-gold {
+  background-color: #d6a812;
+}
+
+.background > .circle1 {
+  height: 700px;
+  width: 700px;
+  top: 100px;
+  right: 100px;
+  border-radius: 250px 0px 250px 200px;
+}
+
+.background > .circle2 {
+  height: 400px;
+  width: 400px;
+  top: 600px;
+  left: 100px;
+  border-radius: 250px 0px 250px 200px;
 }
 /*# sourceMappingURL=Background.css.map */
