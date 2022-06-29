@@ -10,6 +10,14 @@ import Faq from "../../Components/Faq";
 import logo from "../../Assets/Images/Branding/logo.svg";
 import map from "../../Assets/Images/Other/map.png";
 
+//past sponsor images
+import gcloud from "../../Assets/Images/PastSponsors/gc.png";
+import accenture from "../../Assets/Images/PastSponsors/accenture.png";
+import createx from "../../Assets/Images/PastSponsors/createx.png";
+import wolfram from "../../Assets/Images/PastSponsors/wolfram.png";
+import ironmountain from "../../Assets/Images/PastSponsors/ironmountain.png";
+import gatherly from "../../Assets/Images/PastSponsors/gatherly.png";
+
 const Home = (params) => {
     return (
         <div className="home-page">
@@ -168,6 +176,20 @@ const Home = (params) => {
             <Section id="pastsponsors">
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
+                    <div className="sponsors-flex">
+                        <div className="sponsor-row sponsor-row-a">
+                            <img className="sponsor" src={gcloud} />
+                            <img className="sponsor" src={accenture} />
+                            <img className="sponsor" src={createx} />
+                        </div>
+                        <div className="sponsor-row sponsor-row-b">
+                            <img className="sponsor" src={wolfram} />
+                            <img className="sponsor" src={ironmountain} />
+                        </div>
+                        <div className="sponsor-row sponsor-row-c">
+                            <img className="sponsor" src={gatherly} />
+                        </div>
+                    </div>
                 </div>
             </Section>
         </div>
