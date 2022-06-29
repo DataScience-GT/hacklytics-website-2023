@@ -767,7 +767,7 @@
 
 @media only screen and (max-width: 1000px) {
   .home-page {
-    font-size: 10px;
+    font-size: 14px;
   }
   #hero .hero-flex {
     -webkit-box-orient: vertical;
@@ -815,6 +815,12 @@
   }
   #footer {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=Home.css.map */
