@@ -13,7 +13,7 @@ const Faq = (params) => {
             <input id={identifier} className="faq-checkbox" type="checkbox" />
             <label className="faq-label" htmlFor={identifier}>
                 {params.question}
-                <span className="faq-arrow">v</span>
+                <span className="faq-arrow">↓</span>
             </label>
             <p className="faq-answer">{params.answer}</p>
         </div>

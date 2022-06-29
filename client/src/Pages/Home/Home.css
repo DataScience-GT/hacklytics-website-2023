@@ -47,7 +47,7 @@
   text-align: left;
   font-size: 7em;
   font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 0.9em;
 }
 
@@ -63,7 +63,7 @@
   text-align: left;
   font-size: 3em;
   font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 0.9em;
   color: rgba(255, 255, 255, 0.8);
   margin: 10px 0 30px 0;
@@ -131,7 +131,9 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 70%;
+  width: 80%;
+  padding: 100px;
+  margin: 0 auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -158,9 +160,9 @@
   width: 100%;
   text-align: center;
   font-size: 3em;
-  margin: 30px 0;
+  margin-bottom: 40px;
   font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 0.9em;
 }
 
@@ -173,9 +175,368 @@
   width: 100%;
   text-align: left;
   font-size: 1.3em;
-  margin: 30px 0;
   font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.3em;
+}
+
+#whatis,
+#whatis2 {
+  margin: 100px 0;
+}
+
+#whatis .whatis-flex,
+#whatis2 .whatis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding: 100px;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: rgba(217, 217, 217, 0.105);
+  -webkit-box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+          box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+  -webkit-backdrop-filter: blur(110.659px);
+          backdrop-filter: blur(110.659px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 102px;
+}
+
+#whatis .whatis-flex > .major,
+#whatis2 .whatis-flex > .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 0.9em;
+}
+
+#whatis .whatis-flex > .mini,
+#whatis2 .whatis-flex > .mini {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.3em;
+}
+
+#whenwhere .whenwhere-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding: 100px;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#whenwhere .whenwhere-flex > .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 0.9em;
+}
+
+#whenwhere .whenwhere-flex > .split-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+
+#whenwhere .whenwhere-flex > .split-flex > .mini {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.3em;
+}
+
+#whenwhere .whenwhere-flex > .split-flex > .map {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
+}
+
+#faq .faq-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#faq .faq-flex > .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 0.9em;
+}
+
+#speakers .speakers-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 96%;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#speakers .speakers-flex > .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 0.9em;
+}
+
+#speakers .speakers-flex > .tri-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 40px;
+}
+
+#speakers .speakers-flex > .tri-flex > .speaker-card {
+  display: block;
+  position: relative;
+  width: 30%;
+  min-width: 200px;
+  height: 500px;
+  padding: 40px;
+  padding-top: 0;
+}
+
+#speakers .speakers-flex > .tri-flex > .speaker-card > .speaker-bg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 70px);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(217, 217, 217, 0.105);
+  -webkit-box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+          box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+  -webkit-backdrop-filter: blur(110.659px);
+          backdrop-filter: blur(110.659px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 52px;
+}
+
+#speakers .speakers-flex > .tri-flex > .speaker-card > img {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#speakers .speakers-flex > .tri-flex > .speaker-card > .speaker-major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1em;
+  margin: 30px 0;
+}
+
+#speakers .speakers-flex > .tri-flex > .speaker-card > .speaker-mini {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2em;
+  margin: 30px 0;
+}
+
+#speakers .speakers-flex > .tri-flex > .card-down {
+  margin-top: 80px;
+}
+
+#pastsponsors .pastsponsors-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#pastsponsors .pastsponsors-flex > .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 0.9em;
 }
 /*# sourceMappingURL=Home.css.map */

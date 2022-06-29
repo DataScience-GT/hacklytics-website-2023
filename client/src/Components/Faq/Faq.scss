@@ -4,6 +4,8 @@
     width: 100%;
     height: fit-content;
 
+    margin: 10px 0;
+
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 
@@ -30,12 +32,20 @@
         padding: 10px;
         //border-radius: 100px;
 
-        background-color: rgb(149, 23, 188);
+        // background-color: rgb(149, 23, 188);
+        background: rgba(217, 217, 217, 0.1);
+        box-shadow: inset 20.0333px -20.0333px 20.0333px rgba(165, 165, 165, 0.1),
+            inset -20.0333px 20.0333px 20.0333px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(40.0667px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 83px;
 
         > .faq-arrow {
             display: block;
             position: relative;
             float: right;
+            margin-right: 10px;
 
             font-weight: 700;
 
@@ -49,8 +59,10 @@
         height: fit-content;
 
         padding: 10px;
-        border-radius: 0px 0px 10px 10px;
+        // border-radius: 0px 0px 10px 10px;
+        border-radius: 100px;
 
-        background-color: rgba($color: #b5b5b5, $alpha: 1);
+        // background-color: rgba($color: #b5b5b5, $alpha: 1);
+        background: rgba(217, 217, 217, 0.1);
     }
 }

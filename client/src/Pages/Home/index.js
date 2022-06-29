@@ -4,9 +4,11 @@ import "./Home.css";
 import Background from "../../Components/Background";
 import Navbar from "../../Components/Navbar";
 import Section from "../../Components/Section";
+import Faq from "../../Components/Faq";
 // import ScrollSection from "../../Components/ScrollSection";
 
 import logo from "../../Assets/Images/Branding/logo.svg";
+import map from "../../Assets/Images/Other/map.png";
 
 const Home = (params) => {
     return (
@@ -33,7 +35,7 @@ const Home = (params) => {
             </Section>
             <Section id="about">
                 <div className="about-flex">
-                    <div className="major">About</div>
+                    <h2 className="major">About</h2>
                     <p className="mini">
                         Inspired by the famous painting,{" "}
                         <strong>Hacklytics 2023: A Starry Night</strong> will
@@ -51,8 +53,8 @@ const Home = (params) => {
                 </div>
             </Section>
             <Section id="whatis">
-                <div className="about-flex">
-                    <div className="major">What is Hacklytics?</div>
+                <div className="whatis-flex">
+                    <h2 className="major">What is Hacklytics?</h2>
                     <p className="mini">
                         Hacklytics is a 36-hour data science-focused hackathon
                         hosted by Data Science @ GT, the largest data science
@@ -66,6 +68,106 @@ const Home = (params) => {
                         the same time, you can connect with hackers from various
                         backgrounds, build a diverse network, and have fun!
                     </p>
+                </div>
+            </Section>
+            <Section id="whenwhere">
+                <div className="whenwhere-flex">
+                    <h2 className="major">When and Where is Hacklytics?</h2>
+                    <div className="split-flex">
+                        <p className="mini">
+                            When: February 10-12, 2023
+                            <br />
+                            <br />
+                            Where: The Klaus Advanced Computing Building on
+                            Georgia Tech Campus
+                            <br />
+                            <br />
+                            The event will be hybrid, so we’ll have an online
+                            option for those unable to make the event in person.
+                            <br />
+                            <br />
+                            More details to come soon!
+                        </p>
+                        <img className="map" src={map} alt="Klaus Building" />
+                    </div>
+                </div>
+            </Section>
+            <Section id="whatis2">
+                <div className="whatis-flex">
+                    <h2 className="major">What is DSGT?</h2>
+                    <p className="mini">
+                        Data Science @ Georgia Tech is the largest data science
+                        organization at Georgia Tech with over 900 members. Our
+                        motto, “data science with a focus on community” is
+                        manifested through our projects, courses, and events.
+                        Learn more about us or how you can be involved here.
+                    </p>
+                </div>
+            </Section>
+            <Section id="faq">
+                <div className="faq-flex">
+                    <h1 className="major">FAQs</h1>
+                    <Faq
+                        identifier="a"
+                        question="Who can register?"
+                        answer="anyone!"
+                    />
+                    <Faq
+                        identifier="b"
+                        question="Can you participate Virtually"
+                        answer="anyone!"
+                    />
+                    <Faq
+                        identifier="c"
+                        question="Is the event free?"
+                        answer="anyone!"
+                    />
+                    <Faq
+                        identifier="d"
+                        question="How many people are allowed to be on a team?"
+                        answer="anyone!"
+                    />
+                    <Faq
+                        identifier="e"
+                        question="What, other than coding, is going to happen at this event?"
+                        answer="anyone!"
+                    />
+                </div>
+            </Section>
+            <Section id="speakers">
+                <div className="speakers-flex">
+                    <h1 className="major">Speakers</h1>
+                    <div className="tri-flex">
+                        <div className="speaker-card card-down">
+                            <div className="speaker-bg"></div>
+                            <img className="speaker-img" src={logo} />
+                            <h1 className="speaker-major">Test</h1>
+                            <h2 className="speaker-mini">
+                                asjkdh jsahdjk hfjkdh jkfhdj fh
+                            </h2>
+                        </div>
+                        <div className="speaker-card">
+                            <div className="speaker-bg"></div>
+                            <img className="speaker-img" src={logo} />
+                            <h1 className="speaker-major">Test</h1>
+                            <h2 className="speaker-mini">
+                                asjkdh jsahdjk hfjkdh jkfhdj fh
+                            </h2>
+                        </div>
+                        <div className="speaker-card card-down">
+                            <div className="speaker-bg"></div>
+                            <img className="speaker-img" src={logo} />
+                            <h1 className="speaker-major">Test</h1>
+                            <h2 className="speaker-mini">
+                                asjkdh jsahdjk hfjkdh jkfhdj fh
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </Section>
+            <Section id="pastsponsors">
+                <div className="pastsponsors-flex">
+                    <h1 className="major">Past Sponsors</h1>
                 </div>
             </Section>
         </div>
