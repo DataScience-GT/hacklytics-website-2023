@@ -44,7 +44,10 @@ const Home = (params) => {
                             src={logo}
                             alt="hacklytics 2023 logo"
                         />
-                        <img className="star" src={star} alt="star" />
+                        <img className="star star-a" src={star} alt="star" />
+                        <img className="star star-b" src={star} alt="star" />
+                        <img className="star star-c" src={star} alt="star" />
+                        <img className="star star-d" src={star} alt="star" />
                     </div>
                 </div>
             </Section>

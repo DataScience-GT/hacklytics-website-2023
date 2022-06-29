@@ -144,6 +144,7 @@
   display: block;
   position: relative;
   height: auto;
+  width: 100%;
   -webkit-filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
           filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
 }
@@ -151,7 +152,111 @@
 #hero .flex-right > .logo-stars > .star {
   display: block;
   position: absolute;
-  width: 50px;
+  width: 40px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -webkit-filter: drop-shadow(0px 0px 80px #f3ae4a);
+          filter: drop-shadow(0px 0px 80px #f3ae4a);
+}
+
+#hero .flex-right > .logo-stars > .star-a {
+  width: 40px;
+  top: -20px;
+  right: 40px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-animation: StarRotateA 5s infinite;
+          animation: StarRotateA 5s infinite;
+}
+
+#hero .flex-right > .logo-stars > .star-b {
+  width: 70px;
+  top: -40px;
+  right: -40px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-animation: StarRotateA 5s infinite;
+          animation: StarRotateA 5s infinite;
+}
+
+#hero .flex-right > .logo-stars > .star-c {
+  width: 40px;
+  bottom: -10px;
+  left: 40px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-animation: StarRotateB 5s infinite;
+          animation: StarRotateB 5s infinite;
+}
+
+#hero .flex-right > .logo-stars > .star-d {
+  width: 80px;
+  bottom: 0px;
+  left: -40px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-animation: StarRotateB 5s infinite;
+          animation: StarRotateB 5s infinite;
+}
+
+@-webkit-keyframes StarRotateA {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+}
+
+@keyframes StarRotateA {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+}
+
+@-webkit-keyframes StarRotateB {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+@keyframes StarRotateB {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
 }
 
 #about .about-flex {
@@ -203,7 +308,7 @@
   width: 100%;
   text-align: left;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Outfit";
   line-height: 1.3em;
 }
@@ -271,7 +376,7 @@
   width: 100%;
   text-align: left;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Outfit";
   line-height: 1.3em;
 }
@@ -347,7 +452,7 @@
   width: 50%;
   text-align: left;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Outfit";
   line-height: 1.3em;
 }
