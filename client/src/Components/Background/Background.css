@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  overflow: hidden;
   background-color: #050a20;
 }
 
@@ -21,8 +22,8 @@
   border: 100%;
   z-index: 1;
   border-radius: 100%;
-  -webkit-filter: blur(350px);
-          filter: blur(350px);
+  -webkit-filter: blur(260px);
+          filter: blur(260px);
 }
 
 .background > .background-wrapper > .circle1 {

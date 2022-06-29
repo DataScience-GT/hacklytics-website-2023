@@ -8,6 +8,7 @@ import Faq from "../../Components/Faq";
 // import ScrollSection from "../../Components/ScrollSection";
 
 import logo from "../../Assets/Images/Branding/logo.svg";
+import star from "../../Assets/Images/Other/star2--export.svg";
 import map from "../../Assets/Images/Other/map.png";
 
 //past sponsor images
@@ -37,11 +38,14 @@ const Home = (params) => {
                     </a>
                 </div>
                 <div className="flex-right">
-                    <img
-                        className="hero-logo"
-                        src={logo}
-                        alt="hacklytics 2023 logo"
-                    />
+                    <div className="logo-stars">
+                        <img
+                            className="hero-logo"
+                            src={logo}
+                            alt="hacklytics 2023 logo"
+                        />
+                        <img className="star" src={star} alt="star" />
+                    </div>
                 </div>
             </Section>
             <Section id="about">

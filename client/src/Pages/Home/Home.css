@@ -59,7 +59,7 @@
   text-align: left;
   font-size: 7em;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
@@ -75,7 +75,7 @@
   text-align: left;
   font-size: 3em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
   color: rgba(255, 255, 255, 0.8);
   margin: 10px 0 30px 0;
@@ -131,11 +131,27 @@
   color: #fff;
 }
 
-#hero .flex-right > .hero-logo {
+#hero .flex-right > .logo-stars {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#hero .flex-right > .logo-stars > .hero-logo {
   display: block;
   position: relative;
   height: auto;
-  width: 80%;
+  -webkit-filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+          filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+}
+
+#hero .flex-right > .logo-stars > .star {
+  display: block;
+  position: absolute;
+  width: 50px;
 }
 
 #about .about-flex {
@@ -174,7 +190,7 @@
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
@@ -188,7 +204,7 @@
   text-align: left;
   font-size: 1.3em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 1.3em;
 }
 
@@ -241,7 +257,7 @@
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
@@ -256,7 +272,7 @@
   text-align: left;
   font-size: 1.3em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 1.3em;
 }
 
@@ -296,7 +312,7 @@
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
@@ -332,7 +348,7 @@
   text-align: left;
   font-size: 1.3em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 1.3em;
 }
 
@@ -378,7 +394,7 @@
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
@@ -418,7 +434,7 @@
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
@@ -488,7 +504,7 @@
   text-align: center;
   font-size: 1.7em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 1em;
   margin: 30px 0;
 }
@@ -503,7 +519,7 @@
   text-align: left;
   font-size: 1.2em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 1.2em;
   margin: 30px 0;
 }
@@ -548,7 +564,7 @@
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   line-height: 0.9em;
 }
 
