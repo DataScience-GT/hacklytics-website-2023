@@ -1,5 +1,5 @@
 //imports
-import "./Section.css";
+import "./ScrollSection.css";
 
 const ScrollSection = (params) => {
     return (
