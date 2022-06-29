@@ -28,13 +28,18 @@
     }
 
     > .faq-label {
-        display: block;
+        display: flex;
         position: relative;
         width: 100%;
         height: fit-content;
 
         padding: 10px;
         //border-radius: 100px;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
 
         // background-color: rgb(149, 23, 188);
         background: rgba(217, 217, 217, 0.1);
@@ -43,7 +48,11 @@
         backdrop-filter: blur(40.0667px);
         /* Note: backdrop-filter has minimal browser support */
 
-        border-radius: 83px;
+        border-radius: 30px;
+
+        > .faq-question {
+            flex-grow: 1;
+        }
 
         > .faq-arrow {
             display: block;
@@ -61,6 +70,8 @@
         position: relative;
         width: 100%;
         height: fit-content;
+        font-weight: 300;
+        text-align: left;
 
         padding: 10px 20px;
         // border-radius: 0px 0px 10px 10px;

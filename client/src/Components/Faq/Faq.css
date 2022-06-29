@@ -28,20 +28,39 @@
 }
 
 .faq > .faq-label {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   background: rgba(217, 217, 217, 0.1);
   -webkit-box-shadow: inset 20.0333px -20.0333px 20.0333px rgba(165, 165, 165, 0.1), inset -20.0333px 20.0333px 20.0333px rgba(255, 255, 255, 0.1);
           box-shadow: inset 20.0333px -20.0333px 20.0333px rgba(165, 165, 165, 0.1), inset -20.0333px 20.0333px 20.0333px rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(40.0667px);
           backdrop-filter: blur(40.0667px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 83px;
+  border-radius: 30px;
+}
+
+.faq > .faq-label > .faq-question {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .faq > .faq-label > .faq-arrow {
@@ -61,6 +80,8 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  font-weight: 300;
+  text-align: left;
   padding: 10px 20px;
   border-radius: 30px;
   background: rgba(217, 217, 217, 0.1);
