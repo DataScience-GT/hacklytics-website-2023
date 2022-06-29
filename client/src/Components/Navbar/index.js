@@ -42,9 +42,9 @@ const Navbar = (params) => {
                         <a className="nav-menuitem" href="#pastsponsors">
                             Sponsors
                         </a>
-                        <a className="nav-menuitem" href="#">
+                        {/* <a className="nav-menuitem" href="#">
                             Sign In
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
@@ -67,21 +67,37 @@ const Navbar = (params) => {
                 </label>
                 <div className="mobile-navbar-menu">
                     <div className="nav-menu-flex">
-                        <a className="nav-menuitem" onClick={handleClick} href="/">
+                        <a
+                            className="nav-menuitem"
+                            onClick={handleClick}
+                            href="/"
+                        >
                             Home
                         </a>
-                        <a className="nav-menuitem" onClick={handleClick} href="#about">
+                        <a
+                            className="nav-menuitem"
+                            onClick={handleClick}
+                            href="#about"
+                        >
                             About
                         </a>
-                        <a className="nav-menuitem" onClick={handleClick} href="#faq">
+                        <a
+                            className="nav-menuitem"
+                            onClick={handleClick}
+                            href="#faq"
+                        >
                             FAQs
                         </a>
-                        <a className="nav-menuitem" onClick={handleClick} href="#pastsponsors">
+                        <a
+                            className="nav-menuitem"
+                            onClick={handleClick}
+                            href="#pastsponsors"
+                        >
                             Sponsors
                         </a>
-                        <a className="nav-menuitem" onClick={handleClick} href="#">
+                        {/* <a className="nav-menuitem" onClick={handleClick} href="#">
                             Sign In
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
