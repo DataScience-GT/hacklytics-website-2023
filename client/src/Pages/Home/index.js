@@ -17,6 +17,7 @@ import createx from "../../Assets/Images/PastSponsors/createx.png";
 import wolfram from "../../Assets/Images/PastSponsors/wolfram.png";
 import ironmountain from "../../Assets/Images/PastSponsors/ironmountain.png";
 import gatherly from "../../Assets/Images/PastSponsors/gatherly.png";
+import Footer from "../../Components/Footer";
 
 const Home = (params) => {
     return (
@@ -31,7 +32,9 @@ const Home = (params) => {
                         2023
                     </h1>
                     <h2 className="hero-minor">a starry night</h2>
-                    <a className="hero-button">Register!</a>
+                    <a className="hero-button" href="#">
+                        Register!
+                    </a>
                 </div>
                 <div className="flex-right">
                     <img
@@ -148,7 +151,11 @@ const Home = (params) => {
                     <div className="tri-flex">
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
-                            <img className="speaker-img" src={logo} />
+                            <img
+                                className="speaker-img"
+                                src={logo}
+                                alt="person"
+                            />
                             <h1 className="speaker-major">Test</h1>
                             <h2 className="speaker-mini">
                                 asjkdh jsahdjk hfjkdh jkfhdj fh
@@ -156,7 +163,11 @@ const Home = (params) => {
                         </div>
                         <div className="speaker-card">
                             <div className="speaker-bg"></div>
-                            <img className="speaker-img" src={logo} />
+                            <img
+                                className="speaker-img"
+                                src={logo}
+                                alt="person"
+                            />
                             <h1 className="speaker-major">Test</h1>
                             <h2 className="speaker-mini">
                                 asjkdh jsahdjk hfjkdh jkfhdj fh
@@ -164,7 +175,11 @@ const Home = (params) => {
                         </div>
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
-                            <img className="speaker-img" src={logo} />
+                            <img
+                                className="speaker-img"
+                                src={logo}
+                                alt="person"
+                            />
                             <h1 className="speaker-major">Test</h1>
                             <h2 className="speaker-mini">
                                 asjkdh jsahdjk hfjkdh jkfhdj fh
@@ -178,20 +193,45 @@ const Home = (params) => {
                     <h1 className="major">Past Sponsors</h1>
                     <div className="sponsors-flex">
                         <div className="sponsor-row sponsor-row-a">
-                            <img className="sponsor" src={gcloud} />
-                            <img className="sponsor" src={accenture} />
-                            <img className="sponsor" src={createx} />
+                            <img
+                                className="sponsor"
+                                src={gcloud}
+                                alt="Google Cloud"
+                            />
+                            <img
+                                className="sponsor"
+                                src={accenture}
+                                alt="Accenture"
+                            />
+                            <img
+                                className="sponsor"
+                                src={createx}
+                                alt="CreateX"
+                            />
                         </div>
                         <div className="sponsor-row sponsor-row-b">
-                            <img className="sponsor" src={wolfram} />
-                            <img className="sponsor" src={ironmountain} />
+                            <img
+                                className="sponsor"
+                                src={wolfram}
+                                alt="Wolfram Language"
+                            />
+                            <img
+                                className="sponsor"
+                                src={ironmountain}
+                                alt="Iron Mountain"
+                            />
                         </div>
                         <div className="sponsor-row sponsor-row-c">
-                            <img className="sponsor" src={gatherly} />
+                            <img
+                                className="sponsor"
+                                src={gatherly}
+                                alt="Gatherly"
+                            />
                         </div>
                     </div>
                 </div>
             </Section>
+            <Footer />
         </div>
     );
 };

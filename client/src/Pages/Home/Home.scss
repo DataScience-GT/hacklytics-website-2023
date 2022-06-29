@@ -1,9 +1,13 @@
 .home-page {
-    display: block;
+    display: flex;
     position: relative;
     width: 100%;
     height: fit-content;
     overflow-x: hidden;
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #hero {
