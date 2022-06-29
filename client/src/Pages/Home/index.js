@@ -138,6 +138,62 @@ const Home = (params) => {
                         will be hybrid so we shall have an online option for
                         those unable to make the event in person.
                     </Faq>
+                    <Faq
+                        identifier="c"
+                        question="Can you participate virtually?"
+                    >
+                        Yes! Apply the same way as you would usually do and we
+                        will let you know the next steps!
+                    </Faq>
+                    <Faq
+                        identifier="d"
+                        question="What is a data science hackathon?"
+                    >
+                        A datathon is a specific type of hackathon that focuses
+                        on data science. You can choose any datasets,
+                        programming languages, APIs, algorithms you'd like, to
+                        create visualizations, develop models, derive insights,
+                        and do anything you believe to be impactful! The sky's
+                        the limit!
+                    </Faq>
+                    <Faq identifier="e" question="How many people per team?">
+                        A maximum of 4 members per team. However, you’re allowed
+                        to work with fewer members as well!
+                    </Faq>
+                    <Faq identifier="f" question="What if I don’t have a team?">
+                        Lots of people come in without teams! You can find
+                        people to form a team with during our team-building
+                        event or through our Discord.
+                    </Faq>
+                    <Faq identifier="g" question="Is the event free?">
+                        Yes! We also provide food and other goodies if you are
+                        in-person.
+                    </Faq>
+                    <Faq
+                        identifier="h"
+                        question="Is this event beginner friendly?"
+                    >
+                        Yes, we encourage beginners to apply to expand their
+                        knowledge! We will have tons of skill-building workshops
+                        and experienced mentors to help out with projects at the
+                        event. Overall, Hacklytics will be a very enriching
+                        experience regardless of how experienced you are!
+                    </Faq>
+                    <Faq identifier="i" question="How are applicants selected?">
+                        We evaluate your applications by looking into your
+                        interest in participating and passion in the field of
+                        data!
+                    </Faq>
+                    <Faq
+                        identifier="j"
+                        question="What, other than coding, is going to happen at this event?"
+                    >
+                        Speaker talks, workshops, social events and a lot more!{" "}
+                    </Faq>
+                    <Faq identifier="k" question="How do I get in touch?">
+                        Reach out to us at{" "}
+                        <a href="mailto:hello@hacklytics.io">hello@hacklytics.io</a>
+                    </Faq>
                 </div>
             </Section>
             <Section id="speakers">

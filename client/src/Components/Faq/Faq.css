@@ -19,8 +19,8 @@
 }
 
 .faq > .faq-checkbox:checked + .faq-label > .faq-arrow {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
 }
 
 .faq > .faq-checkbox:checked + .faq-label + .faq-answer {
@@ -61,7 +61,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 30px;
   background: rgba(217, 217, 217, 0.1);
 }
