@@ -202,7 +202,7 @@ const Home = (params) => {
                     </Faq>
                 </div>
             </Section>
-            <Section id="speakers">
+            {/* <Section id="speakers">
                 <div className="speakers-flex">
                     <h1 className="major">Speakers</h1>
                     <div className="tri-flex">
@@ -244,7 +244,7 @@ const Home = (params) => {
                         </div>
                     </div>
                 </div>
-            </Section>
+            </Section> */}
             <Section id="pastsponsors">
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
