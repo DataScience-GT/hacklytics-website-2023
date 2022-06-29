@@ -96,8 +96,11 @@ const Home = (params) => {
                             When: February 10-12, 2023
                             <br />
                             <br />
-                            Where: The Klaus Advanced Computing Building on
-                            Georgia Tech Campus
+                            Where: The{" "}
+                            <a href="https://goo.gl/maps/W7uum6WcHQ6bTrJXA">
+                                Klaus Advanced Computing Building
+                            </a>{" "}
+                            on Georgia Tech Campus
                             <br />
                             <br />
                             The event will be hybrid, so we’ll have an online
@@ -118,7 +121,8 @@ const Home = (params) => {
                         organization at Georgia Tech with over 900 members. Our
                         motto, “data science with a focus on community” is
                         manifested through our projects, courses, and events.
-                        Learn more about us or how you can be involved here.
+                        Learn more about us or how you can be involved{" "}
+                        <a href="https://datasciencegt.org">here</a>.
                     </p>
                 </div>
             </Section>
@@ -192,7 +196,9 @@ const Home = (params) => {
                     </Faq>
                     <Faq identifier="k" question="How do I get in touch?">
                         Reach out to us at{" "}
-                        <a href="mailto:hello@hacklytics.io">hello@hacklytics.io</a>
+                        <a href="mailto:hello@hacklytics.io">
+                            hello@hacklytics.io
+                        </a>
                     </Faq>
                 </div>
             </Section>
