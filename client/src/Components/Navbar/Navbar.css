@@ -175,7 +175,7 @@
   position: fixed;
   height: 0px;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(65, 65, 65, 0.4);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   top: -2px;
