@@ -10,25 +10,57 @@ const Footer = (params) => {
                 </div>
                 <div className="footer-section">
                     <h2 className="minor">Company</h2>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
+                    <a className="mini" href="https://datasciencegt.org">
+                        About Us
+                    </a>
+                    <a className="mini" href="mailto:hello@datasciencegt.org">
+                        Contact
+                    </a>
                 </div>
                 <div className="footer-section">
-                    <h2 className="minor">Company</h2>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
+                    <h2 className="minor">Connect with Us</h2>
+                    <a className="mini" href="mailto:hello@datasciencegt.org">
+                        Email
+                    </a>
+                    <a
+                        className="mini"
+                        href="https://www.instagram.com/datasciencegt/"
+                    >
+                        Instagram
+                    </a>
+                    <a
+                        className="mini"
+                        href="https://www.facebook.com/datasciencegt/"
+                    >
+                        Facebook
+                    </a>
+                    <a
+                        className="mini"
+                        href="https://www.linkedin.com/company/dsgt/"
+                    >
+                        LinkedIn
+                    </a>
+                    <a
+                        className="mini"
+                        href="https://github.com/DataScience-GT"
+                    >
+                        Github
+                    </a>
                 </div>
                 <div className="footer-section">
-                    <h2 className="minor">Company</h2>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
-                    <h3 className="mini">test</h3>
+                    <h2 className="minor">Hacklytics</h2>
+                    <a
+                        className="mini"
+                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                    >
+                        MLH Code of Conduct
+                    </a>
                 </div>
+                {/* <div className="footer-section">
+                    <h2 className="minor">Join the Community</h2>
+                    <a className="mini">Slack</a>
+                    <a className="mini">Discord</a>
+                </div> */}
                 <div className="footer-section">
                     <h2 className="minor">
                         Made with 💖 by the DSGT Tech Team.
