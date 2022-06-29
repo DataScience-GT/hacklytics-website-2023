@@ -3,7 +3,8 @@ import "./Faq.css";
 
 /**
  * A frequently asked question
- * @attributes identifier (unique, zero spaces), question, answer
+ * @attributes identifier (unique, zero spaces), question, answer (in element)
+ * @example <Faq identifier="abc123" question="what time is it?">3:00AM</Faq>
  */
 const Faq = (params) => {
     let identifier = "faq-checkbox-" + params.identifier;
@@ -15,7 +16,7 @@ const Faq = (params) => {
                 {params.question}
                 <span className="faq-arrow">↓</span>
             </label>
-            <p className="faq-answer">{params.answer}</p>
+            <p className="faq-answer">{params.children}</p>
         </div>
     );
 };

@@ -9,6 +9,10 @@
     font-family: "Outfit";
     font-size: 20px;
 
+    a {
+        color: inherit;
+    }
+
     > .faq-checkbox {
         display: none;
     }
@@ -60,7 +64,7 @@
 
         padding: 10px;
         // border-radius: 0px 0px 10px 10px;
-        border-radius: 100px;
+        border-radius: 30px;
 
         // background-color: rgba($color: #b5b5b5, $alpha: 1);
         background: rgba(217, 217, 217, 0.1);

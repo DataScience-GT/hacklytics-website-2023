@@ -125,31 +125,19 @@ const Home = (params) => {
             <Section id="faq">
                 <div className="faq-flex">
                     <h1 className="major">FAQs</h1>
-                    <Faq
-                        identifier="a"
-                        question="Who can register?"
-                        answer="anyone!"
-                    />
-                    <Faq
-                        identifier="b"
-                        question="Can you participate Virtually"
-                        answer="anyone!"
-                    />
-                    <Faq
-                        identifier="c"
-                        question="Is the event free?"
-                        answer="anyone!"
-                    />
-                    <Faq
-                        identifier="d"
-                        question="How many people are allowed to be on a team?"
-                        answer="anyone!"
-                    />
-                    <Faq
-                        identifier="e"
-                        question="What, other than coding, is going to happen at this event?"
-                        answer="anyone!"
-                    />
+                    <Faq identifier="a" question="Who can register?">
+                        Any student currently enrolled in a University above the
+                        age of 18. For any discrepancies, feel free to reach
+                        out.
+                    </Faq>
+                    <Faq identifier="b" question="Where and when is it held?">
+                        <a href="https://goo.gl/maps/W7uum6WcHQ6bTrJXA">
+                            Klaus Advanced Computing Building
+                        </a>{" "}
+                        from 10th February to 12th February, 2023. The event
+                        will be hybrid so we shall have an online option for
+                        those unable to make the event in person.
+                    </Faq>
                 </div>
             </Section>
             <Section id="speakers">

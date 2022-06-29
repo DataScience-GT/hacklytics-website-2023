@@ -10,6 +10,10 @@
   font-size: 20px;
 }
 
+.faq a {
+  color: inherit;
+}
+
 .faq > .faq-checkbox {
   display: none;
 }
@@ -58,7 +62,7 @@
   height: -moz-fit-content;
   height: fit-content;
   padding: 10px;
-  border-radius: 100px;
+  border-radius: 30px;
   background: rgba(217, 217, 217, 0.1);
 }
 /*# sourceMappingURL=Faq.css.map */
