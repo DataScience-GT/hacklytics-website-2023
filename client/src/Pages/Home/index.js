@@ -26,28 +26,46 @@ const Home = (params) => {
             <Background />
             <Navbar />
             <Section id="hero">
-                <div className="flex-left">
-                    <h1 className="hero-major">
-                        Hacklytics
-                        <br />
-                        2023
-                    </h1>
-                    <h2 className="hero-minor">a starry night</h2>
-                    <a className="hero-button" href="#">
-                        Register!
-                    </a>
-                </div>
-                <div className="flex-right">
-                    <div className="logo-stars">
-                        <img
-                            className="hero-logo"
-                            src={logo}
-                            alt="hacklytics 2023 logo"
-                        />
-                        <img className="star star-a" src={star} alt="star" />
-                        <img className="star star-b" src={star} alt="star" />
-                        <img className="star star-c" src={star} alt="star" />
-                        <img className="star star-d" src={star} alt="star" />
+                <div className="hero-flex">
+                    <div className="flex-left">
+                        <h1 className="hero-major">
+                            Hacklytics
+                            <br />
+                            2023
+                        </h1>
+                        <h2 className="hero-minor">a starry night</h2>
+                        <a className="hero-button" href="#">
+                            Register!
+                        </a>
+                    </div>
+                    <div className="flex-right">
+                        <div className="logo-stars">
+                            <img
+                                className="hero-logo"
+                                src={logo}
+                                alt="hacklytics 2023 logo"
+                            />
+                            <img
+                                className="star star-a"
+                                src={star}
+                                alt="star"
+                            />
+                            <img
+                                className="star star-b"
+                                src={star}
+                                alt="star"
+                            />
+                            <img
+                                className="star star-c"
+                                src={star}
+                                alt="star"
+                            />
+                            <img
+                                className="star star-d"
+                                src={star}
+                                alt="star"
+                            />
+                        </div>
                     </div>
                 </div>
             </Section>

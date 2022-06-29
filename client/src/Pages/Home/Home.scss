@@ -19,128 +19,139 @@
         text-decoration: none;
         cursor: pointer;
     }
-    .flex-left {
+    .hero-flex {
         display: flex;
         position: relative;
-        height: calc(100vh - 5em);
-        width: 50%;
-        float: left;
+        width: 100%;
+        height: fit-content;
 
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: flex-start;
 
-        color: #fff;
-
-        // border: 1px solid red;
-
-        > .hero-major {
-            display: block;
+        > .flex-left {
+            display: flex;
             position: relative;
-            height: fit-content;
-            width: fit-content;
-            text-align: left;
-            font-size: 7em;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
-        }
-        > .hero-minor {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: fit-content;
-            text-align: left;
-            font-size: 3em;
-            font-weight: 500;
-            font-family: "Outfit";
-            line-height: 0.9em;
-            color: rgba(255, 255, 255, 0.8);
-            margin: 10px 0 30px 0;
-        }
-        > .hero-button {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: fit-content;
+            height: calc(100vh - 5em);
+            width: 50%;
+            // float: left;
 
-            font-size: 1.5em;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.8);
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
 
-            padding: 12px 30px;
-            border: 6px solid rgba(255, 255, 255, 0.8);
-            border-radius: 100px;
-            transition: 0.3s all ease;
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.8);
-                color: black;
-            }
-            &:active {
-                filter: brightness(0.8);
-            }
-        }
-    }
-    .flex-right {
-        display: flex;
-        position: relative;
-        height: calc(100vh - 5em);
-        width: 50%;
-        float: right;
+            color: #fff;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+            // border: 1px solid red;
 
-        color: #fff;
-        > .logo-stars {
-            display: block;
-            position: relative;
-            width: 80%;
-            height: fit-content;
-            > .hero-logo {
+            > .hero-major {
                 display: block;
                 position: relative;
-                height: auto;
-                width: 100%;
-                // width: 80%;
-
-                filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+                height: fit-content;
+                width: fit-content;
+                text-align: left;
+                font-size: 7em;
+                font-weight: 700;
+                font-family: "Outfit";
+                line-height: 0.9em;
             }
-            > .star {
+            > .hero-minor {
                 display: block;
-                position: absolute;
-                width: 40px;
+                position: relative;
+                height: fit-content;
+                width: fit-content;
+                text-align: left;
+                font-size: 3em;
+                font-weight: 500;
+                font-family: "Outfit";
+                line-height: 0.9em;
+                color: rgba(255, 255, 255, 0.8);
+                margin: 10px 0 30px 0;
+            }
+            > .hero-button {
+                display: block;
+                position: relative;
+                height: fit-content;
+                width: fit-content;
+
+                font-size: 1.5em;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.8);
+
+                padding: 12px 30px;
+                border: 6px solid rgba(255, 255, 255, 0.8);
+                border-radius: 100px;
                 transition: 0.3s all ease;
-                filter: drop-shadow(0px 0px 50px #f3ae4a);
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    color: black;
+                }
+                &:active {
+                    filter: brightness(0.8);
+                }
             }
-            > .star-a {
-                width: 40px;
-                top: -20px;
-                right: 40px;
-                transform: rotate(15deg);
-                animation: StarRotateA 5s infinite;
-            }
-            > .star-b {
-                width: 70px;
-                top: -40px;
-                right: -40px;
-                transform: rotate(15deg);
-                animation: StarRotateA 5s infinite;
-            }
-            > .star-c {
-                width: 40px;
-                bottom: -10px;
-                left: 40px;
-                transform: rotate(-15deg);
-                animation: StarRotateB 5s infinite;
-            }
-            > .star-d {
-                width: 80px;
-                bottom: 0px;
-                left: -40px;
-                transform: rotate(-15deg);
-                animation: StarRotateB 5s infinite;
+        }
+        > .flex-right {
+            display: flex;
+            position: relative;
+            height: calc(100vh - 5em);
+            width: 50%;
+            // float: right;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            > .logo-stars {
+                display: block;
+                position: relative;
+                width: 80%;
+                height: fit-content;
+                > .hero-logo {
+                    display: block;
+                    position: relative;
+                    height: auto;
+                    width: 100%;
+                    // width: 80%;
+
+                    filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+                }
+                > .star {
+                    display: block;
+                    position: absolute;
+                    width: 40px;
+                    transition: 0.3s all ease;
+                    filter: drop-shadow(0px 0px 50px #f3ae4a);
+                }
+                > .star-a {
+                    width: 40px;
+                    top: -20px;
+                    right: 40px;
+                    transform: rotate(15deg);
+                    animation: StarRotateA 5s infinite;
+                }
+                > .star-b {
+                    width: 70px;
+                    top: -40px;
+                    right: -40px;
+                    transform: rotate(15deg);
+                    animation: StarRotateA 5s infinite;
+                }
+                > .star-c {
+                    width: 40px;
+                    bottom: -10px;
+                    left: 40px;
+                    transform: rotate(-15deg);
+                    animation: StarRotateB 5s infinite;
+                }
+                > .star-d {
+                    width: 80px;
+                    bottom: 0px;
+                    left: -40px;
+                    transform: rotate(-15deg);
+                    animation: StarRotateB 5s infinite;
+                }
             }
         }
     }
@@ -542,5 +553,74 @@
                 height: 140px;
             }
         }
+    }
+}
+
+//mobile
+@media only screen and (max-width: 1000px) {
+    .home-page {
+        font-size: 10px;
+    }
+    #hero {
+        .hero-flex {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 5em;
+            > .flex-left {
+                height: calc(50vh);
+                padding: 0;
+                width: fit-content;
+                // overflow: hidden;
+            }
+            > .flex-right {
+                height: calc(50vh - 5em);
+                width: 60%;
+                // overflow: hidden;
+            }
+        }
+    }
+    #about {
+        .about-flex {
+            padding: 100px 0;
+        }
+    }
+
+    #whatis,
+    #whatis2 {
+        .whatis-flex {
+            width: 90%;
+            padding: 100px 40px;
+        }
+    }
+
+    #whenwhere {
+        .whenwhere-flex {
+            padding: 100px 0;
+        }
+    }
+
+    #pastsponsors {
+        .pastsponsors-flex {
+            > .sponsors-flex {
+                > .sponsor-row {
+                    > .sponsor {
+                        padding: 5px;
+                    }
+                }
+                > .sponsor-row-a {
+                    height: 80px;
+                }
+                > .sponsor-row-b {
+                    height: 60px;
+                }
+                > .sponsor-row-c {
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    #footer {
+        font-size: 12px;
     }
 }

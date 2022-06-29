@@ -30,14 +30,34 @@
   cursor: pointer;
 }
 
-#hero .flex-left {
+#hero .hero-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#hero .hero-flex > .flex-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   height: calc(100vh - 5em);
   width: 50%;
-  float: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -51,7 +71,7 @@
   color: #fff;
 }
 
-#hero .flex-left > .hero-major {
+#hero .hero-flex > .flex-left > .hero-major {
   display: block;
   position: relative;
   height: -webkit-fit-content;
@@ -67,7 +87,7 @@
   line-height: 0.9em;
 }
 
-#hero .flex-left > .hero-minor {
+#hero .hero-flex > .flex-left > .hero-minor {
   display: block;
   position: relative;
   height: -webkit-fit-content;
@@ -85,7 +105,7 @@
   margin: 10px 0 30px 0;
 }
 
-#hero .flex-left > .hero-button {
+#hero .hero-flex > .flex-left > .hero-button {
   display: block;
   position: relative;
   height: -webkit-fit-content;
@@ -104,24 +124,23 @@
   transition: 0.3s all ease;
 }
 
-#hero .flex-left > .hero-button:hover {
+#hero .hero-flex > .flex-left > .hero-button:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
 }
 
-#hero .flex-left > .hero-button:active {
+#hero .hero-flex > .flex-left > .hero-button:active {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
 }
 
-#hero .flex-right {
+#hero .hero-flex > .flex-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   height: calc(100vh - 5em);
   width: 50%;
-  float: right;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -129,13 +148,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
 }
 
-#hero .flex-right > .logo-stars {
+#hero .hero-flex > .flex-right > .logo-stars {
   display: block;
   position: relative;
   width: 80%;
@@ -144,7 +163,7 @@
   height: fit-content;
 }
 
-#hero .flex-right > .logo-stars > .hero-logo {
+#hero .hero-flex > .flex-right > .logo-stars > .hero-logo {
   display: block;
   position: relative;
   height: auto;
@@ -153,7 +172,7 @@
           filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
 }
 
-#hero .flex-right > .logo-stars > .star {
+#hero .hero-flex > .flex-right > .logo-stars > .star {
   display: block;
   position: absolute;
   width: 40px;
@@ -163,7 +182,7 @@
           filter: drop-shadow(0px 0px 50px #f3ae4a);
 }
 
-#hero .flex-right > .logo-stars > .star-a {
+#hero .hero-flex > .flex-right > .logo-stars > .star-a {
   width: 40px;
   top: -20px;
   right: 40px;
@@ -173,7 +192,7 @@
           animation: StarRotateA 5s infinite;
 }
 
-#hero .flex-right > .logo-stars > .star-b {
+#hero .hero-flex > .flex-right > .logo-stars > .star-b {
   width: 70px;
   top: -40px;
   right: -40px;
@@ -183,7 +202,7 @@
           animation: StarRotateA 5s infinite;
 }
 
-#hero .flex-right > .logo-stars > .star-c {
+#hero .hero-flex > .flex-right > .logo-stars > .star-c {
   width: 40px;
   bottom: -10px;
   left: 40px;
@@ -193,7 +212,7 @@
           animation: StarRotateB 5s infinite;
 }
 
-#hero .flex-right > .logo-stars > .star-d {
+#hero .hero-flex > .flex-right > .logo-stars > .star-d {
   width: 80px;
   bottom: 0px;
   left: -40px;
@@ -744,5 +763,58 @@
 
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
   height: 140px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-page {
+    font-size: 10px;
+  }
+  #hero .hero-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5em;
+  }
+  #hero .hero-flex > .flex-left {
+    height: calc(50vh);
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #hero .hero-flex > .flex-right {
+    height: calc(50vh - 5em);
+    width: 60%;
+  }
+  #about .about-flex {
+    padding: 100px 0;
+  }
+  #whatis .whatis-flex,
+  #whatis2 .whatis-flex {
+    width: 90%;
+    padding: 100px 40px;
+  }
+  #whenwhere .whenwhere-flex {
+    padding: 100px 0;
+  }
+  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row > .sponsor {
+    padding: 5px;
+  }
+  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-a {
+    height: 80px;
+  }
+  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-b {
+    height: 60px;
+  }
+  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
+    height: 60px;
+  }
+  #footer {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=Home.css.map */
