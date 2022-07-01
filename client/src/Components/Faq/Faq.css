@@ -18,6 +18,12 @@
   display: none;
 }
 
+.faq > .faq-checkbox:checked + .faq-label {
+  background: #312cc2;
+  -webkit-box-shadow: 0px 1px 200px #312cc2, inset 20.0333px -20.0333px 20.0333px rgba(165, 165, 165, 0.1), inset -20.0333px 20.0333px 20.0333px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 1px 200px #312cc2, inset 20.0333px -20.0333px 20.0333px rgba(165, 165, 165, 0.1), inset -20.0333px 20.0333px 20.0333px rgba(255, 255, 255, 0.1);
+}
+
 .faq > .faq-checkbox:checked + .faq-label > .faq-arrow {
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
@@ -55,6 +61,9 @@
           backdrop-filter: blur(40.0667px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 30px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
 }
 
 .faq > .faq-label > .faq-question {
