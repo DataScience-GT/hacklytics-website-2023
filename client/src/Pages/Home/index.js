@@ -36,7 +36,7 @@ const Home = (params) => {
                         </h1>
                         <h2 className="hero-minor">a starry night</h2>
                         <a className="hero-button" href="#">
-                            Register!
+                            Apply Now!
                         </a>
                     </div>
                     <div className="flex-right">

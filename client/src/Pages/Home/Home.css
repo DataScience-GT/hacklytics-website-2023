@@ -144,8 +144,9 @@
 }
 
 #hero .hero-flex > .flex-left > .hero-button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
+  background: #312cc2;
+  border: 6px solid #312cc2;
+  text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
 }
 
 #hero .hero-flex > .flex-left > .hero-button:active {
