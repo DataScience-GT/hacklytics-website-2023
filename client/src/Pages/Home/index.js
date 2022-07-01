@@ -16,6 +16,11 @@ import moon from "../../Assets/Images/Other/moon.png";
 import waves from "../../Assets/Images/Other/waves.svg";
 // import map from "../../Assets/Images/Other/map.png";
 
+import andrew from "../../Assets/Images/Speakers/andrew.jpg";
+import chris from "../../Assets/Images/Speakers/chris.png";
+import keith from "../../Assets/Images/Speakers/keith.png";
+import rahul from "../../Assets/Images/Speakers/rahul.png";
+
 //past sponsor images
 import gcloud from "../../Assets/Images/PastSponsors/gc.png";
 import accenture from "../../Assets/Images/PastSponsors/accenture.png";
@@ -288,49 +293,93 @@ const Home = (params) => {
                     <span className="arrow">↓</span>
                 </a> */}
             </Section>
-            {/* <Section id="speakers">
+            <Section id="speakers">
                 <div className="speakers-flex">
-                    <h1 className="major">Speakers</h1>
+                    <h1 className="major">Past Speakers</h1>
                     <div className="tri-flex">
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
                             <img
                                 className="speaker-img"
-                                src={logo}
-                                alt="person"
+                                src={andrew}
+                                alt="Andrew Marchese"
                             />
-                            <h1 className="speaker-major">Test</h1>
+                            <h1 className="speaker-major">Andrew Marchese</h1>
                             <h2 className="speaker-mini">
-                                asjkdh jsahdjk hfjkdh jkfhdj fh
+                                Andrew is currently the lead Data Scientist at
+                                SeatGeek, specialising in building,
+                                productionalizing, and analyzing machine
+                                learning models. With a PhD in Mathematics and
+                                an MS in Mathematics and Statistics from the
+                                University of Tennessee, he also worked as a
+                                senior Data Scientist at New York Times for 2
+                                years.
                             </h2>
                         </div>
                         <div className="speaker-card">
                             <div className="speaker-bg"></div>
                             <img
                                 className="speaker-img"
-                                src={logo}
-                                alt="person"
+                                src={keith}
+                                alt="Keith Werle"
                             />
-                            <h1 className="speaker-major">Test</h1>
+                            <h1 className="speaker-major">Keith Werle</h1>
                             <h2 className="speaker-mini">
-                                asjkdh jsahdjk hfjkdh jkfhdj fh
+                                Keith Werle is Managing Director of the Georgia
+                                Tech Business Analytics Center and a Professor
+                                of the Practice in the Scheller College of
+                                Business. With over thirty years of experience
+                                in industry and consulting, his background spans
+                                a broad range of business disciplines including
+                                finance, analytics, strategy, and corporate
+                                development. He has consulted in many industries
+                                and for a diverse range of clients, from venture
+                                capital backed technology start-ups to global
+                                Fortune 50 companies.
                             </h2>
                         </div>
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
                             <img
                                 className="speaker-img"
-                                src={logo}
-                                alt="person"
+                                src={rahul}
+                                alt="Rahul Saxena"
                             />
-                            <h1 className="speaker-major">Test</h1>
+                            <h1 className="speaker-major">Rahul Saxena</h1>
                             <h2 className="speaker-mini">
-                                asjkdh jsahdjk hfjkdh jkfhdj fh
+                                After completing his Bachelors in Mechanical
+                                Engineering from Georgia Tech in the late 2000s,
+                                Rahul completed his MBA at Emory University’s
+                                Goizeuta School of Business. He then worked as a
+                                venture capitalist and mechatronic engineer in
+                                Silicon Valley before returning to Georgia Tech
+                                to become the Associate Director of Create-X,
+                                that guides and funds student startups in
+                                Atlanta.
+                            </h2>
+                        </div>
+                        <div className="speaker-card">
+                            <div className="speaker-bg"></div>
+                            <img
+                                className="speaker-img"
+                                src={chris}
+                                alt="Chris Cherian"
+                            />
+                            <h1 className="speaker-major">Chris Cherian</h1>
+                            <h2 className="speaker-mini">
+                                Inspite of only graduating Wharton with a
+                                Bachelor of Science in Economics, Finance and
+                                Strategy in 2021, Chris has Co-Founded the
+                                Ballpoint Consulting Group, been a Board Member
+                                of FoodFinder and eventually created Gatherly, a
+                                virtual events software that makes for engaging
+                                and seamless online conferences and socials,
+                                which is used across the world.
                             </h2>
                         </div>
                     </div>
                 </div>
-            </Section> */}
+            </Section>
             <Section id="pastsponsors">
                 <img className="waves" src={waves} />
                 <div className="pastsponsors-flex">
@@ -389,7 +438,10 @@ const Home = (params) => {
                         </a>
                         {/* </div>
                         <div className="sponsor-row sponsor-row-c"> */}
-                        <a className="sponsor sponsor-long" href="https://www.gatherly.io/">
+                        <a
+                            className="sponsor sponsor-long"
+                            href="https://www.gatherly.io/"
+                        >
                             <img
                                 className="sponsor"
                                 src={gatherly}
@@ -411,7 +463,10 @@ const Home = (params) => {
                                 alt="Capital One"
                             />
                         </a>
-                        <a className="sponsor sponsor-long" href="https://www.citadel.com/">
+                        <a
+                            className="sponsor sponsor-long"
+                            href="https://www.citadel.com/"
+                        >
                             <img
                                 className="sponsor"
                                 src={citadel}
