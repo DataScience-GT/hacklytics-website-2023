@@ -4,6 +4,8 @@
   width: 100%;
   height: 5em;
   z-index: 5;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   color: white;
   font-family: "Outfit";
 }
@@ -150,6 +152,18 @@
   height: auto;
 }
 
+._mobile-navbar-bg > .navbar-flex {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+._navbar-bg {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
 #mobile-navbar {
   display: block;
   position: fixed;
@@ -157,6 +171,8 @@
   height: 5em;
   z-index: 5;
   color: white;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   font-family: "Outfit";
 }
 
@@ -180,6 +196,10 @@
           justify-content: center;
 }
 
+#mobile-navbar > .navbar-flex .major {
+  text-shadow: 0px 0px 5px black;
+}
+
 #mobile-navbar > .nav-hamburger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +216,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 5;
+  z-index: 7;
 }
 
 #mobile-navbar > .nav-hamburger > .hamburger-line {
@@ -204,7 +224,7 @@
   position: relative;
   height: 3px;
   width: 50%;
-  margin: 0.5em auto;
+  margin: 0.2em auto;
   border-bottom: 3px solid;
   border-color: white;
   border-radius: 2px;
@@ -222,6 +242,7 @@
           backdrop-filter: blur(3px);
   top: -2px;
   left: 0;
+  z-index: 4;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   overflow: hidden;
@@ -246,7 +267,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
-  z-index: 3;
+  z-index: 1;
 }
 
 #mobile-navbar > .mobile-navbar-menu > .nav-menu-flex > .nav-menuitem {
@@ -263,6 +284,7 @@
   font-weight: 500;
   margin: 20px;
   text-decoration: none;
+  text-shadow: 0px 0px 5px #000;
   color: inherit;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
@@ -281,21 +303,25 @@
   display: none;
 }
 
-#hamburger-checkbox:checked + .nav-hamburger > .hamburger-line {
+#hamburger-checkbox:checked ~ .nav-hamburger > .hamburger-line {
   border-color: white;
 }
 
-#hamburger-checkbox:checked + .nav-hamburger > .hamburger-top {
+#hamburger-checkbox:checked ~ .nav-hamburger > .hamburger-top {
   -webkit-transform: translateY(calc(0.5em + 1px)) rotate(45deg);
           transform: translateY(calc(0.5em + 1px)) rotate(45deg);
 }
 
-#hamburger-checkbox:checked + .nav-hamburger > .hamburger-bottom {
+#hamburger-checkbox:checked ~ .nav-hamburger > .hamburger-middle {
+  opacity: 0;
+}
+
+#hamburger-checkbox:checked ~ .nav-hamburger > .hamburger-bottom {
   -webkit-transform: translateY(calc(-0.5em - 1px)) rotate(-45deg);
           transform: translateY(calc(-0.5em - 1px)) rotate(-45deg);
 }
 
-#hamburger-checkbox:checked + .nav-hamburger + .mobile-navbar-menu {
+#hamburger-checkbox:checked ~ .nav-hamburger ~ .mobile-navbar-menu {
   top: 0;
   height: 100vh;
 }

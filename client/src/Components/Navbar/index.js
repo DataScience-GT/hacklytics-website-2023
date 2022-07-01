@@ -4,12 +4,22 @@ import "./Navbar.css";
 import { useState, useEffect } from "react";
 
 import logo from "../../Assets/Images/Branding/logo.svg";
-import mlhbadge from "../../Assets/Images/Other/mlh-trust-badge-2023-white.png";
+import mlhbadge from "../../Assets/Images/Other/mlh.png";
 
 const Navbar = (params) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [showBG, setShowBG] = useState(false);
     window.addEventListener("resize", (e) => {
         setScreenWidth(e.target.innerWidth);
+    });
+
+    window.addEventListener("scroll", (e) => {
+        let scroll = window.scrollY;
+        if (scroll > 100) {
+            setShowBG(true);
+        } else {
+            setShowBG(false);
+        }
     });
 
     //handle clicking on the mobile menu
@@ -30,7 +40,7 @@ const Navbar = (params) => {
     if (screenWidth >= 1200) {
         //desktop navbar
         return (
-            <div id="navbar">
+            <div id="navbar" class={showBG ? "_navbar-bg" : ""}>
                 <div className="navbar-wrapper">
                     {/* <a className="nav-menuitem-left" href="/">
                         Home
@@ -61,10 +71,7 @@ const Navbar = (params) => {
     } else {
         //mobile navbar
         return (
-            <div id="mobile-navbar">
-                <div className="navbar-flex">
-                    <h1 className="major">Hacklytics 2023</h1>
-                </div>
+            <div id="mobile-navbar" class={showBG ? "_mobile-navbar-bg" : ""}>
                 <input
                     id="hamburger-checkbox"
                     type="checkbox"
@@ -72,8 +79,12 @@ const Navbar = (params) => {
                 ></input>
                 <label htmlFor="hamburger-checkbox" className="nav-hamburger">
                     <div className="hamburger-line hamburger-top"></div>
+                    <div className="hamburger-line hamburger-middle"></div>
                     <div className="hamburger-line hamburger-bottom"></div>
                 </label>
+                <div className="navbar-flex">
+                    <h1 className="major">Hacklytics 2023</h1>
+                </div>
                 <div className="mobile-navbar-menu">
                     <div className="nav-menu-flex">
                         <a

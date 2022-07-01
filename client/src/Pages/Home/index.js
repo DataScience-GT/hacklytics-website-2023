@@ -69,6 +69,10 @@ const Home = (params) => {
                         </div>
                     </div>
                 </div>
+                <a className="continue-reading continue-reading-hero" href="#about">
+                    <span className="text">continue</span>
+                    <span className="arrow">↓</span>
+                </a>
             </Section>
             <Section id="about">
                 <div className="about-flex">
@@ -110,10 +114,10 @@ const Home = (params) => {
                         backgrounds, build a diverse network, and have fun!
                     </p>
                 </div>
-                <a className="continue-reading" href="#whenwhere">
+                {/* <a className="continue-reading" href="#whenwhere">
                     <span className="text">continue</span>
                     <span className="arrow">↓</span>
-                </a>
+                </a> */}
             </Section>
             <Section id="whenwhere">
                 <div className="whenwhere-flex">
@@ -136,13 +140,24 @@ const Home = (params) => {
                             <br />
                             More details to come soon!
                         </p>
-                        <img className="map" src={map} alt="Klaus Building" />
+                        {/* <img className="map" src={map} alt="Klaus Building" /> */}
+                        <div className="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212247.46455110525!2d-84.67596646718748!3d33.777029200000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b781ec0ab42ea5%3A0x16eec927f37b40ec!2sKlaus%20Advanced%20Computing%20Building!5e0!3m2!1sen!2sus!4v1656647278486!5m2!1sen!2sus"
+                                width="300"
+                                height="300"
+                                style={{ border: 0 }}
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
-                <a className="continue-reading" href="#whatis2">
+                {/* <a className="continue-reading" href="#whatis2">
                     <span className="text">continue</span>
                     <span className="arrow">↓</span>
-                </a>
+                </a> */}
             </Section>
             <Section id="whatis2">
                 <div className="whatis-flex">
@@ -156,10 +171,10 @@ const Home = (params) => {
                         <a href="https://datasciencegt.org">here</a>.
                     </p>
                 </div>
-                <a className="continue-reading" href="#faq">
+                {/* <a className="continue-reading" href="#faq">
                     <span className="text">continue</span>
                     <span className="arrow">↓</span>
-                </a>
+                </a> */}
             </Section>
             <Section id="faq">
                 <div className="faq-flex">

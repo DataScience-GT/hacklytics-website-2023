@@ -18,6 +18,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-size: 20px;
 }
 
 .home-page a {
@@ -39,6 +40,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 0px 50px;
   padding-top: 5em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -332,6 +334,36 @@
   }
 }
 
+@-webkit-keyframes hoverhero {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+  50% {
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+  }
+  100% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+}
+
+@keyframes hoverhero {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+  50% {
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+  }
+  100% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+}
+
 #about .about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,9 +542,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 
@@ -532,8 +564,8 @@
 
 #whenwhere .whenwhere-flex > .split-flex > .map {
   width: 50%;
-  height: auto;
-  border-radius: 50px;
+  height: 100%;
+  overflow: hidden;
 }
 
 #faq .faq-flex {
@@ -917,6 +949,18 @@
   height: auto;
 }
 
+.continue-reading-hero {
+  display: none;
+  -webkit-animation: hoverhero 5s infinite;
+          animation: hoverhero 5s infinite;
+}
+
+@media only screen and (max-width: 1400px) {
+  .home-page {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .home-page {
     font-size: 14px;
@@ -973,6 +1017,31 @@
 @media only screen and (max-width: 600px) {
   .home-page {
     font-size: 10px;
+  }
+  #whenwhere .whenwhere-flex > .split-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #whenwhere .whenwhere-flex > .split-flex > .mini {
+    width: 100%;
+  }
+  #whenwhere .whenwhere-flex > .split-flex > .map {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  .continue-reading {
+    display: none;
+  }
+  .continue-reading-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #about {
+    padding-top: 200px;
   }
 }
 /*# sourceMappingURL=Home.css.map */
