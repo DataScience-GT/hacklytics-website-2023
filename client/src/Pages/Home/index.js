@@ -9,7 +9,11 @@ import Faq from "../../Components/Faq";
 
 import logo from "../../Assets/Images/Branding/logo.svg";
 import star from "../../Assets/Images/Other/star2--export.svg";
-import map from "../../Assets/Images/Other/map.png";
+
+import telescope from "../../Assets/Images/Other/telescope.png";
+import moon from "../../Assets/Images/Other/moon.png";
+import waves from "../../Assets/Images/Other/waves.svg";
+// import map from "../../Assets/Images/Other/map.png";
 
 //past sponsor images
 import gcloud from "../../Assets/Images/PastSponsors/gc.png";
@@ -17,7 +21,7 @@ import accenture from "../../Assets/Images/PastSponsors/accenture.png";
 import createx from "../../Assets/Images/PastSponsors/createx.png";
 import wolfram from "../../Assets/Images/PastSponsors/wolfram.png";
 import ironmountain from "../../Assets/Images/PastSponsors/ironmountain.png";
-import gatherly from "../../Assets/Images/PastSponsors/gatherly.png";
+import gatherly from "../../Assets/Images/PastSponsors/gatherly2.svg";
 import Footer from "../../Components/Footer";
 
 const Home = (params) => {
@@ -69,13 +73,22 @@ const Home = (params) => {
                         </div>
                     </div>
                 </div>
-                <a className="continue-reading continue-reading-hero" href="#about">
+                <a
+                    className="continue-reading continue-reading-hero"
+                    href="#about"
+                >
                     <span className="text">continue</span>
                     <span className="arrow">↓</span>
                 </a>
             </Section>
             <Section id="about">
                 <div className="about-flex">
+                    <img
+                        className="telescope"
+                        src={telescope}
+                        alt="telescope"
+                    />
+                    <img className="moon" src={moon} alt="moon" />
                     <h2 className="major">About</h2>
                     <p className="mini">
                         Inspired by the famous painting,{" "}
@@ -99,6 +112,12 @@ const Home = (params) => {
             </Section>
             <Section id="whatis">
                 <div className="whatis-flex">
+                    <img className="star star-a" src={star} alt="star" />
+                    <img className="star star-b" src={star} alt="star" />
+                    <img className="star star-c" src={star} alt="star" />
+                    <img className="star star-d" src={star} alt="star" />
+                    <img className="star star-e" src={star} alt="star" />
+                    <img className="star star-f" src={star} alt="star" />
                     <h2 className="major">What is Hacklytics?</h2>
                     <p className="mini">
                         Hacklytics is a 36-hour data science-focused hackathon
@@ -300,6 +319,7 @@ const Home = (params) => {
                 </div>
             </Section> */}
             <Section id="pastsponsors">
+                <img className="waves" src={waves} />
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
                     <div className="splash"></div>
