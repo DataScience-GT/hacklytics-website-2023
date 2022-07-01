@@ -27,7 +27,7 @@ import accenture from "../../Assets/Images/PastSponsors/accenture-min.png";
 import createx from "../../Assets/Images/PastSponsors/createx-min.png";
 import wolfram from "../../Assets/Images/PastSponsors/wolfram-min.png";
 import ironmountain from "../../Assets/Images/PastSponsors/ironmountain-min.png";
-import gatherly from "../../Assets/Images/PastSponsors/gatherly2-min.png";
+import gatherly from "../../Assets/Images/PastSponsors/gatherly2.svg";
 import capitalone from "../../Assets/Images/PastSponsors/capitalone-min.png";
 import citadel from "../../Assets/Images/PastSponsors/citadel-min.png";
 import bac from "../../Assets/Images/PastSponsors/bac-min.png";
