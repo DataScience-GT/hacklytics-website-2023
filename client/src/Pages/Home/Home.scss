@@ -798,6 +798,7 @@
 
 
     z-index: 6;
+    pointer-events: none;
 
     // border: 2px solid red;
 
@@ -819,6 +820,7 @@
             position: relative;
             width: 100px;
             height: auto;
+            pointer-events: auto;
 
             // border: 1px solid red;
 

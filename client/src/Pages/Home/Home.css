@@ -1028,6 +1028,7 @@
   width: 100%;
   margin: 0 auto;
   z-index: 6;
+  pointer-events: none;
 }
 
 .mlh-section > .mlh-wrapper {
@@ -1056,6 +1057,7 @@
   position: relative;
   width: 100px;
   height: auto;
+  pointer-events: auto;
 }
 
 .mlh-section > .mlh-wrapper > .mlh-badge > img {
