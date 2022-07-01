@@ -1,3 +1,18 @@
+#tsparticles {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    canvas {
+        position: absolute !important;
+        left: 0;
+        top: 0;
+    }
+}
 .background {
     display: block;
     position: absolute;

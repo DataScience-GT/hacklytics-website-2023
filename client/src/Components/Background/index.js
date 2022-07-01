@@ -1,7 +1,25 @@
 //imports
 import "./Background.css";
 
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+
+import particleOptions from "./star.json";
+
 const Background = (params) => {
+    const particlesInit = async (main) => {
+        // console.log(main);
+
+        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+        // starting from v2 you can add only the features you need reducing the bundle size
+        await loadFull(main);
+    };
+
+    const particlesLoaded = (container) => {
+        // console.log(container);
+    };
+
     return (
         <div className="background">
             {/* <div className="bg-blur2"></div>
@@ -39,6 +57,13 @@ const Background = (params) => {
                 <div className="circle circle27"></div>
                 <div className="circle circle28"></div>
             </div>
+            <Particles
+                id="tsparticles"
+                options={particleOptions}
+                init={particlesInit}
+                loaded={particlesLoaded}
+                // style={{ position: "absolute" }}
+            />
         </div>
     );
 };
