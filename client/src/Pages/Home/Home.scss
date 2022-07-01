@@ -669,7 +669,7 @@
             > .sponsor {
                 display: block;
                 position: relative;
-                height: 150px;
+                height: 10em;
                 width: auto;
                 padding: 10px;
                 // border: 1px dashed white;
@@ -686,7 +686,7 @@
             > .sponsor-long {
                 width: 30%;
                 height: auto;
-                max-height: 150px;
+                max-height: 10em;
 
                 > img {
                     width: 100%;
@@ -990,5 +990,14 @@
 
     #about {
         padding-top: 200px;
+    }
+    #pastsponsors {
+        .pastsponsors-flex {
+            .sponsors-flex {
+                > .sponsor-long {
+                    width: 70%;
+                }
+            }
+        }
     }
 }

@@ -880,7 +880,7 @@
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor {
   display: block;
   position: relative;
-  height: 150px;
+  height: 10em;
   width: auto;
   padding: 10px;
 }
@@ -895,7 +895,7 @@
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long {
   width: 30%;
   height: auto;
-  max-height: 150px;
+  max-height: 10em;
 }
 
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > img {
@@ -1172,6 +1172,9 @@
   }
   #about {
     padding-top: 200px;
+  }
+  #pastsponsors .pastsponsors-flex .sponsors-flex > .sponsor-long {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=Home.css.map */
