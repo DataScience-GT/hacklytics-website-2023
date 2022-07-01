@@ -8,6 +8,7 @@ import Faq from "../../Components/Faq";
 // import ScrollSection from "../../Components/ScrollSection";
 
 import logo from "../../Assets/Images/Branding/logo.svg";
+import mlhbadge from "../../Assets/Images/Other/mlh.png";
 import star from "../../Assets/Images/Other/star2--export.svg";
 
 import telescope from "../../Assets/Images/Other/telescope.png";
@@ -29,6 +30,13 @@ const Home = (params) => {
         <div className="home-page">
             <Background />
             <Navbar />
+            <div className="mlh-section">
+                <div className="mlh-wrapper">
+                    <a className="mlh-badge" href="https://mlh.io/">
+                        <img src={mlhbadge} alt="mlh badge" />
+                    </a>
+                </div>
+            </div>
             <Section id="hero">
                 <div className="hero-flex">
                     <div className="flex-left">
@@ -106,7 +114,7 @@ const Home = (params) => {
                     </p>
                 </div>
                 <a className="continue-reading" href="#whatis">
-                    <span className="text">continue</span>
+                    <span className="text">What is Hacklytics?</span>
                     <span className="arrow">↓</span>
                 </a>
             </Section>
@@ -133,10 +141,10 @@ const Home = (params) => {
                         backgrounds, build a diverse network, and have fun!
                     </p>
                 </div>
-                {/* <a className="continue-reading" href="#whenwhere">
-                    <span className="text">continue</span>
+                <a className="continue-reading" href="#whenwhere">
+                    <span className="text">When and Where is Hacklytics?</span>
                     <span className="arrow">↓</span>
-                </a> */}
+                </a>
             </Section>
             <Section id="whenwhere">
                 <div className="whenwhere-flex">
@@ -173,10 +181,10 @@ const Home = (params) => {
                         </div>
                     </div>
                 </div>
-                {/* <a className="continue-reading" href="#whatis2">
-                    <span className="text">continue</span>
+                <a className="continue-reading" href="#whatis2">
+                    <span className="text">What is DSGT?</span>
                     <span className="arrow">↓</span>
-                </a> */}
+                </a>
             </Section>
             <Section id="whatis2">
                 <div className="whatis-flex">

@@ -105,7 +105,7 @@
   font-family: "Outfit";
   line-height: 0.9em;
   color: rgba(255, 255, 255, 0.8);
-  margin: 10px 0 30px 0;
+  margin: 10px 0 40px 0;
 }
 
 #hero .hero-flex > .flex-left > .hero-date {
@@ -135,7 +135,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
   padding: 8px 30px 12px 30px;
@@ -249,10 +249,6 @@
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
   }
-  50% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
   100% {
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
@@ -263,10 +259,6 @@
   0% {
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
-  }
-  50% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
   }
   100% {
     -webkit-transform: rotate(15deg);
@@ -279,10 +271,6 @@
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
   }
-  50% {
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
-  }
   100% {
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
@@ -293,10 +281,6 @@
   0% {
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
-  }
-  50% {
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
   }
   100% {
     -webkit-transform: rotate(-15deg);
@@ -520,8 +504,6 @@
   width: 5.5em;
   top: 0;
   left: -2em;
-  -webkit-animation: StarRotateB 5s infinite;
-          animation: StarRotateB 5s infinite;
 }
 
 #whatis .whatis-flex > .star-b,
@@ -529,8 +511,6 @@
   width: 2.7em;
   top: 3.5em;
   left: 3em;
-  -webkit-animation: StarRotateB 5s infinite;
-          animation: StarRotateB 5s infinite;
 }
 
 #whatis .whatis-flex > .star-c,
@@ -538,8 +518,6 @@
   width: 2.7em;
   top: 6em;
   left: 1em;
-  -webkit-animation: StarRotateB 5s infinite;
-          animation: StarRotateB 5s infinite;
 }
 
 #whatis .whatis-flex > .star-d,
@@ -547,8 +525,6 @@
   width: 6em;
   bottom: -0.5em;
   right: -0.5em;
-  -webkit-animation: StarRotateA 5s infinite;
-          animation: StarRotateA 5s infinite;
 }
 
 #whatis .whatis-flex > .star-e,
@@ -556,8 +532,6 @@
   width: 2.7em;
   bottom: -1.2em;
   right: 4.3em;
-  -webkit-animation: StarRotateA 5s infinite;
-          animation: StarRotateA 5s infinite;
 }
 
 #whatis .whatis-flex > .star-f,
@@ -565,8 +539,6 @@
   width: 2.5em;
   bottom: -2.5em;
   right: -1em;
-  -webkit-animation: StarRotateA 5s infinite;
-          animation: StarRotateA 5s infinite;
 }
 
 #whenwhere .whenwhere-flex {
@@ -1047,9 +1019,61 @@
           animation: hoverhero 5s infinite;
 }
 
+.mlh-section {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5em;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 6;
+}
+
+.mlh-section > .mlh-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mlh-section > .mlh-wrapper > .mlh-badge {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: auto;
+}
+
+.mlh-section > .mlh-wrapper > .mlh-badge > img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (max-width: 1400px) {
   .home-page {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mlh-section {
+    display: none;
   }
 }
 

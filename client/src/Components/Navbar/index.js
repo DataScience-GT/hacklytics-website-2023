@@ -1,10 +1,10 @@
 //imports
 import "./Navbar.css";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import logo from "../../Assets/Images/Branding/logo.svg";
-import mlhbadge from "../../Assets/Images/Other/mlh.png";
+// import mlhbadge from "../../Assets/Images/Other/mlh.png";
 
 const Navbar = (params) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -62,9 +62,9 @@ const Navbar = (params) => {
                             Sign In
                         </a> */}
                     </div>
-                    <a className="mlh-badge" href="https://mlh.io/">
+                    {/* <a className="mlh-badge" href="https://mlh.io/">
                         <img src={mlhbadge} alt="mlh badge" />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         );
