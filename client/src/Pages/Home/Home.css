@@ -106,6 +106,24 @@
   margin: 10px 0 30px 0;
 }
 
+#hero .hero-flex > .flex-left > .hero-date {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: "Outfit";
+  line-height: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
 #hero .hero-flex > .flex-left > .hero-button {
   display: block;
   position: relative;

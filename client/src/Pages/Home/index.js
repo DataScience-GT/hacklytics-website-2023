@@ -28,6 +28,7 @@ const Home = (params) => {
             <Section id="hero">
                 <div className="hero-flex">
                     <div className="flex-left">
+                        <h3 className="hero-date">February 10-12</h3>
                         <h1 className="hero-major">
                             Hacklytics
                             <br />
