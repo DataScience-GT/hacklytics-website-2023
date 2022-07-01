@@ -85,6 +85,10 @@ const Navbar = (params) => {
                 <div className="navbar-flex">
                     <h1 className="major">Hacklytics 2023</h1>
                 </div>
+                <div
+                    className="mobile-navbar-clickoff"
+                    onClick={handleClick}
+                ></div>
                 <div className="mobile-navbar-menu">
                     <div className="nav-menu-flex">
                         <a
