@@ -66,6 +66,20 @@
                 "rotateX": 600,
                 "rotateY": 1200
             }
+        },
+        "life": {
+            "duration": {
+                "sync": false,
+                "value": 500
+            },
+            "count": 0,
+            "delay": {
+                "random": {
+                    "enable": true,
+                    "minimumValue": 0.5
+                },
+                "value": 1
+            }
         }
     },
     "interactivity": {
