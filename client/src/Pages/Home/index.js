@@ -22,16 +22,16 @@ import keith from "../../Assets/Images/Speakers/keith.png";
 import rahul from "../../Assets/Images/Speakers/rahul.png";
 
 //past sponsor images
-import gcloud from "../../Assets/Images/PastSponsors/gc.png";
-import accenture from "../../Assets/Images/PastSponsors/accenture.png";
-import createx from "../../Assets/Images/PastSponsors/createx.png";
-import wolfram from "../../Assets/Images/PastSponsors/wolfram.png";
-import ironmountain from "../../Assets/Images/PastSponsors/ironmountain.png";
-import gatherly from "../../Assets/Images/PastSponsors/gatherly2.svg";
-import capitalone from "../../Assets/Images/PastSponsors/capitalone.png";
-import citadel from "../../Assets/Images/PastSponsors/citadel.png";
-import bac from "../../Assets/Images/PastSponsors/bac.png";
-import deepnote from "../../Assets/Images/PastSponsors/deepnote.png";
+import gcloud from "../../Assets/Images/PastSponsors/gc-min.png";
+import accenture from "../../Assets/Images/PastSponsors/accenture-min.png";
+import createx from "../../Assets/Images/PastSponsors/createx-min.png";
+import wolfram from "../../Assets/Images/PastSponsors/wolfram-min.png";
+import ironmountain from "../../Assets/Images/PastSponsors/ironmountain-min.png";
+import gatherly from "../../Assets/Images/PastSponsors/gatherly2-min.png";
+import capitalone from "../../Assets/Images/PastSponsors/capitalone-min.png";
+import citadel from "../../Assets/Images/PastSponsors/citadel-min.png";
+import bac from "../../Assets/Images/PastSponsors/bac-min.png";
+import deepnote from "../../Assets/Images/PastSponsors/deepnote-min.png";
 
 import Footer from "../../Components/Footer";
 
