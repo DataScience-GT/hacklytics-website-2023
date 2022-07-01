@@ -286,6 +286,7 @@
             height: auto;
             top: -6em;
             right: -13em;
+            filter: drop-shadow(0px 0px 40px #f3ae4a);
         }
     }
 }
@@ -346,7 +347,7 @@
             display: block;
             position: absolute;
             width: 3em;
-
+            filter: drop-shadow(0px 0px 50px #f3ae4a);
         }
         > .star-a {
             width: 5.5em;
