@@ -1,6 +1,6 @@
 #navbar {
   display: block;
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 5em;
   z-index: 5;
@@ -42,9 +42,37 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#navbar > .navbar-wrapper > .navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#navbar > .navbar-wrapper > .navbar-logo > img {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 80%;
 }
 
 #navbar > .navbar-wrapper > .major {
@@ -86,9 +114,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,6 +134,20 @@
   font-size: 1.2em;
   font-weight: 500;
   padding: 10px 20px;
+}
+
+#navbar > .navbar-wrapper > .mlh-badge {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: auto;
+}
+
+#navbar > .navbar-wrapper > .mlh-badge > img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 #mobile-navbar {

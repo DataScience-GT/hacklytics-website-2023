@@ -3,6 +3,9 @@ import "./Navbar.css";
 
 import { useState, useEffect } from "react";
 
+import logo from "../../Assets/Images/Branding/logo.svg";
+import mlhbadge from "../../Assets/Images/Other/mlh-trust-badge-2023-white.png";
+
 const Navbar = (params) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     window.addEventListener("resize", (e) => {
@@ -29,8 +32,11 @@ const Navbar = (params) => {
         return (
             <div id="navbar">
                 <div className="navbar-wrapper">
-                    <a className="nav-menuitem-left" href="/">
+                    {/* <a className="nav-menuitem-left" href="/">
                         Home
+                    </a> */}
+                    <a className="navbar-logo" href="/">
+                        <img src={logo} />
                     </a>
                     <div className="navbar-flex">
                         <a className="nav-menuitem" href="#about">
@@ -46,6 +52,9 @@ const Navbar = (params) => {
                             Sign In
                         </a> */}
                     </div>
+                    <a className="mlh-badge" href="https://mlh.io/">
+                        <img src={mlhbadge} alt="mlh badge" />
+                    </a>
                 </div>
             </div>
         );
