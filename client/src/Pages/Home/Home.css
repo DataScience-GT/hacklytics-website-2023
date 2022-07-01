@@ -39,6 +39,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-top: 5em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -279,6 +280,36 @@
   100% {
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes hover {
+  0% {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
+  }
+  50% {
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
+  }
+  100% {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
+  }
+}
+
+@keyframes hover {
+  0% {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
+  }
+  50% {
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
+  }
+  100% {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
   }
 }
 
@@ -763,6 +794,54 @@
 
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
   height: 140px;
+}
+
+.continue-reading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  float: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: hover 5s infinite;
+          animation: hover 5s infinite;
+  text-decoration: none;
+  color: #fff !important;
+  font-family: "Outfit";
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+.continue-reading:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.continue-reading:hover > .text {
+  text-decoration: underline;
+}
+
+.continue-reading > .text {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 1000px) {

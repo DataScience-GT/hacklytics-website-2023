@@ -87,6 +87,10 @@ const Home = (params) => {
                         guide you towards data-focused problems worth solving.
                     </p>
                 </div>
+                <a className="continue-reading" href="#whatis">
+                    <span className="text">continue</span>
+                    <span className="arrow">↓</span>
+                </a>
             </Section>
             <Section id="whatis">
                 <div className="whatis-flex">
@@ -105,6 +109,10 @@ const Home = (params) => {
                         backgrounds, build a diverse network, and have fun!
                     </p>
                 </div>
+                <a className="continue-reading" href="#whenwhere">
+                    <span className="text">continue</span>
+                    <span className="arrow">↓</span>
+                </a>
             </Section>
             <Section id="whenwhere">
                 <div className="whenwhere-flex">
@@ -130,6 +138,10 @@ const Home = (params) => {
                         <img className="map" src={map} alt="Klaus Building" />
                     </div>
                 </div>
+                <a className="continue-reading" href="#whatis2">
+                    <span className="text">continue</span>
+                    <span className="arrow">↓</span>
+                </a>
             </Section>
             <Section id="whatis2">
                 <div className="whatis-flex">
@@ -143,6 +155,10 @@ const Home = (params) => {
                         <a href="https://datasciencegt.org">here</a>.
                     </p>
                 </div>
+                <a className="continue-reading" href="#faq">
+                    <span className="text">continue</span>
+                    <span className="arrow">↓</span>
+                </a>
             </Section>
             <Section id="faq">
                 <div className="faq-flex">
@@ -219,6 +235,10 @@ const Home = (params) => {
                         </a>
                     </Faq>
                 </div>
+                {/* <a className="continue-reading" href="#pastsponsors">
+                    <span className="text">continue</span>
+                    <span className="arrow">↓</span>
+                </a> */}
             </Section>
             {/* <Section id="speakers">
                 <div className="speakers-flex">

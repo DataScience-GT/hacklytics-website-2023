@@ -181,6 +181,19 @@
     }
 }
 
+@keyframes hover {
+    0% {
+        transform: translateY(45px);
+    }
+
+    50% {
+        transform: translateY(55px);
+    }
+    100% {
+        transform: translateY(45px);
+    }
+}
+
 #about {
     .about-flex {
         display: flex;
@@ -554,6 +567,43 @@
                 height: 140px;
             }
         }
+    }
+}
+
+.continue-reading {
+    display: flex;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    float: right;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    animation: hover 5s infinite;
+
+    text-decoration: none;
+    color: #fff !important;
+
+    font-family: "Outfit";
+    font-size: 1.2em;
+    line-height: 1em;
+
+    &:hover {
+        animation-play-state: paused;
+        > .text {
+            text-decoration: underline;
+        }
+    }
+
+    // border: 1px dashed red;
+    > .text {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
     }
 }
 
