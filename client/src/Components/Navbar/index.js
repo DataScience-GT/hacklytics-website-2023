@@ -27,7 +27,7 @@ const Navbar = (params) => {
         }
     };
 
-    if (screenWidth >= 1000) {
+    if (screenWidth >= 1200) {
         //desktop navbar
         return (
             <div id="navbar">
