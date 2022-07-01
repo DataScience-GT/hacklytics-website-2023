@@ -287,44 +287,76 @@ const Home = (params) => {
             <Section id="pastsponsors">
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
+                    <div className="splash"></div>
                     <div className="sponsors-flex">
                         <div className="sponsor-row sponsor-row-a">
-                            <img
+                            <a
                                 className="sponsor"
-                                src={gcloud}
-                                alt="Google Cloud"
-                            />
-                            <img
+                                href="https://cloud.google.com/"
+                            >
+                                <img
+                                    className="sponsor"
+                                    src={gcloud}
+                                    alt="Google Cloud"
+                                />
+                            </a>
+                            <a
                                 className="sponsor"
-                                src={accenture}
-                                alt="Accenture"
-                            />
-                            <img
+                                href="https://www.accenture.com/"
+                            >
+                                <img
+                                    className="sponsor"
+                                    src={accenture}
+                                    alt="Accenture"
+                                />
+                            </a>
+                            <a
                                 className="sponsor"
-                                src={createx}
-                                alt="CreateX"
-                            />
+                                href="https://create-x.gatech.edu/"
+                            >
+                                <img
+                                    className="sponsor"
+                                    src={createx}
+                                    alt="CreateX"
+                                />
+                            </a>
                         </div>
                         <div className="sponsor-row sponsor-row-b">
-                            <img
+                            <a
                                 className="sponsor"
-                                src={wolfram}
-                                alt="Wolfram Language"
-                            />
-                            <img
+                                href="https://www.wolfram.com/language/"
+                            >
+                                <img
+                                    className="sponsor"
+                                    src={wolfram}
+                                    alt="Wolfram Language"
+                                />
+                            </a>
+                            <a
                                 className="sponsor"
-                                src={ironmountain}
-                                alt="Iron Mountain"
-                            />
+                                href="https://www.ironmountain.com/"
+                            >
+                                <img
+                                    className="sponsor"
+                                    src={ironmountain}
+                                    alt="Iron Mountain"
+                                />
+                            </a>
                         </div>
                         <div className="sponsor-row sponsor-row-c">
-                            <img
+                            <a
                                 className="sponsor"
-                                src={gatherly}
-                                alt="Gatherly"
-                            />
+                                href="https://www.gatherly.io/"
+                            >
+                                <img
+                                    className="sponsor"
+                                    src={gatherly}
+                                    alt="Gatherly"
+                                />
+                            </a>
                         </div>
                     </div>
+                    <a className="sponsor-us-button">Sponsor Us!</a>
                 </div>
             </Section>
             <Footer />

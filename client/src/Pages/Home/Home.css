@@ -746,6 +746,19 @@
   line-height: 0.9em;
 }
 
+#pastsponsors .pastsponsors-flex > .splash {
+  display: block;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 75px);
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  background-color: #ffc100;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
 #pastsponsors .pastsponsors-flex > .sponsors-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,7 +779,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(214, 214, 214, 0.1);
   -webkit-box-shadow: 0px 0px 200px 10px #312cc2;
           box-shadow: 0px 0px 200px 10px #312cc2;
   -webkit-backdrop-filter: blur(132.133px);
@@ -803,6 +816,13 @@
   padding: 10px;
 }
 
+#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row > .sponsor > img {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-a {
   height: 200px;
 }
@@ -813,6 +833,40 @@
 
 #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
   height: 140px;
+}
+
+#pastsponsors .pastsponsors-flex > .sponsor-us-button {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 12px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 1.3em;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
+}
+
+#pastsponsors .pastsponsors-flex > .sponsor-us-button:hover {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+#pastsponsors .pastsponsors-flex > .sponsor-us-button:active {
+  -webkit-transform: translateY(20px) scale(0.95);
+          transform: translateY(20px) scale(0.95);
 }
 
 .continue-reading {
