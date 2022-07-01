@@ -35,7 +35,7 @@ const Navbar = (params) => {
                     {/* <a className="nav-menuitem-left" href="/">
                         Home
                     </a> */}
-                    <a className="navbar-logo" href="/">
+                    <a className="navbar-logo" href="#">
                         <img src={logo} />
                     </a>
                     <div className="navbar-flex">
@@ -79,7 +79,7 @@ const Navbar = (params) => {
                         <a
                             className="nav-menuitem"
                             onClick={handleClick}
-                            href="/"
+                            href="#"
                         >
                             Home
                         </a>
