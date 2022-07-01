@@ -57,7 +57,10 @@ const Home = (params) => {
                             2023
                         </h1>
                         <h2 className="hero-minor">a starry night</h2>
-                        <a className="hero-button" href="#">
+                        <a
+                            className="hero-button"
+                            href="https://qrlxk51kzhj.typeform.com/to/tFLwAnWI"
+                        >
                             Apply Now!
                         </a>
                     </div>
@@ -382,7 +385,7 @@ const Home = (params) => {
                 </div>
             </Section>
             <Section id="pastsponsors">
-                <img className="waves" src={waves} />
+                <img className="waves" src={waves} alt="waves" />
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
                     <div className="splash"></div>
@@ -492,7 +495,12 @@ const Home = (params) => {
                             />
                         </a>
                     </div>
-                    <a className="sponsor-us-button">Sponsor Us!</a>
+                    <a
+                        className="sponsor-us-button"
+                        href="mailto:hello@hacklytics.io"
+                    >
+                        Sponsor Us!
+                    </a>
                 </div>
             </Section>
             <Footer />
