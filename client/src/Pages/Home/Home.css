@@ -724,6 +724,7 @@
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 20px;
 }
 
 #speakers .speakers-flex > .tri-flex > .speaker-card {

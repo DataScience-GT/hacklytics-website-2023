@@ -186,6 +186,7 @@ const Home = (params) => {
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"
+                                title="Klaus Advanced Computing Building"
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>
@@ -202,7 +203,7 @@ const Home = (params) => {
                     <p className="mini">
                         Data Science @ Georgia Tech is the largest data science
                         organization at Georgia Tech with over 900 members. Our
-                        motto, “data science with a focus on community” is
+                        motto, “data science with a focus on community,” is
                         manifested through our projects, courses, and events.
                         Learn more about us or how you can be involved{" "}
                         <a href="https://datasciencegt.org">here</a>.
