@@ -856,17 +856,19 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background: rgba(255, 255, 255, 0.1);
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0px 0px 200px 10px #312cc2;
           box-shadow: 0px 0px 200px 10px #312cc2;
   -webkit-backdrop-filter: blur(132.133px);
@@ -875,51 +877,30 @@
   border-radius: 41px;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 150px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-}
-
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row > .sponsor {
+#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor {
   display: block;
   position: relative;
-  height: 80%;
+  height: 150px;
   width: auto;
   padding: 10px;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row > .sponsor > img {
+#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor > img {
   display: block;
   position: relative;
   height: 100%;
   width: auto;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-a {
-  height: 200px;
+#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long {
+  width: 30%;
+  height: auto;
+  max-height: 150px;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-b {
-  height: 140px;
-}
-
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
-  height: 130px;
+#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > img {
+  width: 100%;
+  height: auto;
 }
 
 #pastsponsors .pastsponsors-flex > .sponsor-us-button {

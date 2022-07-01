@@ -23,6 +23,11 @@ import createx from "../../Assets/Images/PastSponsors/createx.png";
 import wolfram from "../../Assets/Images/PastSponsors/wolfram.png";
 import ironmountain from "../../Assets/Images/PastSponsors/ironmountain.png";
 import gatherly from "../../Assets/Images/PastSponsors/gatherly2.svg";
+import capitalone from "../../Assets/Images/PastSponsors/capitalone.png";
+import citadel from "../../Assets/Images/PastSponsors/citadel.png";
+import bac from "../../Assets/Images/PastSponsors/bac.png";
+import deepnote from "../../Assets/Images/PastSponsors/deepnote.png";
+
 import Footer from "../../Components/Footer";
 
 const Home = (params) => {
@@ -273,8 +278,8 @@ const Home = (params) => {
                     </Faq>
                     <Faq identifier="k" question="How do I get in touch?">
                         Reach out to us at{" "}
-                        <a href="mailto:hello@hacklytics.io">
-                            hello@hacklytics.io
+                        <a href="mailto:info@hacklytics.io">
+                            info@hacklytics.io
                         </a>
                     </Faq>
                 </div>
@@ -332,72 +337,104 @@ const Home = (params) => {
                     <h1 className="major">Past Sponsors</h1>
                     <div className="splash"></div>
                     <div className="sponsors-flex">
-                        <div className="sponsor-row sponsor-row-a">
-                            <a
+                        {/* <div className="sponsor-row sponsor-row-a"> */}
+                        <a className="sponsor" href="https://cloud.google.com/">
+                            <img
                                 className="sponsor"
-                                href="https://cloud.google.com/"
-                            >
-                                <img
-                                    className="sponsor"
-                                    src={gcloud}
-                                    alt="Google Cloud"
-                                />
-                            </a>
-                            <a
+                                src={gcloud}
+                                alt="Google Cloud"
+                            />
+                        </a>
+                        <a
+                            className="sponsor"
+                            href="https://www.accenture.com/"
+                        >
+                            <img
                                 className="sponsor"
-                                href="https://www.accenture.com/"
-                            >
-                                <img
-                                    className="sponsor"
-                                    src={accenture}
-                                    alt="Accenture"
-                                />
-                            </a>
-                            <a
+                                src={accenture}
+                                alt="Accenture"
+                            />
+                        </a>
+                        <a
+                            className="sponsor"
+                            href="https://create-x.gatech.edu/"
+                        >
+                            <img
                                 className="sponsor"
-                                href="https://create-x.gatech.edu/"
-                            >
-                                <img
-                                    className="sponsor"
-                                    src={createx}
-                                    alt="CreateX"
-                                />
-                            </a>
-                        </div>
-                        <div className="sponsor-row sponsor-row-b">
-                            <a
+                                src={createx}
+                                alt="CreateX"
+                            />
+                        </a>
+                        {/* </div>
+                        <div className="sponsor-row sponsor-row-b"> */}
+                        <a
+                            className="sponsor sponsor-long"
+                            href="https://www.wolfram.com/language/"
+                        >
+                            <img
                                 className="sponsor"
-                                href="https://www.wolfram.com/language/"
-                            >
-                                <img
-                                    className="sponsor"
-                                    src={wolfram}
-                                    alt="Wolfram Language"
-                                />
-                            </a>
-                            <a
+                                src={wolfram}
+                                alt="Wolfram Language"
+                            />
+                        </a>
+                        <a
+                            className="sponsor sponsor-long"
+                            href="https://www.ironmountain.com/"
+                        >
+                            <img
                                 className="sponsor"
-                                href="https://www.ironmountain.com/"
-                            >
-                                <img
-                                    className="sponsor"
-                                    src={ironmountain}
-                                    alt="Iron Mountain"
-                                />
-                            </a>
-                        </div>
-                        <div className="sponsor-row sponsor-row-c">
-                            <a
+                                src={ironmountain}
+                                alt="Iron Mountain"
+                            />
+                        </a>
+                        {/* </div>
+                        <div className="sponsor-row sponsor-row-c"> */}
+                        <a className="sponsor sponsor-long" href="https://www.gatherly.io/">
+                            <img
                                 className="sponsor"
-                                href="https://www.gatherly.io/"
-                            >
-                                <img
-                                    className="sponsor"
-                                    src={gatherly}
-                                    alt="Gatherly"
-                                />
-                            </a>
-                        </div>
+                                src={gatherly}
+                                alt="Gatherly"
+                            />
+                        </a>
+                        {/* </div> */}
+                        {/* capitalone
+                            citadel
+                            bac"
+                            deepnote */}
+                        <a
+                            className="sponsor"
+                            href="https://www.capitalone.com/"
+                        >
+                            <img
+                                className="sponsor"
+                                src={capitalone}
+                                alt="Capital One"
+                            />
+                        </a>
+                        <a className="sponsor sponsor-long" href="https://www.citadel.com/">
+                            <img
+                                className="sponsor"
+                                src={citadel}
+                                alt="Citadel"
+                            />
+                        </a>
+                        <a
+                            className="sponsor sponsor-long"
+                            href="https://www.scheller.gatech.edu/centers-initiatives/business-analytics-center/index.html"
+                        >
+                            <img
+                                className="sponsor"
+                                src={bac}
+                                alt="Business Analytics Center"
+                            />
+                        </a>
+                        <a className="sponsor" href="https://deepnote.com/">
+                            <img
+                                className="sponsor"
+                                src={deepnote}
+                                alt="deepnote"
+                            />
+                        </a>
                     </div>
                     <a className="sponsor-us-button">Sponsor Us!</a>
                 </div>

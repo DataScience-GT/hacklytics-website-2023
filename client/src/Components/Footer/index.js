@@ -13,13 +13,13 @@ const Footer = (params) => {
                     <a className="mini" href="https://datasciencegt.org">
                         About Us
                     </a>
-                    <a className="mini" href="mailto:hello@hacklytics.io">
+                    <a className="mini" href="mailto:info@hacklytics.io">
                         Contact
                     </a>
                 </div>
                 <div className="footer-section">
                     <h2 className="minor">Connect with Us</h2>
-                    <a className="mini" href="mailto:hello@hacklytics.io">
+                    <a className="mini" href="mailto:info@hacklytics.io">
                         Email
                     </a>
                     <a
