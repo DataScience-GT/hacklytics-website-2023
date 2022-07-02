@@ -292,7 +292,7 @@
             line-height: 1.3em;
         }
 
-        > .telescope {
+        .telescope {
             display: block;
             position: absolute;
             width: 16em;
@@ -301,7 +301,7 @@
             left: -13em;
         }
 
-        > .moon {
+        .moon {
             display: block;
             position: absolute;
             width: 16em;
@@ -578,6 +578,17 @@
                     margin: 0 auto;
                     border-radius: 100%;
                 }
+                > span {
+                    width: 100%;
+                    height: 100%;
+                    > img {
+                        display: block;
+                        position: relative;
+                        width: 60%;
+                        margin: 0 auto;
+                        border-radius: 100%;
+                    }
+                }
                 > .speaker-major {
                     display: block;
                     position: relative;
@@ -685,6 +696,18 @@
 
                     // border: 1px dashed red;
                 }
+                > span {
+                    width: fit-content;
+                    height: 100%;
+                    > img {
+                        display: block;
+                        position: relative;
+                        height: 100%;
+                        width: auto;
+
+                        // border: 1px dashed red;
+                    }
+                }
             }
 
             > .sponsor-long {
@@ -695,6 +718,15 @@
                 > img {
                     width: 100%;
                     height: auto;
+                }
+
+                > span {
+                    height: fit-content;
+                    width: 100%;
+                    > img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
 
@@ -848,6 +880,16 @@
                 width: 100%;
                 height: auto;
             }
+            > span {
+                width: 100%;
+                height: auto;
+                > img {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
 }
@@ -912,11 +954,11 @@
     #about {
         .about-flex {
             padding: 100px 0;
-            > .telescope {
+            .telescope {
                 left: -17em;
                 bottom: -8em;
             }
-            > .moon {
+            .moon {
                 right: -16em;
                 top: 4em;
             }

@@ -1,6 +1,8 @@
 //imports
 import "./Home.css";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import Background from "../../Components/Background";
 import Navbar from "../../Components/Navbar";
 import Section from "../../Components/Section";
@@ -43,7 +45,11 @@ const Home = (params) => {
             <div className="mlh-section">
                 <div className="mlh-wrapper">
                     <a className="mlh-badge" href="https://mlh.io/">
-                        <img src={mlhbadge} alt="mlh badge" />
+                        <LazyLoadImage
+                            effect="blur"
+                            src={mlhbadge}
+                            alt="mlh badge"
+                        />
                     </a>
                 </div>
             </div>
@@ -105,12 +111,18 @@ const Home = (params) => {
             </Section>
             <Section id="about">
                 <div className="about-flex">
-                    <img
+                    <LazyLoadImage
+                        effect="blur"
                         className="telescope"
                         src={telescope}
                         alt="telescope"
                     />
-                    <img className="moon" src={moon} alt="moon" />
+                    <LazyLoadImage
+                        effect="blur"
+                        className="moon"
+                        src={moon}
+                        alt="moon"
+                    />
                     <h2 className="major">About</h2>
                     <p className="mini">
                         Inspired by the famous painting,{" "}
@@ -304,7 +316,8 @@ const Home = (params) => {
                     <div className="tri-flex">
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="speaker-img"
                                 src={andrew}
                                 alt="Andrew Marchese"
@@ -323,7 +336,8 @@ const Home = (params) => {
                         </div>
                         <div className="speaker-card">
                             <div className="speaker-bg"></div>
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="speaker-img"
                                 src={keith}
                                 alt="Keith Werle"
@@ -345,7 +359,8 @@ const Home = (params) => {
                         </div>
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="speaker-img"
                                 src={rahul}
                                 alt="Rahul Saxena"
@@ -365,7 +380,8 @@ const Home = (params) => {
                         </div>
                         <div className="speaker-card">
                             <div className="speaker-bg"></div>
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="speaker-img"
                                 src={chris}
                                 alt="Chris Cherian"
@@ -386,14 +402,20 @@ const Home = (params) => {
                 </div>
             </Section>
             <Section id="pastsponsors">
-                <img className="waves" src={waves} alt="waves" />
+                <LazyLoadImage
+                    effect="blur"
+                    className="waves"
+                    src={waves}
+                    alt="waves"
+                />
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
                     <div className="splash"></div>
                     <div className="sponsors-flex">
                         {/* <div className="sponsor-row sponsor-row-a"> */}
                         <a className="sponsor" href="https://cloud.google.com/">
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={gcloud}
                                 alt="Google Cloud"
@@ -403,7 +425,8 @@ const Home = (params) => {
                             className="sponsor"
                             href="https://www.accenture.com/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={accenture}
                                 alt="Accenture"
@@ -413,7 +436,8 @@ const Home = (params) => {
                             className="sponsor"
                             href="https://create-x.gatech.edu/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={createx}
                                 alt="CreateX"
@@ -425,7 +449,8 @@ const Home = (params) => {
                             className="sponsor sponsor-long"
                             href="https://www.wolfram.com/language/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={wolfram}
                                 alt="Wolfram Language"
@@ -435,7 +460,8 @@ const Home = (params) => {
                             className="sponsor sponsor-long"
                             href="https://www.ironmountain.com/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={ironmountain}
                                 alt="Iron Mountain"
@@ -447,7 +473,8 @@ const Home = (params) => {
                             className="sponsor sponsor-long"
                             href="https://www.gatherly.io/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={gatherly}
                                 alt="Gatherly"
@@ -462,7 +489,8 @@ const Home = (params) => {
                             className="sponsor"
                             href="https://www.capitalone.com/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={capitalone}
                                 alt="Capital One"
@@ -472,7 +500,8 @@ const Home = (params) => {
                             className="sponsor sponsor-long"
                             href="https://www.citadel.com/"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={citadel}
                                 alt="Citadel"
@@ -482,14 +511,16 @@ const Home = (params) => {
                             className="sponsor sponsor-long"
                             href="https://www.scheller.gatech.edu/centers-initiatives/business-analytics-center/index.html"
                         >
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={bac}
                                 alt="Business Analytics Center"
                             />
                         </a>
                         <a className="sponsor" href="https://deepnote.com/">
-                            <img
+                            <LazyLoadImage
+                                effect="blur"
                                 className="sponsor"
                                 src={deepnote}
                                 alt="deepnote"
