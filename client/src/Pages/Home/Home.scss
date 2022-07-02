@@ -299,6 +299,10 @@
             height: auto;
             bottom: -6em;
             left: -13em;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         .moon {
@@ -308,7 +312,11 @@
             height: auto;
             top: -6em;
             right: -13em;
-            filter: drop-shadow(0px 0px 40px #f3ae4a);
+            img {
+                width: 100%;
+                height: auto;
+                filter: drop-shadow(0px 0px 40px #f3ae4a);
+            }
         }
     }
 }
@@ -793,6 +801,16 @@
         bottom: 0;
         left: calc(50% - 50vw);
         width: 100vw;
+        height: fit-content;
+        transform: translateY(4px);
+        > span {
+            width: 100%;
+
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
 

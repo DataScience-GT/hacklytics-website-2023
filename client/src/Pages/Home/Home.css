@@ -411,6 +411,11 @@
   left: -13em;
 }
 
+#about .about-flex .telescope img {
+  width: 100%;
+  height: auto;
+}
+
 #about .about-flex .moon {
   display: block;
   position: absolute;
@@ -418,6 +423,11 @@
   height: auto;
   top: -6em;
   right: -13em;
+}
+
+#about .about-flex .moon img {
+  width: 100%;
+  height: auto;
   -webkit-filter: drop-shadow(0px 0px 40px #f3ae4a);
           filter: drop-shadow(0px 0px 40px #f3ae4a);
 }
@@ -990,6 +1000,20 @@
   bottom: 0;
   left: calc(50% - 50vw);
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#pastsponsors .waves > span {
+  width: 100%;
+}
+
+#pastsponsors .waves > span > img {
+  width: 100%;
+  height: auto;
 }
 
 .continue-reading {

@@ -2,6 +2,7 @@
 import "./Home.css";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import Background from "../../Components/Background";
 import Navbar from "../../Components/Navbar";
@@ -111,18 +112,16 @@ const Home = (params) => {
             </Section>
             <Section id="about">
                 <div className="about-flex">
-                    <LazyLoadImage
-                        effect="blur"
-                        className="telescope"
-                        src={telescope}
-                        alt="telescope"
-                    />
-                    <LazyLoadImage
-                        effect="blur"
-                        className="moon"
-                        src={moon}
-                        alt="moon"
-                    />
+                    <div className="telescope">
+                        <LazyLoadImage
+                            effect="blur"
+                            src={telescope}
+                            alt="telescope"
+                        />
+                    </div>
+                    <div className="moon">
+                        <LazyLoadImage effect="blur" src={moon} alt="moon" />
+                    </div>
                     <h2 className="major">About</h2>
                     <p className="mini">
                         Inspired by the famous painting,{" "}
@@ -317,6 +316,7 @@ const Home = (params) => {
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
                             <LazyLoadImage
+                                threshold={400}
                                 effect="blur"
                                 className="speaker-img"
                                 src={andrew}
@@ -337,6 +337,7 @@ const Home = (params) => {
                         <div className="speaker-card">
                             <div className="speaker-bg"></div>
                             <LazyLoadImage
+                                threshold={400}
                                 effect="blur"
                                 className="speaker-img"
                                 src={keith}
@@ -360,6 +361,7 @@ const Home = (params) => {
                         <div className="speaker-card card-down">
                             <div className="speaker-bg"></div>
                             <LazyLoadImage
+                                threshold={400}
                                 effect="blur"
                                 className="speaker-img"
                                 src={rahul}
@@ -381,6 +383,7 @@ const Home = (params) => {
                         <div className="speaker-card">
                             <div className="speaker-bg"></div>
                             <LazyLoadImage
+                                threshold={400}
                                 effect="blur"
                                 className="speaker-img"
                                 src={chris}
@@ -402,12 +405,15 @@ const Home = (params) => {
                 </div>
             </Section>
             <Section id="pastsponsors">
-                <LazyLoadImage
-                    effect="blur"
-                    className="waves"
-                    src={waves}
-                    alt="waves"
-                />
+                <div className="waves">
+                    <LazyLoadImage
+                        effect="blur"
+                        threshold={1000}
+                        src={waves}
+                        alt="waves"
+                    />
+                </div>
+
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
                     <div className="splash"></div>
