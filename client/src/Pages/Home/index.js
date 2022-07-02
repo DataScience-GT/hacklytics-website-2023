@@ -60,6 +60,7 @@ const Home = (params) => {
                         <a
                             className="hero-button"
                             href="https://qrlxk51kzhj.typeform.com/to/tFLwAnWI"
+                            target="_blank"
                         >
                             Apply Now!
                         </a>
