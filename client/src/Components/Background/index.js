@@ -57,13 +57,13 @@ const Background = (params) => {
                 <div className="circle circle27"></div>
                 <div className="circle circle28"></div>
             </div>
-            {/* <Particles
+            <Particles
                 id="tsparticles"
                 options={particleOptions}
                 init={particlesInit}
                 loaded={particlesLoaded}
                 // style={{ position: "absolute" }}
-            /> */}
+            />
         </div>
     );
 };
