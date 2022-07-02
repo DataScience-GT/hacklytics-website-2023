@@ -5,6 +5,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 import particleOptions from "./star.json";
+import mobileParticleOptions from "./star-mobile.json";
 
 const Background = (params) => {
     const particlesInit = async (main) => {
@@ -59,7 +60,11 @@ const Background = (params) => {
             </div>
             <Particles
                 id="tsparticles"
-                options={particleOptions}
+                options={
+                    window.innerWidth > 600
+                        ? particleOptions
+                        : mobileParticleOptions
+                }
                 init={particlesInit}
                 loaded={particlesLoaded}
                 // style={{ position: "absolute" }}
