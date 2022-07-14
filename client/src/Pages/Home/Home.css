@@ -190,6 +190,8 @@
   position: relative;
   height: auto;
   width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+          filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
 }
 
 #hero .hero-flex > .flex-right > .logo-stars > .star {
@@ -198,6 +200,8 @@
   width: 40px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  -webkit-filter: drop-shadow(0px 0px 50px #f3ae4a);
+          filter: drop-shadow(0px 0px 50px #f3ae4a);
 }
 
 #hero .hero-flex > .flex-right > .logo-stars > .star-a {
@@ -495,6 +499,8 @@
   display: block;
   position: absolute;
   width: 3em;
+  -webkit-filter: drop-shadow(0px 0px 50px #f3ae4a);
+          filter: drop-shadow(0px 0px 50px #f3ae4a);
 }
 
 #whatis .whatis-flex > .star-a,

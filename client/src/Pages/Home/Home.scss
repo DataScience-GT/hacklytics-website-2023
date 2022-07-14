@@ -136,14 +136,14 @@
                     width: 100%;
                     // width: 80%;
 
-                    // filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+                    filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
                 }
                 > .star {
                     display: block;
                     position: absolute;
                     width: 40px;
                     transition: 0.3s all ease;
-                    // filter: drop-shadow(0px 0px 50px #f3ae4a);
+                    filter: drop-shadow(0px 0px 50px #f3ae4a);
                 }
                 > .star-a {
                     width: 40px;
@@ -377,7 +377,7 @@
             display: block;
             position: absolute;
             width: 3em;
-            // filter: drop-shadow(0px 0px 50px #f3ae4a);
+            filter: drop-shadow(0px 0px 50px #f3ae4a);
         }
         > .star-a {
             width: 5.5em;
