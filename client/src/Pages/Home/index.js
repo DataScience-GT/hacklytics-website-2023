@@ -416,7 +416,7 @@ const Home = (params) => {
 
                 <div className="pastsponsors-flex">
                     <h1 className="major">Past Sponsors</h1>
-                    <div className="splash"></div>
+                    {/* <div className="splash"></div> */}
                     <div className="sponsors-flex">
                         {/* <div className="sponsor-row sponsor-row-a"> */}
                         <a className="sponsor" href="https://cloud.google.com/">

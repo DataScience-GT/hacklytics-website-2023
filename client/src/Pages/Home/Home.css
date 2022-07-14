@@ -190,8 +190,6 @@
   position: relative;
   height: auto;
   width: 100%;
-  -webkit-filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
-          filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
 }
 
 #hero .hero-flex > .flex-right > .logo-stars > .star {
@@ -200,8 +198,6 @@
   width: 40px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  -webkit-filter: drop-shadow(0px 0px 50px #f3ae4a);
-          filter: drop-shadow(0px 0px 50px #f3ae4a);
 }
 
 #hero .hero-flex > .flex-right > .logo-stars > .star-a {
@@ -428,8 +424,6 @@
 #about .about-flex .moon img {
   width: 100%;
   height: auto;
-  -webkit-filter: drop-shadow(0px 0px 40px #f3ae4a);
-          filter: drop-shadow(0px 0px 40px #f3ae4a);
 }
 
 #whatis,
@@ -461,10 +455,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   background: rgba(217, 217, 217, 0.105);
-  -webkit-box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
-          box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
-  -webkit-backdrop-filter: blur(110.659px);
-          backdrop-filter: blur(110.659px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 102px;
 }
@@ -505,8 +495,6 @@
   display: block;
   position: absolute;
   width: 3em;
-  -webkit-filter: drop-shadow(0px 0px 50px #f3ae4a);
-          filter: drop-shadow(0px 0px 50px #f3ae4a);
 }
 
 #whatis .whatis-flex > .star-a,
@@ -758,10 +746,6 @@
   left: 0;
   z-index: -1;
   background: rgba(217, 217, 217, 0.105);
-  -webkit-box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
-          box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41), inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
-  -webkit-backdrop-filter: blur(110.659px);
-          backdrop-filter: blur(110.659px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 52px;
 }
@@ -871,8 +855,6 @@
   width: 150px;
   height: 150px;
   background-color: #ffc100;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
 }
 
 #pastsponsors .pastsponsors-flex > .sponsors-flex {
@@ -898,10 +880,6 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: 0px 0px 200px 10px #312cc2;
-          box-shadow: 0px 0px 200px 10px #312cc2;
-  -webkit-backdrop-filter: blur(132.133px);
-          backdrop-filter: blur(132.133px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 41px;
 }

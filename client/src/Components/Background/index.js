@@ -29,7 +29,7 @@ const Background = (params) => {
         <div className="circle circle-blue-bright circle1"></div>
         <div className="circle circle-gold circle2"></div> */}
             <div className="background-wrapper">
-                <div className="circle circle1"></div>
+                {/* <div className="circle circle1"></div>
                 <div className="circle circle2"></div>
                 <div className="circle circle3"></div>
                 <div className="circle circle4"></div>
@@ -56,7 +56,7 @@ const Background = (params) => {
                 <div className="circle circle25"></div>
                 <div className="circle circle26"></div>
                 <div className="circle circle27"></div>
-                <div className="circle circle28"></div>
+                <div className="circle circle28"></div> */}
             </div>
             <Particles
                 id="tsparticles"
