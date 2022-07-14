@@ -3,7 +3,7 @@
     "fullScreen": false,
     "particles": {
         "number": {
-            "value": 50,
+            "value": 250,
             "density": {
                 "enable": false,
                 "value_area": 800
@@ -88,14 +88,14 @@
             "onhover": {
                 "enable": true,
                 "mode": [
-                    "attract"
+                    "repulse"
                 ]
             },
             "resize": true
         },
         "modes": {
             "attract": {
-                "distance": 100,
+                "distance": 50,
                 "speed": 3
             }
         }
