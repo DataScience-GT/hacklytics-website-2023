@@ -919,8 +919,15 @@
     }
 }
 @media only screen and (max-width: 1200px) {
-    .mlh-section {
-        display: none;
+    // .mlh-section {
+    //     display: none;
+    // }
+    .mlh-section > .mlh-wrapper {
+        justify-content: flex-start;
+        & > .mlh-badge {
+            width: 60px;
+            margin: 0 10px;
+        }
     }
 }
 
