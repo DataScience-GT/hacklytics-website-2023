@@ -105,7 +105,7 @@
   font-family: "Outfit";
   line-height: 0.9em;
   color: rgba(255, 255, 255, 0.8);
-  margin: 10px 0 40px 0;
+  margin: 10px 0 0.5em 0;
 }
 
 #hero .hero-flex > .flex-left > .hero-date {
@@ -124,6 +124,24 @@
   line-height: 0.9em;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 10px;
+}
+
+#hero .hero-flex > .flex-left > .hero-date-mini {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Outfit";
+  line-height: 0.9em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1em;
 }
 
 #hero .hero-flex > .flex-left > .hero-button {
