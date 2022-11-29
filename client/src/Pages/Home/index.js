@@ -71,6 +71,7 @@ const Home = (params) => {
                         >
                             Apply Now!
                         </a>
+                        <h3 className="hero-date-mini">*Registration closes January 19th*</h3>
                     </div>
                     <div className="flex-right">
                         <div className="logo-stars">
