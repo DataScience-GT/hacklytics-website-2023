@@ -645,7 +645,8 @@
   overflow: hidden;
 }
 
-#faq .faq-flex {
+#faq .faq-flex,
+#tracks .faq-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +671,8 @@
           align-items: flex-start;
 }
 
-#faq .faq-flex > .major {
+#faq .faq-flex > .major,
+#tracks .faq-flex > .major {
   display: block;
   position: relative;
   height: -webkit-fit-content;
