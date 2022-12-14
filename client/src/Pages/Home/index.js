@@ -72,7 +72,9 @@ const Home = (params) => {
                         >
                             Apply Now!
                         </a>
-                        <h3 className="hero-date-mini">*Registration closes January 19th*</h3>
+                        <h3 className="hero-date-mini">
+                            *Registration closes January 19th*
+                        </h3>
                     </div>
                     <div className="flex-right">
                         <div className="logo-stars">
@@ -209,10 +211,71 @@ const Home = (params) => {
                         </div>
                     </div>
                 </div>
-                <a className="continue-reading" href="#whatis2">
-                    <span className="text">What is DSGT?</span>
+                <a className="continue-reading" href="#tracks">
+                    <span className="text">Tracks</span>
                     <span className="arrow">↓</span>
                 </a>
+            </Section>
+            <Section id="tracks">
+                <div className="faq-flex">
+                    <h1 className="major">Tracks</h1>
+                    <Faq identifier="a1" question="Sports">
+                        From historical data and fundamental sckorekeeping to
+                        algorithmic performance and player statistics, data
+                        analytics is an integral part of sports. In fact, data
+                        is so important in sports that the field of “sports
+                        analytics” has has tremendous growth in the past few
+                        decades.
+                        <br />
+                        <br />
+                        In this track, you will be working on sports analytics
+                        challenges that will take your data science and machine
+                        learning skills to the next level.
+                    </Faq>
+                    <Faq identifier="b2" question="Healthcare">
+                        Health data science is a growing field that incorporates
+                        health informatics, data science, analytics, and
+                        computational modeling to assess large volumes of data
+                        from clinical trials, electronic medical records,
+                        genetic and genomic epidemiology and environmental
+                        health, or health care claims.
+                        <br />
+                        <br />
+                        In this track, you will be analyzing some of these
+                        datasets to help solve crucial, real-world problems in
+                        public health or the biomedical sciences.
+                    </Faq>
+                    <Faq identifier="c3" question="Energy and Sustainability">
+                        The importance of data science in renewable energy and
+                        climate change is only growing as the Internet of Things
+                        continues to expand.  With improvements in sensor and
+                        connectivity technology comes the ability to collect
+                        more data, and the advent of data science has allowed
+                        companies to gain important insights from the data they
+                        collect.
+                        <br />
+                        <br />
+                        In this track, you will be analyzing data with one of
+                        several goals, including resource/waste management,
+                        adapting to climate change, and more.
+                    </Faq>
+                    <Faq identifier="d4" question="Finance">
+                        The financial industry, which includes both traditional
+                        financial institutions as well as fintech companies,
+                        deals with large volumes of unique types of data and
+                        comes with some peculiarities that other industries
+                        don’t share. This has a huge impact on the different
+                        applications of data science within the industry.
+                        <br />
+                        <br />
+                        In this track, you will be working on data science
+                        challenges that touch almost every area of finance and
+                        banking, such as trading decisions, market forecasting,
+                        customer sentiment, and more.
+                    </Faq>
+                    {/* <Faq identifier="e5" question="Healthcare"></Faq>
+                    <Faq identifier="f6" question="Healthcare"></Faq> */}
+                </div>
             </Section>
             <Section id="whatis2">
                 <div className="whatis-flex">
