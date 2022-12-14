@@ -68,6 +68,7 @@ const Home = (params) => {
                             className="hero-button"
                             href="https://qrlxk51kzhj.typeform.com/to/tFLwAnWI"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             Apply Now!
                         </a>
