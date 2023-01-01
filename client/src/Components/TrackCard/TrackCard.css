@@ -1,0 +1,87 @@
+.track-card {
+  display: block;
+  width: 40%;
+  min-width: 300px;
+  height: 30vh;
+  min-height: 200px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.track-card .card-check {
+  display: none;
+}
+
+.track-card .card-check:checked ~ .track-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.track-card-inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.track-card-front,
+.track-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.5em;
+}
+
+.track-card-front {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.track-card-back {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.track-card-back > .minor {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .track-card .track-card-back {
+    font-size: 1.2em;
+  }
+}
+/*# sourceMappingURL=TrackCard.css.map */

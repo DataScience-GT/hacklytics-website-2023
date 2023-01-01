@@ -1,217 +1,217 @@
 .home-page {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-size: 20px;
+
+  a {
+    color: inherit;
+  }
+}
+
+#hero {
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .hero-flex {
     display: flex;
     position: relative;
     width: 100%;
     height: fit-content;
-    overflow-x: hidden;
+    padding: 0px 50px;
+    padding-top: 5em;
 
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
 
-    font-size: 20px;
+    > .flex-left {
+      display: flex;
+      position: relative;
+      height: calc(100vh - 5em);
+      width: 50%;
+      // float: left;
 
-    a {
-        color: inherit;
-    }
-}
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
 
-#hero {
-    a {
-        color: inherit;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    .hero-flex {
-        display: flex;
+      color: #fff;
+
+      // border: 1px solid red;
+
+      > .hero-major {
+        display: block;
         position: relative;
-        width: 100%;
         height: fit-content;
-        padding: 0px 50px;
-        padding-top: 5em;
+        width: fit-content;
+        text-align: left;
+        font-size: 7em;
+        font-weight: 700;
+        font-family: "Outfit";
+        line-height: 0.9em;
+      }
+      > .hero-minor {
+        display: block;
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        text-align: left;
+        font-size: 3em;
+        font-weight: 500;
+        font-family: "Outfit";
+        line-height: 0.9em;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 10px 0 0.5em 0;
+      }
+      > .hero-date {
+        display: block;
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        text-align: left;
+        font-size: 2em;
+        font-weight: 500;
+        font-family: "Outfit";
+        line-height: 0.9em;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+      }
+      > .hero-date-mini {
+        display: block;
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 500;
+        font-family: "Outfit";
+        line-height: 0.9em;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 1em;
+      }
+      > .hero-button {
+        display: block;
+        position: relative;
+        height: fit-content;
+        width: fit-content;
 
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
+        font-size: 1.6em;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.8);
 
-        > .flex-left {
-            display: flex;
-            position: relative;
-            height: calc(100vh - 5em);
-            width: 50%;
-            // float: left;
-
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-
-            color: #fff;
-
-            // border: 1px solid red;
-
-            > .hero-major {
-                display: block;
-                position: relative;
-                height: fit-content;
-                width: fit-content;
-                text-align: left;
-                font-size: 7em;
-                font-weight: 700;
-                font-family: "Outfit";
-                line-height: 0.9em;
-            }
-            > .hero-minor {
-                display: block;
-                position: relative;
-                height: fit-content;
-                width: fit-content;
-                text-align: left;
-                font-size: 3em;
-                font-weight: 500;
-                font-family: "Outfit";
-                line-height: 0.9em;
-                color: rgba(255, 255, 255, 0.8);
-                margin: 10px 0 0.5em 0;
-            }
-            > .hero-date {
-                display: block;
-                position: relative;
-                height: fit-content;
-                width: fit-content;
-                text-align: left;
-                font-size: 2em;
-                font-weight: 500;
-                font-family: "Outfit";
-                line-height: 0.9em;
-                color: rgba(255, 255, 255, 0.8);
-                margin-bottom: 10px;
-            }
-            > .hero-date-mini {
-                display: block;
-                position: relative;
-                height: fit-content;
-                width: fit-content;
-                text-align: left;
-                font-size: 1.5em;
-                font-weight: 500;
-                font-family: "Outfit";
-                line-height: 0.9em;
-                color: rgba(255, 255, 255, 0.7);
-                margin-top: 1em;
-            }
-            > .hero-button {
-                display: block;
-                position: relative;
-                height: fit-content;
-                width: fit-content;
-
-                font-size: 1.6em;
-                font-weight: 500;
-                color: rgba(255, 255, 255, 0.8);
-
-                padding: 8px 30px 12px 30px;
-                border: 6px solid rgba(255, 255, 255, 0.8);
-                border-radius: 100px;
-                transition: 0.3s all ease;
-                &:hover {
-                    // background-color: rgba(255, 255, 255, 0.8);
-                    // color: black;
-                    background: #312cc2;
-                    border: 6px solid #312cc2;
-                    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
-                }
-                &:active {
-                    filter: brightness(0.8);
-                }
-            }
+        padding: 8px 30px 12px 30px;
+        border: 6px solid rgba(255, 255, 255, 0.8);
+        border-radius: 100px;
+        transition: 0.3s all ease;
+        &:hover {
+          // background-color: rgba(255, 255, 255, 0.8);
+          // color: black;
+          background: #312cc2;
+          border: 6px solid #312cc2;
+          text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
         }
-        > .flex-right {
-            display: flex;
-            position: relative;
-            height: calc(100vh - 5em);
-            width: 50%;
-            // float: right;
-
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            color: #fff;
-            > .logo-stars {
-                display: block;
-                position: relative;
-                width: 80%;
-                height: fit-content;
-                > .hero-logo {
-                    display: block;
-                    position: relative;
-                    height: auto;
-                    width: 100%;
-                    // width: 80%;
-
-                    filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
-                }
-                > .star {
-                    display: block;
-                    position: absolute;
-                    width: 40px;
-                    transition: 0.3s all ease;
-                    filter: drop-shadow(0px 0px 50px #f3ae4a);
-                }
-                > .star-a {
-                    width: 40px;
-                    top: -20px;
-                    right: 40px;
-                    transform: rotate(15deg);
-                    animation: StarRotateA 5s infinite;
-                }
-                > .star-b {
-                    width: 70px;
-                    top: -40px;
-                    right: -40px;
-                    transform: rotate(15deg);
-                    animation: StarRotateA 5s infinite;
-                }
-                > .star-c {
-                    width: 40px;
-                    bottom: -10px;
-                    left: 40px;
-                    transform: rotate(-15deg);
-                    animation: StarRotateB 5s infinite;
-                }
-                > .star-d {
-                    width: 80px;
-                    bottom: 0px;
-                    left: -40px;
-                    transform: rotate(-15deg);
-                    animation: StarRotateB 5s infinite;
-                }
-            }
+        &:active {
+          filter: brightness(0.8);
         }
+      }
     }
+    > .flex-right {
+      display: flex;
+      position: relative;
+      height: calc(100vh - 5em);
+      width: 50%;
+      // float: right;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      color: #fff;
+      > .logo-stars {
+        display: block;
+        position: relative;
+        width: 80%;
+        height: fit-content;
+        > .hero-logo {
+          display: block;
+          position: relative;
+          height: auto;
+          width: 100%;
+          // width: 80%;
+
+          filter: drop-shadow(0px 0px 100px rgba(79, 75, 218, 0.9));
+        }
+        > .star {
+          display: block;
+          position: absolute;
+          width: 40px;
+          transition: 0.3s all ease;
+          filter: drop-shadow(0px 0px 50px #f3ae4a);
+        }
+        > .star-a {
+          width: 40px;
+          top: -20px;
+          right: 40px;
+          transform: rotate(15deg);
+          animation: StarRotateA 5s infinite;
+        }
+        > .star-b {
+          width: 70px;
+          top: -40px;
+          right: -40px;
+          transform: rotate(15deg);
+          animation: StarRotateA 5s infinite;
+        }
+        > .star-c {
+          width: 40px;
+          bottom: -10px;
+          left: 40px;
+          transform: rotate(-15deg);
+          animation: StarRotateB 5s infinite;
+        }
+        > .star-d {
+          width: 80px;
+          bottom: 0px;
+          left: -40px;
+          transform: rotate(-15deg);
+          animation: StarRotateB 5s infinite;
+        }
+      }
+    }
+  }
 }
 
 @keyframes StarRotateA {
-    0% {
-        transform: rotate(15deg);
-    }
-    // 50% {
-    //     transform: rotate(15deg);
-    // }
-    100% {
-        transform: rotate(15deg);
-    }
+  0% {
+    transform: rotate(15deg);
+  }
+  // 50% {
+  //     transform: rotate(15deg);
+  // }
+  100% {
+    transform: rotate(15deg);
+  }
 }
 @keyframes StarRotateB {
-    0% {
-        transform: rotate(-15deg);
-    }
-    // 50% {
-    //     transform: rotate(-15deg);
-    // }
-    100% {
-        transform: rotate(-15deg);
-    }
+  0% {
+    transform: rotate(-15deg);
+  }
+  // 50% {
+  //     transform: rotate(-15deg);
+  // }
+  100% {
+    transform: rotate(-15deg);
+  }
 }
 // @keyframes StarRotateA {
 //     0% {
@@ -237,853 +237,887 @@
 // }
 
 @keyframes hover {
-    0% {
-        transform: translateY(45px);
-    }
+  0% {
+    transform: translateY(45px);
+  }
 
-    50% {
-        transform: translateY(55px);
-    }
-    100% {
-        transform: translateY(45px);
-    }
+  50% {
+    transform: translateY(55px);
+  }
+  100% {
+    transform: translateY(45px);
+  }
 }
 
 @keyframes hoverhero {
-    0% {
-        transform: translateY(-45px);
-    }
+  0% {
+    transform: translateY(-45px);
+  }
 
-    50% {
-        transform: translateY(-55px);
-    }
-    100% {
-        transform: translateY(-45px);
-    }
+  50% {
+    transform: translateY(-55px);
+  }
+  100% {
+    transform: translateY(-45px);
+  }
 }
 
 #about {
-    .about-flex {
-        display: flex;
-        position: relative;
-        width: 80%;
-        padding: 100px;
-        margin: 0 auto;
-        height: fit-content;
-        margin: 0 auto;
+  .about-flex {
+    display: flex;
+    position: relative;
+    width: 80%;
+    padding: 100px;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
 
-        color: #fff;
+    color: #fff;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-        // border: 1px solid red;
+    // border: 1px solid red;
 
-        > .major {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
-        }
-        > .mini {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: left;
-            font-size: 1.3em;
-            // margin: 30px 0;
-            font-weight: 400;
-            font-family: "Outfit";
-            line-height: 1.3em;
-        }
-
-        .telescope {
-            display: block;
-            position: absolute;
-            width: 16em;
-            height: auto;
-            bottom: -6em;
-            left: -13em;
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .moon {
-            display: block;
-            position: absolute;
-            width: 16em;
-            height: auto;
-            top: -6em;
-            right: -13em;
-            img {
-                width: 100%;
-                height: auto;
-                // filter: drop-shadow(0px 0px 40px #f3ae4a);
-            }
-        }
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
     }
+    > .mini {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: left;
+      font-size: 1.3em;
+      // margin: 30px 0;
+      font-weight: 400;
+      font-family: "Outfit";
+      line-height: 1.3em;
+    }
+
+    .telescope {
+      display: block;
+      position: absolute;
+      width: 16em;
+      height: auto;
+      bottom: -6em;
+      left: -13em;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .moon {
+      display: block;
+      position: absolute;
+      width: 16em;
+      height: auto;
+      top: -6em;
+      right: -13em;
+      img {
+        width: 100%;
+        height: auto;
+        // filter: drop-shadow(0px 0px 40px #f3ae4a);
+      }
+    }
+  }
 }
 
 #whatis,
 #whatis2 {
-    margin: 100px 0;
-    .whatis-flex {
-        display: flex;
-        position: relative;
-        width: 80%;
-        padding: 100px;
-        margin: 0 auto;
-        height: fit-content;
+  margin: 100px 0;
+  .whatis-flex {
+    display: flex;
+    position: relative;
+    width: 80%;
+    padding: 100px;
+    margin: 0 auto;
+    height: fit-content;
 
-        color: #fff;
+    color: #fff;
 
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-        background: rgba(217, 217, 217, 0.105);
-        // box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41),
-        //     inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
-        // backdrop-filter: blur(110.659px);
-        /* Note: backdrop-filter has minimal browser support */
+    background: rgba(217, 217, 217, 0.105);
+    // box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41),
+    //     inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+    // backdrop-filter: blur(110.659px);
+    /* Note: backdrop-filter has minimal browser support */
 
-        border-radius: 102px;
+    border-radius: 102px;
 
-        // border: 1px solid red;
+    // border: 1px solid red;
 
-        > .major {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
-        }
-        > .mini {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: left;
-            font-size: 1.3em;
-            // margin: 30px 0;
-            font-weight: 400;
-            font-family: "Outfit";
-            line-height: 1.3em;
-        }
-
-        > .star {
-            display: block;
-            position: absolute;
-            width: 3em;
-            filter: drop-shadow(0px 0px 50px #f3ae4a);
-        }
-        > .star-a {
-            width: 5.5em;
-            top: 0;
-            left: -2em;
-            // animation: StarRotateB 5s infinite;
-        }
-        > .star-b {
-            width: 2.7em;
-            top: 3.5em;
-            left: 3em;
-            // animation: StarRotateB 5s infinite;
-        }
-        > .star-c {
-            width: 2.7em;
-            top: 6em;
-            left: 1em;
-            // animation: StarRotateB 5s infinite;
-        }
-        > .star-d {
-            width: 6em;
-            bottom: -0.5em;
-            right: -0.5em;
-            // animation: StarRotateA 5s infinite;
-        }
-        > .star-e {
-            width: 2.7em;
-            bottom: -1.2em;
-            right: 4.3em;
-            // animation: StarRotateA 5s infinite;
-        }
-        > .star-f {
-            width: 2.5em;
-            bottom: -2.5em;
-            right: -1em;
-            // animation: StarRotateA 5s infinite;
-        }
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
     }
+    > .mini {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: left;
+      font-size: 1.3em;
+      // margin: 30px 0;
+      font-weight: 400;
+      font-family: "Outfit";
+      line-height: 1.3em;
+    }
+
+    > .star {
+      display: block;
+      position: absolute;
+      width: 3em;
+      filter: drop-shadow(0px 0px 50px #f3ae4a);
+    }
+    > .star-a {
+      width: 5.5em;
+      top: 0;
+      left: -2em;
+      // animation: StarRotateB 5s infinite;
+    }
+    > .star-b {
+      width: 2.7em;
+      top: 3.5em;
+      left: 3em;
+      // animation: StarRotateB 5s infinite;
+    }
+    > .star-c {
+      width: 2.7em;
+      top: 6em;
+      left: 1em;
+      // animation: StarRotateB 5s infinite;
+    }
+    > .star-d {
+      width: 6em;
+      bottom: -0.5em;
+      right: -0.5em;
+      // animation: StarRotateA 5s infinite;
+    }
+    > .star-e {
+      width: 2.7em;
+      bottom: -1.2em;
+      right: 4.3em;
+      // animation: StarRotateA 5s infinite;
+    }
+    > .star-f {
+      width: 2.5em;
+      bottom: -2.5em;
+      right: -1em;
+      // animation: StarRotateA 5s infinite;
+    }
+  }
 }
 
 #whenwhere {
-    .whenwhere-flex {
-        display: flex;
-        position: relative;
-        width: 80%;
-        padding: 100px;
-        margin: 0 auto;
-        height: fit-content;
-        margin: 0 auto;
+  .whenwhere-flex {
+    display: flex;
+    position: relative;
+    width: 80%;
+    padding: 100px;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
 
-        color: #fff;
+    color: #fff;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-        // border: 1px solid red;
+    // border: 1px solid red;
 
-        > .major {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
-        }
-        > .split-flex {
-            display: flex;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-
-            > .mini {
-                display: block;
-                position: relative;
-                height: fit-content;
-                width: 50%;
-                text-align: left;
-                font-size: 1.3em;
-                // margin: 30px 0;
-                font-weight: 400;
-                font-family: "Outfit";
-                line-height: 1.3em;
-            }
-            > .map {
-                width: 50%;
-                height: 100%;
-                // border-radius: 50px;
-                overflow: hidden;
-            }
-        }
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
     }
+    > .split-flex {
+      display: flex;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      > .mini {
+        display: block;
+        position: relative;
+        height: fit-content;
+        width: 50%;
+        text-align: left;
+        font-size: 1.3em;
+        // margin: 30px 0;
+        font-weight: 400;
+        font-family: "Outfit";
+        line-height: 1.3em;
+      }
+      > .map {
+        width: 50%;
+        height: 100%;
+        // border-radius: 50px;
+        overflow: hidden;
+      }
+    }
+  }
 }
 
 #faq,
 #tracks {
-    .faq-flex {
-        display: flex;
-        position: relative;
-        width: 80%;
-        padding: 100px 0;
-        margin: 0 auto;
-        height: fit-content;
-        margin: 0 auto;
+  .faq-flex {
+    display: flex;
+    position: relative;
+    width: 80%;
+    padding: 100px 0;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
 
-        color: #fff;
+    color: #fff;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-        > .major {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
-        }
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
     }
+  }
+}
+
+#tracks {
+  .tracks-flex {
+    display: flex;
+    position: relative;
+    width: 80%;
+    padding: 100px 0;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
+
+    color: #fff;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 1em;
+
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
+    }
+  }
 }
 
 #speakers {
-    .speakers-flex {
-        display: flex;
+  .speakers-flex {
+    display: flex;
+    position: relative;
+    width: 96%;
+    padding: 100px 0;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
+
+    color: #fff;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
+    }
+
+    > .tri-flex {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: fit-content;
+
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      > .speaker-card {
+        display: block;
         position: relative;
-        width: 96%;
-        padding: 100px 0;
-        margin: 0 auto;
+        width: 300px;
+        min-width: 200px;
+        // height: 500px;
         height: fit-content;
-        margin: 0 auto;
+        padding: 40px;
+        padding-top: 0;
 
-        color: #fff;
+        > .speaker-bg {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 70px);
+          bottom: 0;
+          left: 0;
+          z-index: -1;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+          background: rgba(217, 217, 217, 0.105);
+          // box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41),
+          //     inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+          // backdrop-filter: blur(110.659px);
+          /* Note: backdrop-filter has minimal browser support */
 
-        > .major {
+          border-radius: 52px;
+        }
+        > img {
+          display: block;
+          position: relative;
+          width: 60%;
+          margin: 0 auto;
+          border-radius: 100%;
+        }
+        > span {
+          width: 100%;
+          height: 100%;
+          > img {
             display: block;
             position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
+            width: 60%;
+            margin: 0 auto;
+            border-radius: 100%;
+          }
         }
-
-        > .tri-flex {
-            display: flex;
-            position: relative;
-            width: 100%;
-            height: fit-content;
-
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 20px;
-
-            > .speaker-card {
-                display: block;
-                position: relative;
-                width: 300px;
-                min-width: 200px;
-                // height: 500px;
-                height: fit-content;
-                padding: 40px;
-                padding-top: 0;
-
-                > .speaker-bg {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: calc(100% - 70px);
-                    bottom: 0;
-                    left: 0;
-                    z-index: -1;
-
-                    background: rgba(217, 217, 217, 0.105);
-                    // box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41),
-                    //     inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
-                    // backdrop-filter: blur(110.659px);
-                    /* Note: backdrop-filter has minimal browser support */
-
-                    border-radius: 52px;
-                }
-                > img {
-                    display: block;
-                    position: relative;
-                    width: 60%;
-                    margin: 0 auto;
-                    border-radius: 100%;
-                }
-                > span {
-                    width: 100%;
-                    height: 100%;
-                    > img {
-                        display: block;
-                        position: relative;
-                        width: 60%;
-                        margin: 0 auto;
-                        border-radius: 100%;
-                    }
-                }
-                > .speaker-major {
-                    display: block;
-                    position: relative;
-                    height: fit-content;
-                    width: 100%;
-                    text-align: center;
-                    font-size: 1.4em;
-                    font-weight: 500;
-                    font-family: "Outfit";
-                    line-height: 1em;
-                    margin: 10px 0;
-                    color: #f3ae4a;
-                }
-                > .speaker-mini {
-                    display: block;
-                    position: relative;
-                    height: fit-content;
-                    width: 100%;
-                    text-align: left;
-                    font-size: 1em;
-                    font-weight: 300;
-                    font-family: "Outfit";
-                    line-height: 1.2em;
-                    margin: 10px 0;
-                }
-            }
-            > .card-down {
-                margin-top: 80px;
-            }
+        > .speaker-major {
+          display: block;
+          position: relative;
+          height: fit-content;
+          width: 100%;
+          text-align: center;
+          font-size: 1.4em;
+          font-weight: 500;
+          font-family: "Outfit";
+          line-height: 1em;
+          margin: 10px 0;
+          color: #f3ae4a;
         }
+        > .speaker-mini {
+          display: block;
+          position: relative;
+          height: fit-content;
+          width: 100%;
+          text-align: left;
+          font-size: 1em;
+          font-weight: 300;
+          font-family: "Outfit";
+          line-height: 1.2em;
+          margin: 10px 0;
+        }
+      }
+      > .card-down {
+        margin-top: 80px;
+      }
     }
+  }
 }
 
 #pastsponsors {
-    .pastsponsors-flex {
-        display: flex;
-        position: relative;
-        width: 96%;
-        padding: 100px 0;
-        margin: 0 auto;
-        height: fit-content;
-        margin: 0 auto;
+  .pastsponsors-flex {
+    display: flex;
+    position: relative;
+    width: 96%;
+    padding: 100px 0;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
 
-        color: #fff;
+    color: #fff;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-        > .major {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: 700;
-            font-family: "Outfit";
-            line-height: 0.9em;
-        }
-        > .splash {
-            display: block;
-            position: absolute;
-            top: calc(50% - 30px);
-            left: calc(50% - 75px);
-            z-index: -1;
-            width: 150px;
-            height: 150px;
-            background-color: #ffc100;
-            // filter: blur(100px);
-        }
-        > .sponsors-flex {
-            display: flex;
-            position: relative;
-            width: 100%;
-            padding: 40px;
-            height: fit-content;
-
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-
-            background: rgba(255, 255, 255, 0.2);
-            // box-shadow: 0px 0px 200px 10px #312cc2;
-            // inset 0px 0px 100px 10px #ffbf003a;
-            // backdrop-filter: blur(132.133px);
-            /* Note: backdrop-filter has minimal browser support */
-
-            border-radius: 41px;
-
-            > .sponsor {
-                display: block;
-                position: relative;
-                height: 10em;
-                width: auto;
-                padding: 10px;
-                // border: 1px dashed white;
-                > img {
-                    display: block;
-                    position: relative;
-                    height: 100%;
-                    width: auto;
-
-                    // border: 1px dashed red;
-                }
-                > span {
-                    width: fit-content;
-                    height: 100%;
-                    > img {
-                        display: block;
-                        position: relative;
-                        height: 100%;
-                        width: auto;
-
-                        // border: 1px dashed red;
-                    }
-                }
-            }
-
-            > .sponsor-long {
-                width: 30%;
-                height: auto;
-                max-height: 10em;
-
-                > img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                > span {
-                    height: fit-content;
-                    width: 100%;
-                    > img {
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-
-            // > .sponsor-row {
-            //     display: flex;
-            //     position: relative;
-            //     width: 100%;
-            //     height: 150px;
-
-            //     flex-direction: row;
-            //     justify-content: center;
-            //     align-items: center;
-            //     gap: 40px;
-
-            //     // border: 1px solid red;
-            // }
-            // > .sponsor-row-a {
-            //     height: 200px;
-            // }
-            // > .sponsor-row-b {
-            //     height: 140px;
-            // }
-            // > .sponsor-row-c {
-            //     height: 130px;
-            // }
-        }
-        > .sponsor-us-button {
-            display: block;
-            position: relative;
-            height: fit-content;
-            width: fit-content;
-            margin: 0 auto;
-            padding: 6px 12px;
-            transform: translateY(20px);
-
-            color: rgba(0, 0, 0, 0.8);
-
-            font-family: "Outfit";
-
-            font-weight: 500;
-            font-size: 1.3em;
-
-            border-radius: 100px;
-            background: rgba(255, 255, 255, 0.8);
-            cursor: pointer;
-
-            transition: 0.1s all ease;
-            text-decoration: none;
-
-            &:hover {
-                // background: #312cc2;
-                // color: rgba(255, 255, 255, 0.8);
-                filter: brightness(0.6);
-            }
-            &:active {
-                transform: translateY(20px) scale(0.95);
-            }
-        }
+    > .major {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-family: "Outfit";
+      line-height: 0.9em;
     }
-    .waves {
+    > .splash {
+      display: block;
+      position: absolute;
+      top: calc(50% - 30px);
+      left: calc(50% - 75px);
+      z-index: -1;
+      width: 150px;
+      height: 150px;
+      background-color: #ffc100;
+      // filter: blur(100px);
+    }
+    > .sponsors-flex {
+      display: flex;
+      position: relative;
+      width: 100%;
+      padding: 40px;
+      height: fit-content;
+
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      background: rgba(255, 255, 255, 0.2);
+      // box-shadow: 0px 0px 200px 10px #312cc2;
+      // inset 0px 0px 100px 10px #ffbf003a;
+      // backdrop-filter: blur(132.133px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 41px;
+
+      > .sponsor {
         display: block;
-        position: absolute;
-        z-index: -1;
-        bottom: 0;
-        left: calc(50% - 50vw);
-        width: 100vw;
-        height: fit-content;
-        transform: translateY(4px);
-        > span {
-            width: 100%;
+        position: relative;
+        height: 10em;
+        width: auto;
+        padding: 10px;
+        // border: 1px dashed white;
+        > img {
+          display: block;
+          position: relative;
+          height: 100%;
+          width: auto;
 
-            > img {
-                width: 100%;
-                height: auto;
-            }
+          // border: 1px dashed red;
         }
+        > span {
+          width: fit-content;
+          height: 100%;
+          > img {
+            display: block;
+            position: relative;
+            height: 100%;
+            width: auto;
+
+            // border: 1px dashed red;
+          }
+        }
+      }
+
+      > .sponsor-long {
+        width: 30%;
+        height: auto;
+        max-height: 10em;
+
+        > img {
+          width: 100%;
+          height: auto;
+        }
+
+        > span {
+          height: fit-content;
+          width: 100%;
+          > img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      // > .sponsor-row {
+      //     display: flex;
+      //     position: relative;
+      //     width: 100%;
+      //     height: 150px;
+
+      //     flex-direction: row;
+      //     justify-content: center;
+      //     align-items: center;
+      //     gap: 40px;
+
+      //     // border: 1px solid red;
+      // }
+      // > .sponsor-row-a {
+      //     height: 200px;
+      // }
+      // > .sponsor-row-b {
+      //     height: 140px;
+      // }
+      // > .sponsor-row-c {
+      //     height: 130px;
+      // }
     }
+    > .sponsor-us-button {
+      display: block;
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 6px 12px;
+      transform: translateY(20px);
+
+      color: rgba(0, 0, 0, 0.8);
+
+      font-family: "Outfit";
+
+      font-weight: 500;
+      font-size: 1.3em;
+
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+
+      transition: 0.1s all ease;
+      text-decoration: none;
+
+      &:hover {
+        // background: #312cc2;
+        // color: rgba(255, 255, 255, 0.8);
+        filter: brightness(0.6);
+      }
+      &:active {
+        transform: translateY(20px) scale(0.95);
+      }
+    }
+  }
+  .waves {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: fit-content;
+    transform: translateY(4px);
+    > span {
+      width: 100%;
+
+      > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 .continue-reading {
+  display: flex;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  float: right;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  animation: hover 5s infinite;
+
+  text-decoration: none;
+  color: #fff !important;
+
+  font-family: "Outfit";
+  font-size: 1.2em;
+  line-height: 1em;
+
+  &:hover {
+    animation-play-state: paused;
+    > .text {
+      text-decoration: underline;
+    }
+  }
+
+  // border: 1px dashed red;
+  > .text {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.continue-reading-hero {
+  display: none;
+  animation: hoverhero 5s infinite;
+}
+
+.mlh-section {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5em;
+  width: 100%;
+  margin: 0 auto;
+
+  z-index: 6;
+  pointer-events: none;
+
+  // border: 2px solid red;
+
+  > .mlh-wrapper {
     display: flex;
     position: relative;
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    float: right;
+    // border: 2px dashed blue;
 
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
 
-    animation: hover 5s infinite;
+    > .mlh-badge {
+      display: block;
+      position: relative;
+      width: 100px;
+      height: auto;
+      pointer-events: auto;
 
-    text-decoration: none;
-    color: #fff !important;
+      // border: 1px solid red;
 
-    font-family: "Outfit";
-    font-size: 1.2em;
-    line-height: 1em;
-
-    &:hover {
-        animation-play-state: paused;
-        > .text {
-            text-decoration: underline;
-        }
-    }
-
-    // border: 1px dashed red;
-    > .text {
+      > img {
         display: block;
         position: relative;
         width: 100%;
         height: auto;
-    }
-}
-
-.continue-reading-hero {
-    display: none;
-    animation: hoverhero 5s infinite;
-}
-
-.mlh-section {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5em;
-    width: 100%;
-    margin: 0 auto;
-
-    z-index: 6;
-    pointer-events: none;
-
-    // border: 2px solid red;
-
-    > .mlh-wrapper {
-        display: flex;
-        position: relative;
-        height: 100%;
+      }
+      > span {
         width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        // border: 2px dashed blue;
-
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-start;
-
-        > .mlh-badge {
-            display: block;
-            position: relative;
-            width: 100px;
-            height: auto;
-            pointer-events: auto;
-
-            // border: 1px solid red;
-
-            > img {
-                display: block;
-                position: relative;
-                width: 100%;
-                height: auto;
-            }
-            > span {
-                width: 100%;
-                height: auto;
-                > img {
-                    display: block;
-                    position: relative;
-                    width: 100%;
-                    height: auto;
-                }
-            }
+        height: auto;
+        > img {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: auto;
         }
+      }
     }
+  }
 }
 
 //mobile
 @media only screen and (max-width: 1400px) {
-    .home-page {
-        font-size: 16px;
-    }
+  .home-page {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 1200px) {
-    // .mlh-section {
-    //     display: none;
-    // }
-    .mlh-section > .mlh-wrapper {
-        justify-content: flex-start;
-        & > .mlh-badge {
-            width: 60px;
-            margin: 0 10px;
-        }
+  // .mlh-section {
+  //     display: none;
+  // }
+  .mlh-section > .mlh-wrapper {
+    justify-content: flex-start;
+    & > .mlh-badge {
+      width: 60px;
+      margin: 0 10px;
     }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .home-page {
-        font-size: 14px;
-    }
-    #hero {
-        .hero-flex {
-            flex-direction: column-reverse;
-            align-items: center;
-            padding-top: 5em;
-            > .flex-left {
-                height: calc(50vh);
-                padding: 0;
-                width: fit-content;
-                // overflow: hidden;
-            }
-            > .flex-right {
-                height: calc(50vh - 5em);
-                width: 60%;
-                // overflow: hidden;
-                > .logo-stars {
-                    width: 130%;
-                    > .star-a {
-                        width: 30px;
-                        top: -15px;
-                        right: 25px;
-                    }
-                    > .star-b {
-                        width: 50px;
-                        top: -30px;
-                        right: -30px;
-                    }
-                    > .star-c {
-                        width: 30px;
-                        bottom: -5px;
-                        left: 25px;
-                    }
-                    > .star-d {
-                        width: 50px;
-                        bottom: 0px;
-                        left: -25px;
-                    }
-                }
-            }
+  .home-page {
+    font-size: 14px;
+  }
+  #hero {
+    .hero-flex {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-top: 5em;
+      > .flex-left {
+        height: calc(50vh);
+        padding: 0;
+        width: fit-content;
+        // overflow: hidden;
+      }
+      > .flex-right {
+        height: calc(50vh - 5em);
+        width: 60%;
+        // overflow: hidden;
+        > .logo-stars {
+          width: 130%;
+          > .star-a {
+            width: 30px;
+            top: -15px;
+            right: 25px;
+          }
+          > .star-b {
+            width: 50px;
+            top: -30px;
+            right: -30px;
+          }
+          > .star-c {
+            width: 30px;
+            bottom: -5px;
+            left: 25px;
+          }
+          > .star-d {
+            width: 50px;
+            bottom: 0px;
+            left: -25px;
+          }
         }
+      }
     }
-    #about {
-        .about-flex {
-            padding: 100px 0;
-            .telescope {
-                left: -17em;
-                bottom: -8em;
-            }
-            .moon {
-                right: -16em;
-                top: 4em;
-            }
-        }
+  }
+  #about {
+    .about-flex {
+      padding: 100px 0;
+      .telescope {
+        left: -17em;
+        bottom: -8em;
+      }
+      .moon {
+        right: -16em;
+        top: 4em;
+      }
     }
+  }
 
-    #whatis,
-    #whatis2 {
-        .whatis-flex {
-            width: 90%;
-            padding: 100px 40px;
-        }
+  #whatis,
+  #whatis2 {
+    .whatis-flex {
+      width: 90%;
+      padding: 100px 40px;
     }
+  }
 
-    #whenwhere {
-        .whenwhere-flex {
-            padding: 100px 0;
-        }
+  #whenwhere {
+    .whenwhere-flex {
+      padding: 100px 0;
     }
+  }
 
-    #pastsponsors {
-        .pastsponsors-flex {
-            > .sponsors-flex {
-                > .sponsor-row {
-                    > .sponsor {
-                        padding: 5px;
-                    }
-                }
-                > .sponsor-row-a {
-                    height: 80px;
-                }
-                > .sponsor-row-b {
-                    height: 60px;
-                }
-                > .sponsor-row-c {
-                    height: 50px;
-                }
-            }
+  #pastsponsors {
+    .pastsponsors-flex {
+      > .sponsors-flex {
+        > .sponsor-row {
+          > .sponsor {
+            padding: 5px;
+          }
         }
+        > .sponsor-row-a {
+          height: 80px;
+        }
+        > .sponsor-row-b {
+          height: 60px;
+        }
+        > .sponsor-row-c {
+          height: 50px;
+        }
+      }
     }
+  }
 
-    #footer {
-        font-size: 12px;
-    }
+  #footer {
+    font-size: 12px;
+  }
 }
 
 //mobile
 @media only screen and (max-width: 600px) {
-    .home-page {
-        font-size: 10px;
-    }
+  .home-page {
+    font-size: 10px;
+  }
 
-    #whenwhere {
-        .whenwhere-flex {
-            > .split-flex {
-                flex-direction: column;
+  #whenwhere {
+    .whenwhere-flex {
+      > .split-flex {
+        flex-direction: column;
 
-                > .mini {
-                    width: 100%;
-                }
-                > .map {
-                    width: 100%;
-                    height: 100%;
-                    margin-top: 10px;
-                }
-            }
+        > .mini {
+          width: 100%;
         }
-    }
-
-    .continue-reading {
-        display: none;
-    }
-    .continue-reading-hero {
-        display: flex;
-    }
-
-    #about {
-        padding-top: 200px;
-    }
-    #pastsponsors {
-        .pastsponsors-flex {
-            .sponsors-flex {
-                > .sponsor-long {
-                    width: 70%;
-                }
-            }
+        > .map {
+          width: 100%;
+          height: 100%;
+          margin-top: 10px;
         }
+      }
     }
+  }
+
+  .continue-reading {
+    display: none;
+  }
+  .continue-reading-hero {
+    display: flex;
+  }
+
+  #about {
+    padding-top: 200px;
+  }
+  #pastsponsors {
+    .pastsponsors-flex {
+      .sponsors-flex {
+        > .sponsor-long {
+          width: 70%;
+        }
+      }
+    }
+  }
 }
