@@ -32,6 +32,7 @@
           transform-style: preserve-3d;
   -webkit-transform: none;
           transform: none;
+  cursor: pointer;
 }
 
 .track-card-front,
