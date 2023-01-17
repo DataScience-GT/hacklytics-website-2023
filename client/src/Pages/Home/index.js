@@ -26,16 +26,33 @@ import keith from "../../Assets/Images/Speakers/keith.png";
 import rahul from "../../Assets/Images/Speakers/rahul.png";
 
 //past sponsor images
-import gcloud from "../../Assets/Images/PastSponsors/gc-min.png";
-import accenture from "../../Assets/Images/PastSponsors/accenture-min.png";
-import createx from "../../Assets/Images/PastSponsors/createx-min.png";
-import wolfram from "../../Assets/Images/PastSponsors/wolfram-min.png";
-import ironmountain from "../../Assets/Images/PastSponsors/ironmountain-min.png";
-import gatherly from "../../Assets/Images/PastSponsors/gatherly2.svg";
-import capitalone from "../../Assets/Images/PastSponsors/capitalone-min.png";
-import citadel from "../../Assets/Images/PastSponsors/citadel-min.png";
-import bac from "../../Assets/Images/PastSponsors/bac-min.png";
-import deepnote from "../../Assets/Images/PastSponsors/deepnote-min.png";
+// import gcloud from "../../Assets/Images/PastSponsors/gc-min.png";
+// import accenture from "../../Assets/Images/PastSponsors/accenture-min.png";
+// import createx from "../../Assets/Images/PastSponsors/createx-min.png";
+// import wolfram from "../../Assets/Images/PastSponsors/wolfram-min.png";
+// import ironmountain from "../../Assets/Images/PastSponsors/ironmountain-min.png";
+// import gatherly from "../../Assets/Images/PastSponsors/gatherly2.svg";
+// import capitalone from "../../Assets/Images/PastSponsors/capitalone-min.png";
+// import citadel from "../../Assets/Images/PastSponsors/citadel-min.png";
+// import bac from "../../Assets/Images/PastSponsors/bac-min.png";
+// import deepnote from "../../Assets/Images/PastSponsors/deepnote-min.png";
+
+// current sponsor images
+import ideas from "../../Assets/Images/Sponsors/ideas.svg";
+import nsa from "../../Assets/Images/Sponsors/nsa.png";
+import millennium from "../../Assets/Images/Sponsors/millennium.svg";
+import elevance from "../../Assets/Images/Sponsors/elevance.png";
+import carelon from "../../Assets/Images/Sponsors/carelon.png";
+import intel from "../../Assets/Images/Sponsors/intel.png";
+import deshaw from "../../Assets/Images/Sponsors/deshaw.png";
+import scheller from "../../Assets/Images/Sponsors/bac-min.png";
+import gtathletics from "../../Assets/Images/Sponsors/gtathletics2.png";
+import createx from "../../Assets/Images/Sponsors/createx.png";
+import aws from "../../Assets/Images/Sponsors/aws2.png";
+import googlecloud from "../../Assets/Images/Sponsors/googlecloud.png";
+import wolfram from "../../Assets/Images/Sponsors/wolfram.png";
+import echo from "../../Assets/Images/Sponsors/echoar.png";
+
 
 import Footer from "../../Components/Footer";
 
@@ -420,40 +437,123 @@ const Home = (params) => {
         </div>
 
         <div className="pastsponsors-flex">
-          <h1 className="major">Past Sponsors</h1>
+          <h1 className="major">Sponsors</h1>
           {/* <div className="splash"></div> */}
           <div className="sponsors-flex">
             {/* <div className="sponsor-row sponsor-row-a"> */}
-            <a className="sponsor" href="https://cloud.google.com/">
+            <a className="sponsor" href="https://research.gatech.edu/data">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
-                src={gcloud}
-                alt="Google Cloud"
+                src={ideas}
+                alt="Institute for Data Engineering and Science"
               />
             </a>
-            <a className="sponsor" href="https://www.accenture.com/">
+            <a className="sponsor" href="https://www.nsa.gov/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
-                src={accenture}
-                alt="Accenture"
+                src={nsa}
+                alt="National Security Agency"
               />
             </a>
-            <a className="sponsor" href="https://create-x.gatech.edu/">
+            <a className="sponsor" href="https://www.mlp.com/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
-                src={createx}
-                alt="CreateX"
+                src={millennium}
+                alt="Millennium"
               />
             </a>
             {/* </div>
                         <div className="sponsor-row sponsor-row-b"> */}
             <a
-              className="sponsor sponsor-long"
-              href="https://www.wolfram.com/language/"
+              className="sponsor"
+              href="https://www.elevancehealth.com/"
             >
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={elevance}
+                alt="Elevance Health"
+              />
+            </a>
+            <a
+              className="sponsor"
+              href="https://www.carelon.com/"
+            >
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={carelon}
+                alt="Carelon"
+              />
+            </a>
+            <a
+              className="sponsor"
+              href="https://www.intel.com/content/www/us/en/homepage.html"
+            >
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={intel}
+                alt="Intel"
+              />
+            </a>
+            {/* </div>
+                        <div className="sponsor-row sponsor-row-c"> */}
+            <a className="sponsor" href="https://www.deshaw.com/">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={deshaw}
+                alt="DE Shaw & Co"
+              />
+            </a>
+            <a className="sponsor" href="https://www.scheller.gatech.edu/centers-and-initiatives/business-analytics-center/index.html">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={scheller}
+                alt="Scheller Business Analytics Center"
+              />
+            </a>
+            <a className="sponsor" href="https://ramblinwreck.com/">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={gtathletics}
+                alt="Georgia Tech Athletics"
+              />
+            </a>
+            <a
+              className="sponsor"
+              href="https://create-x.gatech.edu/"
+            >
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={createx}
+                alt="Georgia Tech Create-X"
+              />
+            </a>
+            <a className="sponsor" href="https://aws.amazon.com/">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={aws}
+                alt="Amazon Web Services"
+              />
+            </a>
+            <a className="sponsor" href="https://cloud.google.com/">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={googlecloud}
+                alt="Google Cloud"
+              />
+            </a>
+            <a className="sponsor" href="https://www.wolfram.com/language/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
@@ -461,71 +561,18 @@ const Home = (params) => {
                 alt="Wolfram Language"
               />
             </a>
-            <a
-              className="sponsor sponsor-long"
-              href="https://www.ironmountain.com/"
-            >
+            <a className="sponsor" href="https://www.echo3d.com/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
-                src={ironmountain}
-                alt="Iron Mountain"
-              />
-            </a>
-            {/* </div>
-                        <div className="sponsor-row sponsor-row-c"> */}
-            <a className="sponsor sponsor-long" href="https://www.gatherly.io/">
-              <LazyLoadImage
-                effect="blur"
-                className="sponsor"
-                src={gatherly}
-                alt="Gatherly"
-              />
-            </a>
-            {/* </div> */}
-            {/* capitalone
-                            citadel
-                            bac"
-                            deepnote */}
-            <a className="sponsor" href="https://www.capitalone.com/">
-              <LazyLoadImage
-                effect="blur"
-                className="sponsor"
-                src={capitalone}
-                alt="Capital One"
-              />
-            </a>
-            <a className="sponsor sponsor-long" href="https://www.citadel.com/">
-              <LazyLoadImage
-                effect="blur"
-                className="sponsor"
-                src={citadel}
-                alt="Citadel"
-              />
-            </a>
-            <a
-              className="sponsor sponsor-long"
-              href="https://www.scheller.gatech.edu/centers-initiatives/business-analytics-center/index.html"
-            >
-              <LazyLoadImage
-                effect="blur"
-                className="sponsor"
-                src={bac}
-                alt="Business Analytics Center"
-              />
-            </a>
-            <a className="sponsor" href="https://deepnote.com/">
-              <LazyLoadImage
-                effect="blur"
-                className="sponsor"
-                src={deepnote}
-                alt="deepnote"
+                src={echo}
+                alt="echoAR"
               />
             </a>
           </div>
-          <a className="sponsor-us-button" href="mailto:hello@hacklytics.io">
+          {/* <a className="sponsor-us-button" href="mailto:hello@hacklytics.io">
             Sponsor Us!
-          </a>
+          </a> */}
         </div>
       </Section>
       <Footer />
