@@ -53,7 +53,6 @@ import googlecloud from "../../Assets/Images/Sponsors/googlecloud.png";
 import wolfram from "../../Assets/Images/Sponsors/wolfram.png";
 import echo from "../../Assets/Images/Sponsors/echoar.png";
 
-
 import Footer from "../../Components/Footer";
 
 const Home = (params) => {
@@ -207,7 +206,11 @@ const Home = (params) => {
       </Section>
       <Section id="tracks">
         <div className="tracks-flex">
-          <h1 className="major">Tracks</h1>
+          <h1 className="major">
+            Tracks
+            <br />
+            <span className="clicktoflip">click cards to flip</span>
+          </h1>
           <TrackCard identifier="a1" track="Sports">
             From historical data and fundamental sckorekeeping to algorithmic
             performance and player statistics, data analytics is an integral
@@ -467,10 +470,7 @@ const Home = (params) => {
             </a>
             {/* </div>
                         <div className="sponsor-row sponsor-row-b"> */}
-            <a
-              className="sponsor"
-              href="https://www.elevancehealth.com/"
-            >
+            <a className="sponsor" href="https://www.elevancehealth.com/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
@@ -478,10 +478,7 @@ const Home = (params) => {
                 alt="Elevance Health"
               />
             </a>
-            <a
-              className="sponsor"
-              href="https://www.carelon.com/"
-            >
+            <a className="sponsor" href="https://www.carelon.com/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
@@ -510,7 +507,10 @@ const Home = (params) => {
                 alt="DE Shaw & Co"
               />
             </a>
-            <a className="sponsor" href="https://www.scheller.gatech.edu/centers-and-initiatives/business-analytics-center/index.html">
+            <a
+              className="sponsor"
+              href="https://www.scheller.gatech.edu/centers-and-initiatives/business-analytics-center/index.html"
+            >
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"
@@ -526,10 +526,7 @@ const Home = (params) => {
                 alt="Georgia Tech Athletics"
               />
             </a>
-            <a
-              className="sponsor"
-              href="https://create-x.gatech.edu/"
-            >
+            <a className="sponsor" href="https://create-x.gatech.edu/">
               <LazyLoadImage
                 effect="blur"
                 className="sponsor"

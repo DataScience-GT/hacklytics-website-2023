@@ -715,6 +715,12 @@
   gap: 1em;
 }
 
+#tracks .tracks-flex .clicktoflip {
+  font-size: 0.4em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
 #tracks .tracks-flex > .major {
   display: block;
   position: relative;
