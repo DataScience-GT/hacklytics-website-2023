@@ -358,7 +358,16 @@ const Home = (params) => {
                 src={nick}
                 alt="Nick Singh"
               />
-              <h1 className="speaker-major">Nick Singh</h1>
+              <h1 className="speaker-major">
+                <a
+                  className="link"
+                  href="https://www.linkedin.com/in/nick-singh-tech/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Nick Singh
+                </a>
+              </h1>
               <h2 className="speaker-mini">
                 Nick Singh is the best-selling author of{" "}
                 <a
