@@ -46,7 +46,7 @@ const Navbar = (params) => {
                         Home
                     </a> */}
           <a className="navbar-logo" href="#">
-            <img src={logo} />
+            <img src={logo} alt="Hacklytics logo"/>
           </a>
           <div className="navbar-flex">
             <a className="nav-menuitem" href="#about">
@@ -58,7 +58,10 @@ const Navbar = (params) => {
             <a className="nav-menuitem" href="#faq">
               FAQs
             </a>
-            <a className="nav-menuitem" href="#pastsponsors">
+            <a className="nav-menuitem" href="#speakers">
+              Speakers
+            </a>
+            <a className="nav-menuitem" href="#sponsors">
               Sponsors
             </a>
             {/* <a className="nav-menuitem" href="#">
@@ -74,7 +77,7 @@ const Navbar = (params) => {
   } else {
     //mobile navbar
     return (
-      <div id="mobile-navbar" class={showBG ? "_mobile-navbar-bg" : ""}>
+      <div id="mobile-navbar" className={showBG ? "_mobile-navbar-bg" : ""}>
         <input
           id="hamburger-checkbox"
           type="checkbox"
@@ -103,11 +106,10 @@ const Navbar = (params) => {
             <a className="nav-menuitem" onClick={handleClick} href="#faq">
               FAQs
             </a>
-            <a
-              className="nav-menuitem"
-              onClick={handleClick}
-              href="#pastsponsors"
-            >
+            <a className="nav-menuitem" onClick={handleClick} href="#speakers">
+              Speakers
+            </a>
+            <a className="nav-menuitem" onClick={handleClick} href="#sponsors">
               Sponsors
             </a>
             {/* <a className="nav-menuitem" onClick={handleClick} href="#">
