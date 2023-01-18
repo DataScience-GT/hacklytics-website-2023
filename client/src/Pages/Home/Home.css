@@ -881,7 +881,7 @@
   margin-top: 80px;
 }
 
-#pastsponsors .pastsponsors-flex {
+#sponsors .pastsponsors-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,7 +906,7 @@
           align-items: flex-start;
 }
 
-#pastsponsors .pastsponsors-flex > .major {
+#sponsors .pastsponsors-flex > .major {
   display: block;
   position: relative;
   height: -webkit-fit-content;
@@ -921,7 +921,7 @@
   line-height: 0.9em;
 }
 
-#pastsponsors .pastsponsors-flex > .splash {
+#sponsors .pastsponsors-flex > .splash {
   display: block;
   position: absolute;
   top: calc(50% - 30px);
@@ -932,7 +932,7 @@
   background-color: #ffc100;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex {
+#sponsors .pastsponsors-flex > .sponsors-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -960,7 +960,7 @@
   border-radius: 41px;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor {
   display: block;
   position: relative;
   height: 10em;
@@ -968,7 +968,7 @@
   padding: 0.6em;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor > span {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor > span {
   width: 100%;
   height: 100%;
   display: -webkit-box !important;
@@ -987,37 +987,37 @@
           align-items: center;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor > span > img {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor > span > img {
   display: block;
   position: relative;
   max-width: 100%;
   max-height: 100%;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long {
   width: 30%;
   height: auto;
   max-height: 10em;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > img {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > img {
   width: 100%;
   height: auto;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > span {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > span {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > span > img {
+#sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-long > span > img {
   width: 100%;
   height: auto;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsor-us-button {
+#sponsors .pastsponsors-flex > .sponsor-us-button {
   display: block;
   position: relative;
   height: -webkit-fit-content;
@@ -1042,17 +1042,17 @@
   text-decoration: none;
 }
 
-#pastsponsors .pastsponsors-flex > .sponsor-us-button:hover {
+#sponsors .pastsponsors-flex > .sponsor-us-button:hover {
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
 }
 
-#pastsponsors .pastsponsors-flex > .sponsor-us-button:active {
+#sponsors .pastsponsors-flex > .sponsor-us-button:active {
   -webkit-transform: translateY(20px) scale(0.95);
           transform: translateY(20px) scale(0.95);
 }
 
-#pastsponsors .waves {
+#sponsors .waves {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1066,11 +1066,11 @@
           transform: translateY(4px);
 }
 
-#pastsponsors .waves > span {
+#sponsors .waves > span {
   width: 100%;
 }
 
-#pastsponsors .waves > span > img {
+#sponsors .waves > span > img {
   width: 100%;
   height: auto;
 }
@@ -1274,16 +1274,16 @@
   #whenwhere .whenwhere-flex {
     padding: 100px 0;
   }
-  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row > .sponsor {
+  #sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row > .sponsor {
     padding: 5px;
   }
-  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-a {
+  #sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-a {
     height: 80px;
   }
-  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-b {
+  #sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-b {
     height: 60px;
   }
-  #pastsponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
+  #sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
     height: 50px;
   }
   #footer {
@@ -1320,10 +1320,10 @@
   #about {
     padding-top: 200px;
   }
-  #pastsponsors .pastsponsors-flex .sponsors-flex > .sponsor-long {
+  #sponsors .pastsponsors-flex .sponsors-flex > .sponsor-long {
     width: 70%;
   }
-  #pastsponsors .pastsponsors-flex .sponsors-flex > .sponsor {
+  #sponsors .pastsponsors-flex .sponsors-flex > .sponsor {
     width: 30em;
     height: 15em;
   }

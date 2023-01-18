@@ -25,6 +25,8 @@ import chris from "../../Assets/Images/Speakers/chris.png";
 import keith from "../../Assets/Images/Speakers/keith.png";
 import rahul from "../../Assets/Images/Speakers/rahul.png";
 
+import nick from "../../Assets/Images/Speakers/nick.jpg";
+
 //past sponsor images
 // import gcloud from "../../Assets/Images/PastSponsors/gc-min.png";
 // import accenture from "../../Assets/Images/PastSponsors/accenture-min.png";
@@ -338,14 +340,14 @@ const Home = (params) => {
             <a href="mailto:info@hacklytics.io">info@hacklytics.io</a>
           </Faq>
         </div>
-        {/* <a className="continue-reading" href="#pastsponsors">
+        {/* <a className="continue-reading" href="#sponsors">
                     <span className="text">continue</span>
                     <span className="arrow">↓</span>
                 </a> */}
       </Section>
       <Section id="speakers">
         <div className="speakers-flex">
-          <h1 className="major">Past Speakers</h1>
+          <h1 className="major">Keynote Speaker</h1>
           <div className="tri-flex">
             <div className="speaker-card card-down">
               <div className="speaker-bg"></div>
@@ -353,20 +355,35 @@ const Home = (params) => {
                 threshold={400}
                 effect="blur"
                 className="speaker-img"
-                src={andrew}
-                alt="Andrew Marchese"
+                src={nick}
+                alt="Nick Singh"
               />
-              <h1 className="speaker-major">Andrew Marchese</h1>
+              <h1 className="speaker-major">Nick Singh</h1>
               <h2 className="speaker-mini">
-                Andrew is currently the lead Data Scientist at SeatGeek,
-                specialising in building, productionalizing, and analyzing
-                machine learning models. With a PhD in Mathematics and an MS in
-                Mathematics and Statistics from the University of Tennessee, he
-                also worked as a senior Data Scientist at New York Times for 2
-                years.
+                Nick Singh is the best-selling author of{" "}
+                <a
+                  className="link"
+                  href="https://www.acethedatascienceinterview.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Ace the Data Science Interview
+                </a>
+                , and founder of SQL interview platform{" "}
+                <a
+                  className="link"
+                  href="https://datalemur.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  DataLemur
+                </a>
+                . Previously, he's held Data & Engineering roles at Facebook,
+                Google, and SafeGraph. His daily tech career advice on LinkedIn
+                has earned him 130,000 followers.
               </h2>
             </div>
-            <div className="speaker-card">
+            {/* <div className="speaker-card">
               <div className="speaker-bg"></div>
               <LazyLoadImage
                 threshold={400}
@@ -425,11 +442,11 @@ const Home = (params) => {
                 software that makes for engaging and seamless online conferences
                 and socials, which is used across the world.
               </h2>
-            </div>
+            </div> */}
           </div>
         </div>
       </Section>
-      <Section id="pastsponsors">
+      <Section id="sponsors">
         <div className="waves">
           <LazyLoadImage
             effect="blur"
