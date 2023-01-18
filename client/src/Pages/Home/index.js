@@ -266,6 +266,16 @@ const Home = (params) => {
                     <Faq identifier="f6" question="Healthcare"></Faq> */}
         </div>
       </Section>
+      <Section id="prizes">
+        <div className="prizes-flex">
+          <h2 className="major">Prizes</h2>
+          <p className="mini">
+            We will be giving out prizes to the top teams in each track and to
+            the best overall team. The prizes will be announced soon!
+          </p>
+          <div className="prize-grid"></div>
+        </div>
+      </Section>
       <Section id="whatis2">
         <div className="whatis-flex">
           <h2 className="major">What is DSGT?</h2>
