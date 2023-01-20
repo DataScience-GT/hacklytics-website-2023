@@ -89,7 +89,7 @@ const Home = (params) => {
               Apply Now!
             </a>
             <h3 className="hero-date-mini">
-              *Registration closes January 19th*
+              *Registration extended to January 24th*
             </h3>
           </div>
           <div className="flex-right">
