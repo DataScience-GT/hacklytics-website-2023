@@ -596,6 +596,90 @@
     align-items: flex-start;
 
     gap: 1em;
+
+    .prize-grid {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: fit-content;
+
+      flex-direction: row;
+      justify-content: center;
+      > .prize-card {
+        display: block;
+        position: relative;
+        width: 300px;
+        min-width: 200px;
+        // height: 500px;
+        height: fit-content;
+        padding: 40px;
+        padding-top: 0;
+
+        > .prize-bg {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 70px);
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+
+          background: rgba(217, 217, 217, 0.105);
+          // box-shadow: inset 16.2733px -16.2733px 16.2733px rgba(182, 182, 182, 0.41),
+          //     inset -16.2733px 16.2733px 16.2733px rgba(255, 255, 255, 0.41);
+          // backdrop-filter: blur(110.659px);
+          /* Note: backdrop-filter has minimal browser support */
+
+          border-radius: 52px;
+        }
+        > img {
+          display: block;
+          position: relative;
+          width: 60%;
+          margin: 0 auto;
+          border-radius: 100%;
+        }
+        > span {
+          width: 100%;
+          height: 100%;
+          > img {
+            display: block;
+            position: relative;
+            width: 60%;
+            margin: 0 auto;
+            border-radius: 100%;
+          }
+        }
+        > .speaker-major {
+          display: block;
+          position: relative;
+          height: fit-content;
+          width: 100%;
+          text-align: center;
+          font-size: 1.4em;
+          font-weight: 500;
+          font-family: "Outfit";
+          line-height: 1em;
+          margin: 10px 0;
+          color: #f3ae4a;
+        }
+        > .speaker-mini {
+          display: block;
+          position: relative;
+          height: fit-content;
+          width: 100%;
+          text-align: left;
+          font-size: 1em;
+          font-weight: 300;
+          font-family: "Outfit";
+          line-height: 1.2em;
+          margin: 10px 0;
+        }
+      }
+      > .card-down {
+        margin-top: 80px;
+      }
+    }
   }
 }
 

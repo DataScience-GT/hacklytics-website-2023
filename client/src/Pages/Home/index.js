@@ -273,7 +273,22 @@ const Home = (params) => {
             We will be giving out prizes to the top teams in each track and to
             the best overall team. The prizes will be announced soon!
           </p>
-          <div className="prize-grid"></div>
+          <div className="prize-grid">
+            <div className="prize-card card-down">
+              <div className="prize-bg"></div>
+              <LazyLoadImage
+                threshold={400}
+                effect="blur"
+                className="prize-img"
+                src={nick}
+                alt="Nick Singh"
+              />
+              <h1 className="speaker-major">iPad Air</h1>
+              <h2 className="speaker-mini">
+                Nick Singh is the best-selling author of
+              </h2>
+            </div>
+          </div>
         </div>
       </Section>
       <Section id="whatis2">

@@ -783,6 +783,105 @@
   gap: 1em;
 }
 
+#prizes .prizes-flex .prize-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card {
+  display: block;
+  position: relative;
+  width: 300px;
+  min-width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px;
+  padding-top: 0;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > .prize-bg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 70px);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(217, 217, 217, 0.105);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 52px;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > img {
+  display: block;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > span {
+  width: 100%;
+  height: 100%;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > span > img {
+  display: block;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > .speaker-major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: "Outfit";
+  line-height: 1em;
+  margin: 10px 0;
+  color: #f3ae4a;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > .speaker-mini {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Outfit";
+  line-height: 1.2em;
+  margin: 10px 0;
+}
+
+#prizes .prizes-flex .prize-grid > .card-down {
+  margin-top: 80px;
+}
+
 #speakers .speakers-flex {
   display: -webkit-box;
   display: -ms-flexbox;
