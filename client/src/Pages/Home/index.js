@@ -28,6 +28,11 @@ import waves from "../../Assets/Images/Other/waves.svg";
 import nick from "../../Assets/Images/Speakers/nick.jpg";
 import ankush from "../../Assets/Images/Speakers/ankush.jfif";
 
+// prizes
+import iPad from "../../Assets/Images/Prizes/iPad.jpg";
+import metaquest from "../../Assets/Images/Prizes/metaquest.jpg";
+import nintendoswitch from "../../Assets/Images/Prizes/switch.webp";
+
 //past sponsor images
 // import gcloud from "../../Assets/Images/PastSponsors/gc-min.png";
 // import accenture from "../../Assets/Images/PastSponsors/accenture-min.png";
@@ -265,6 +270,59 @@ const Home = (params) => {
           </TrackCard>
           {/* <Faq identifier="e5" question="Healthcare"></Faq>
                     <Faq identifier="f6" question="Healthcare"></Faq> */}
+        </div>
+      </Section>
+      <Section id="prizes">
+        <div className="prizes-flex">
+          <h2 className="major">Prizes</h2>
+          {/* <p className="mini">
+            We will be giving out prizes to the top teams in each track and to
+            the best overall team. The prizes will be announced soon!
+          </p> */}
+          <div className="prize-grid">
+            <div className="prize-card card-down">
+              <div className="prize-bg"></div>
+              <LazyLoadImage
+                threshold={400}
+                effect="blur"
+                className="prize-img"
+                src={metaquest}
+                alt="Meta Quest 2"
+              />
+              <h1 className="speaker-major">2nd Place</h1>
+              <h2 className="speaker-mini">
+                Each member of the 2nd place team will receive a Meta Quest 2
+              </h2>
+            </div>
+            <div className="prize-card winner">
+              <div className="prize-bg"></div>
+              <LazyLoadImage
+                threshold={400}
+                effect="blur"
+                className="prize-img"
+                src={iPad}
+                alt="iPad Air"
+              />
+              <h1 className="speaker-major">1st Place</h1>
+              <h2 className="speaker-mini">
+                Each member of the winning team will receive an iPad Air
+              </h2>
+            </div>
+            <div className="prize-card card-down">
+              <div className="prize-bg"></div>
+              <LazyLoadImage
+                threshold={400}
+                effect="blur"
+                className="prize-img"
+                src={nintendoswitch}
+                alt="Nintendo Switch"
+              />
+              <h1 className="speaker-major">3rd Place</h1>
+              <h2 className="speaker-mini">
+                Each member of the 3rd place team will receive a Nintendo Switch
+              </h2>
+            </div>
+          </div>
         </div>
       </Section>
       <Section id="whatis2">

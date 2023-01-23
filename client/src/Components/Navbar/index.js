@@ -46,7 +46,7 @@ const Navbar = (params) => {
                         Home
                     </a> */}
           <a className="navbar-logo" href="#">
-            <img src={logo} alt="Hacklytics logo"/>
+            <img src={logo} alt="Hacklytics logo" />
           </a>
           <div className="navbar-flex">
             <a className="nav-menuitem" href="#about">
@@ -54,6 +54,9 @@ const Navbar = (params) => {
             </a>
             <a className="nav-menuitem" href="#tracks">
               Tracks
+            </a>
+            <a className="nav-menuitem" href="#prizes">
+              Prizes
             </a>
             <a className="nav-menuitem" href="#faq">
               FAQs
@@ -102,6 +105,9 @@ const Navbar = (params) => {
             </a>
             <a className="nav-menuitem" onClick={handleClick} href="#tracks">
               Tracks
+            </a>
+            <a className="nav-menuitem" onClick={handleClick} href="#prizes">
+              Prizes
             </a>
             <a className="nav-menuitem" onClick={handleClick} href="#faq">
               FAQs

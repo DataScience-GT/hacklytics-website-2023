@@ -736,6 +736,160 @@
   line-height: 0.9em;
 }
 
+#prizes {
+  color: #fff;
+}
+
+#prizes .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Outfit";
+  line-height: 0.9em;
+}
+
+#prizes .prizes-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+}
+
+#prizes .prizes-flex .prize-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card {
+  display: block;
+  position: relative;
+  width: 300px;
+  min-width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px;
+  padding-top: 0;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > .prize-bg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 70px);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(217, 217, 217, 0.105);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 52px;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > img {
+  display: block;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > span {
+  width: 100%;
+  height: 100%;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > span > img {
+  display: block;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > .speaker-major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: "Outfit";
+  line-height: 1em;
+  margin: 10px 0;
+  color: #f3ae4a;
+}
+
+#prizes .prizes-flex .prize-grid > .prize-card > .speaker-mini {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Outfit";
+  line-height: 1.2em;
+  margin: 10px 0;
+}
+
+#prizes .prizes-flex .prize-grid > .card-down {
+  margin-top: 80px;
+}
+
+#prizes .prizes-flex .prize-grid > .winner {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 20px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 30px rgba(243, 174, 74, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 20px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 30px rgba(243, 174, 74, 0.5));
+}
+
 #speakers .speakers-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,8 +957,9 @@
 #speakers .speakers-flex > .tri-flex > .speaker-card {
   display: block;
   position: relative;
-  width: 300px;
+  width: 400px;
   min-width: 200px;
+  max-width: calc(100% - 6em);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1205,6 +1360,19 @@
     width: 60px;
     margin: 0 10px;
   }
+  #prizes .prizes-flex .prize-grid > .prize-card {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #prizes .prizes-flex .prize-grid > .winner {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  #prizes .prizes-flex .prize-grid > .card-down {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1285,6 +1453,12 @@
   }
   #sponsors .pastsponsors-flex > .sponsors-flex > .sponsor-row-c {
     height: 50px;
+  }
+  #speakers .speakers-flex .speaker-card {
+    font-size: 1.6em;
+  }
+  #prizes .prizes-flex .prize-grid > .prize-card {
+    font-size: 1.6em;
   }
   #footer {
     font-size: 12px;
