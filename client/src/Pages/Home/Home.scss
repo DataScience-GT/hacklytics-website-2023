@@ -735,8 +735,9 @@
       > .speaker-card {
         display: block;
         position: relative;
-        width: 300px;
+        width: 400px;
         min-width: 200px;
+        max-width: calc(100% - 6em);
         // height: 500px;
         height: fit-content;
         padding: 40px;
@@ -1217,6 +1218,24 @@
         }
         > .sponsor-row-c {
           height: 50px;
+        }
+      }
+    }
+  }
+
+  #speakers {
+    .speakers-flex {
+      .speaker-card {
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  #prizes {
+    .prizes-flex {
+      .prize-grid {
+        > .prize-card {
+          font-size: 1.6em;
         }
       }
     }
