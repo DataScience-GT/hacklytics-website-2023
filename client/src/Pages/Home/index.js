@@ -20,12 +20,13 @@ import moon from "../../Assets/Images/Other/moon.png";
 import waves from "../../Assets/Images/Other/waves.svg";
 // import map from "../../Assets/Images/Other/map.png";
 
-import andrew from "../../Assets/Images/Speakers/andrew.jpg";
-import chris from "../../Assets/Images/Speakers/chris.png";
-import keith from "../../Assets/Images/Speakers/keith.png";
-import rahul from "../../Assets/Images/Speakers/rahul.png";
+// import andrew from "../../Assets/Images/Speakers/andrew.jpg";
+// import chris from "../../Assets/Images/Speakers/chris.png";
+// import keith from "../../Assets/Images/Speakers/keith.png";
+// import rahul from "../../Assets/Images/Speakers/rahul.png";
 
 import nick from "../../Assets/Images/Speakers/nick.jpg";
+import ankush from "../../Assets/Images/Speakers/ankush.jfif";
 
 //past sponsor images
 // import gcloud from "../../Assets/Images/PastSponsors/gc-min.png";
@@ -88,7 +89,7 @@ const Home = (params) => {
               Apply Now!
             </a>
             <h3 className="hero-date-mini">
-              *Registration closes January 19th*
+              *Registration extended to January 24th*
             </h3>
           </div>
           <div className="flex-right">
@@ -372,7 +373,7 @@ const Home = (params) => {
       </Section>
       <Section id="speakers">
         <div className="speakers-flex">
-          <h1 className="major">Keynote Speaker</h1>
+          <h1 className="major">Keynote Speakers</h1>
           <div className="tri-flex">
             <div className="speaker-card card-down">
               <div className="speaker-bg"></div>
@@ -417,28 +418,34 @@ const Home = (params) => {
                 has earned him 130,000 followers.
               </h2>
             </div>
-            {/* <div className="speaker-card">
+            <div className="speaker-card card-down">
               <div className="speaker-bg"></div>
               <LazyLoadImage
                 threshold={400}
                 effect="blur"
                 className="speaker-img"
-                src={keith}
-                alt="Keith Werle"
+                src={ankush}
+                alt="Ankush Tewari"
               />
-              <h1 className="speaker-major">Keith Werle</h1>
+              <h1 className="speaker-major">
+                <a
+                  className="link"
+                  href="https://www.linkedin.com/in/ankushtewari/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Ankush Tewari
+                </a>
+              </h1>
               <h2 className="speaker-mini">
-                Keith Werle is Managing Director of the Georgia Tech Business
-                Analytics Center and a Professor of the Practice in the Scheller
-                College of Business. With over thirty years of experience in
-                industry and consulting, his background spans a broad range of
-                business disciplines including finance, analytics, strategy, and
-                corporate development. He has consulted in many industries and
-                for a diverse range of clients, from venture capital backed
-                technology start-ups to global Fortune 50 companies.
+                GT Alumni and Consumer data industry executive specializing in
+                digital identities, data monetization, and privacy regulations.
+                He was General Manager at Lexis Nexis where he led multiple
+                verticals: US and Global Credit Risk, Marketing, Communications,
+                Digital Economy, Collections, and Investigations.
               </h2>
             </div>
-            <div className="speaker-card card-down">
+            {/* <div className="speaker-card card-down">
               <div className="speaker-bg"></div>
               <LazyLoadImage
                 threshold={400}

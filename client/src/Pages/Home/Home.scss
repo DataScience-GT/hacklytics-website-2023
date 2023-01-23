@@ -719,10 +719,10 @@
       height: fit-content;
 
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: flex-start;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 2em;
 
       > .speaker-card {
         display: block;
