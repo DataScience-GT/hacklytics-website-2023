@@ -799,6 +799,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 1em;
 }
 
 #prizes .prizes-flex .prize-grid > .prize-card {
@@ -880,6 +881,11 @@
 
 #prizes .prizes-flex .prize-grid > .card-down {
   margin-top: 80px;
+}
+
+#prizes .prizes-flex .prize-grid > .winner {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 20px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 30px rgba(243, 174, 74, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 20px rgba(243, 174, 74, 0.5)) drop-shadow(0px 0px 30px rgba(243, 174, 74, 0.5));
 }
 
 #speakers .speakers-flex {
