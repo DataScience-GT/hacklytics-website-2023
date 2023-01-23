@@ -800,6 +800,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #prizes .prizes-flex .prize-grid > .prize-card {
@@ -1356,6 +1358,19 @@
   .mlh-section > .mlh-wrapper > .mlh-badge {
     width: 60px;
     margin: 0 10px;
+  }
+  #prizes .prizes-flex .prize-grid > .prize-card {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #prizes .prizes-flex .prize-grid > .winner {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  #prizes .prizes-flex .prize-grid > .card-down {
+    margin-top: 0;
   }
 }
 
