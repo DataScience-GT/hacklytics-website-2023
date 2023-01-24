@@ -60,6 +60,7 @@ import aws from "../../Assets/Images/Sponsors/aws2.png";
 import googlecloud from "../../Assets/Images/Sponsors/googlecloud.png";
 import wolfram from "../../Assets/Images/Sponsors/wolfram.png";
 import echo from "../../Assets/Images/Sponsors/echoar.png";
+import microsoft from "../../Assets/Images/Sponsors/microsoft.webp";
 
 import Footer from "../../Components/Footer";
 
@@ -639,6 +640,14 @@ const Home = (params) => {
                 className="sponsor"
                 src={googlecloud}
                 alt="Google Cloud"
+              />
+            </a>
+            <a className="sponsor" href="https://www.microsoft.com/">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={microsoft}
+                alt="Microsoft"
               />
             </a>
             <a className="sponsor" href="https://www.wolfram.com/language/">
