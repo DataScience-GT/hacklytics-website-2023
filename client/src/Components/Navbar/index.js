@@ -40,7 +40,7 @@ const Navbar = (params) => {
   if (screenWidth >= 1200) {
     //desktop navbar
     return (
-      <div id="navbar" class={showBG ? "_navbar-bg" : ""}>
+      <div id="navbar" className={showBG ? "_navbar-bg" : ""}>
         <div className="navbar-wrapper">
           {/* <a className="nav-menuitem-left" href="/">
                         Home
