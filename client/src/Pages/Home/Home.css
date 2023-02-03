@@ -687,6 +687,35 @@
   line-height: 0.9em;
 }
 
+#schedule {
+  color: #fff;
+}
+
+#schedule .schedule-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#schedule .major {
+  display: block;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: "Outfit";
+  line-height: 0.9em;
+}
+
 #tracks .tracks-flex {
   display: -webkit-box;
   display: -ms-flexbox;

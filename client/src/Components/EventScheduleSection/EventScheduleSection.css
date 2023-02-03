@@ -1,0 +1,38 @@
+.schedule-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 1em;
+}
+
+.schedule-tabs .schedule-tabs-button {
+  font-size: 1.2em;
+  background: none;
+  color: inherit;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.schedule-tabs .schedule-tabs-button:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.schedule-tabs ._active {
+  border-bottom: 2px solid #fff;
+}
+
+.schedule-tabs ._active:hover {
+  border-bottom: 2px solid #fff;
+}
+/*# sourceMappingURL=EventScheduleSection.css.map */
