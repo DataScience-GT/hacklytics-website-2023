@@ -10,7 +10,7 @@ const TrackCard = (params) => {
         type="checkbox"
       />
       <label
-        for={"track-card-" + params.identifier}
+        htmlFor={"track-card-" + params.identifier}
         className="track-card-inner"
       >
         {/* front and  back of cards */}
