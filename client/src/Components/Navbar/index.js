@@ -40,7 +40,7 @@ const Navbar = (params) => {
   if (screenWidth >= 1200) {
     //desktop navbar
     return (
-      <div id="navbar" class={showBG ? "_navbar-bg" : ""}>
+      <div id="navbar" className={showBG ? "_navbar-bg" : ""}>
         <div className="navbar-wrapper">
           {/* <a className="nav-menuitem-left" href="/">
                         Home
@@ -51,6 +51,9 @@ const Navbar = (params) => {
           <div className="navbar-flex">
             <a className="nav-menuitem" href="#about">
               About
+            </a>
+            <a className="nav-menuitem" href="#schedule">
+              Schedule
             </a>
             <a className="nav-menuitem" href="#tracks">
               Tracks
@@ -102,6 +105,9 @@ const Navbar = (params) => {
             </a>
             <a className="nav-menuitem" onClick={handleClick} href="#about">
               About
+            </a>
+            <a className="nav-menuitem" onClick={handleClick} href="#schedule">
+              Schedule
             </a>
             <a className="nav-menuitem" onClick={handleClick} href="#tracks">
               Tracks

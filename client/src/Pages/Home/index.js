@@ -63,6 +63,7 @@ import echo from "../../Assets/Images/Sponsors/echoar.png";
 import microsoft from "../../Assets/Images/Sponsors/microsoft.webp";
 
 import Footer from "../../Components/Footer";
+import EventScheduleSection from "../../Components/EventScheduleSection";
 
 const Home = (params) => {
   return (
@@ -208,10 +209,16 @@ const Home = (params) => {
             </div>
           </div>
         </div>
-        <a className="continue-reading" href="#tracks">
-          <span className="text">Tracks</span>
+        <a className="continue-reading" href="#schedule">
+          <span className="text">Schedule</span>
           <span className="arrow">↓</span>
         </a>
+      </Section>
+      <Section id="schedule">
+        <div className="schedule-flex">
+          <h1 className="major">Schedule</h1>
+          <EventScheduleSection />
+        </div>
       </Section>
       <Section id="tracks">
         <div className="tracks-flex">

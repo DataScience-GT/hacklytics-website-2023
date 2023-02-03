@@ -10,7 +10,7 @@ const TrackCard = (params) => {
         type="checkbox"
       />
       <label
-        for={"track-card-" + params.identifier}
+        htmlFor={"track-card-" + params.identifier}
         className="track-card-inner"
       >
         {/* front and  back of cards */}
@@ -19,7 +19,7 @@ const TrackCard = (params) => {
         </div>
         <div className="track-card-back">
           {/* <h1 className="minor">{params.track}</h1> */}
-          <p1>{params.children}</p1>
+          <p>{params.children}</p>
         </div>
       </label>
     </div>
