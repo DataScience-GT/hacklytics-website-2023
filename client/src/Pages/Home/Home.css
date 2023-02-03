@@ -689,6 +689,8 @@
 
 #schedule {
   color: #fff;
+  padding: 100px 0;
+  height: 70vh;
 }
 
 #schedule .schedule-flex {

@@ -70,4 +70,10 @@
 .schedule-table td {
   padding: 0.5em 1em;
 }
+
+@media screen and (max-width: 768px) {
+  .schedule-table {
+    font-size: 11px;
+  }
+}
 /*# sourceMappingURL=EventScheduleSection.css.map */

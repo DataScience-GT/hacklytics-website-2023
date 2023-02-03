@@ -52,6 +52,9 @@ const Navbar = (params) => {
             <a className="nav-menuitem" href="#about">
               About
             </a>
+            <a className="nav-menuitem" href="#schedule">
+              Schedule
+            </a>
             <a className="nav-menuitem" href="#tracks">
               Tracks
             </a>
@@ -102,6 +105,9 @@ const Navbar = (params) => {
             </a>
             <a className="nav-menuitem" onClick={handleClick} href="#about">
               About
+            </a>
+            <a className="nav-menuitem" onClick={handleClick} href="#schedule">
+              Schedule
             </a>
             <a className="nav-menuitem" onClick={handleClick} href="#tracks">
               Tracks
