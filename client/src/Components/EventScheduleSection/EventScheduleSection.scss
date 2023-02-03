@@ -37,29 +37,17 @@
 .schedule-table {
   // add borders to cells
   border-collapse: collapse;
-  border: 1px solid #fff;
-  // add padding to cells
-  td,
-  th {
-    padding: 0.5em;
-  }
-  // add borders to rows
-  tr {
+  thead > tr {
     border-bottom: 1px solid #fff;
   }
-  // add borders to columns
-  th {
-    border-right: 1px solid #fff;
+  tbody tr {
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.4);
+    &:last-child {
+      border-bottom: none;
+    }
   }
-  // remove borders from last row
-  tr:last-child {
-    border-bottom: none;
-  }
-  // remove borders from last column
-  th:last-child {
-    border-right: none;
-  }
-  td:last-child {
-    border-right: none;
+  th,
+  td {
+    padding: 0.5em 1em;
   }
 }

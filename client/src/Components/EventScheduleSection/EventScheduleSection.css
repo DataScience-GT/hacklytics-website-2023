@@ -52,31 +52,22 @@
 
 .schedule-table {
   border-collapse: collapse;
-  border: 1px solid #fff;
 }
 
-.schedule-table td,
-.schedule-table th {
-  padding: 0.5em;
-}
-
-.schedule-table tr {
+.schedule-table thead > tr {
   border-bottom: 1px solid #fff;
 }
 
-.schedule-table th {
-  border-right: 1px solid #fff;
+.schedule-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.schedule-table tr:last-child {
+.schedule-table tbody tr:last-child {
   border-bottom: none;
 }
 
-.schedule-table th:last-child {
-  border-right: none;
-}
-
-.schedule-table td:last-child {
-  border-right: none;
+.schedule-table th,
+.schedule-table td {
+  padding: 0.5em 1em;
 }
 /*# sourceMappingURL=EventScheduleSection.css.map */
