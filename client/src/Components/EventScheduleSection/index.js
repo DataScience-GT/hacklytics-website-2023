@@ -32,6 +32,17 @@ const EventScheduleSection = (params) => {
           Sunday
         </button>
       </div>
+      <div className="schedule-content">
+        <table className="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </div>
   );
 };

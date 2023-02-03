@@ -1,3 +1,10 @@
+.event-schedule-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
 .schedule-tabs {
   display: flex;
   flex-direction: row;
@@ -24,5 +31,35 @@
     &:hover {
       border-bottom: 2px solid #fff;
     }
+  }
+}
+
+.schedule-table {
+  // add borders to cells
+  border-collapse: collapse;
+  border: 1px solid #fff;
+  // add padding to cells
+  td,
+  th {
+    padding: 0.5em;
+  }
+  // add borders to rows
+  tr {
+    border-bottom: 1px solid #fff;
+  }
+  // add borders to columns
+  th {
+    border-right: 1px solid #fff;
+  }
+  // remove borders from last row
+  tr:last-child {
+    border-bottom: none;
+  }
+  // remove borders from last column
+  th:last-child {
+    border-right: none;
+  }
+  td:last-child {
+    border-right: none;
   }
 }

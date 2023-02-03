@@ -1,3 +1,17 @@
+.event-schedule-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
 .schedule-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,5 +48,35 @@
 
 .schedule-tabs ._active:hover {
   border-bottom: 2px solid #fff;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+  border: 1px solid #fff;
+}
+
+.schedule-table td,
+.schedule-table th {
+  padding: 0.5em;
+}
+
+.schedule-table tr {
+  border-bottom: 1px solid #fff;
+}
+
+.schedule-table th {
+  border-right: 1px solid #fff;
+}
+
+.schedule-table tr:last-child {
+  border-bottom: none;
+}
+
+.schedule-table th:last-child {
+  border-right: none;
+}
+
+.schedule-table td:last-child {
+  border-right: none;
 }
 /*# sourceMappingURL=EventScheduleSection.css.map */
