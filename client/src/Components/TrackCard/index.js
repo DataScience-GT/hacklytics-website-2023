@@ -19,7 +19,7 @@ const TrackCard = (params) => {
         </div>
         <div className="track-card-back">
           {/* <h1 className="minor">{params.track}</h1> */}
-          <p1>{params.children}</p1>
+          <p>{params.children}</p>
         </div>
       </label>
     </div>
