@@ -70,6 +70,11 @@ const EventScheduleSection = (params) => {
                   <td>-</td>
                 </tr>
                 <tr>
+                  <td>10:00-11:30pm</td>
+                  <td>GTXR Workshop</td>
+                  <td>Klaus 1456</td>
+                </tr>
+                <tr>
                   <td>11:30pm-12:30am</td>
                   <td>Midnight Snacks</td>
                   <td>Klaus 1116</td>
@@ -104,9 +109,19 @@ const EventScheduleSection = (params) => {
                   <td>Klaus 1447</td>
                 </tr>
                 <tr>
-                  <td>4:00-5:00pm</td>
+                  <td>3:00-4:00pm</td>
                   <td>Millenium Management Workshop</td>
                   <td>Klaus 1443</td>
+                </tr>
+                <tr>
+                  <td>4:00-5:00pm</td>
+                  <td>Microsoft Workshop</td>
+                  <td>Klaus 1447</td>
+                </tr>
+                <tr>
+                  <td>5:30-6:00pm</td>
+                  <td>Hot Sauce Challenge with GEICO</td>
+                  <td>TBD</td>
                 </tr>
                 <tr>
                   <td>7:00-9:00pm</td>
