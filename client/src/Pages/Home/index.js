@@ -26,7 +26,8 @@ import waves from "../../Assets/Images/Other/waves.svg";
 // import rahul from "../../Assets/Images/Speakers/rahul.png";
 
 import nick from "../../Assets/Images/Speakers/nick.jpg";
-import ankush from "../../Assets/Images/Speakers/ankush.jfif";
+// import ankush from "../../Assets/Images/Speakers/ankush.jfif";
+import rahul from "../../Assets/Images/Speakers/rahul.png";
 
 // prizes
 import iPad from "../../Assets/Images/Prizes/iPad.jpg";
@@ -466,25 +467,27 @@ const Home = (params) => {
                 threshold={400}
                 effect="blur"
                 className="speaker-img"
-                src={ankush}
-                alt="Ankush Tewari"
+                src={rahul}
+                alt="Rahul Saxena"
               />
               <h1 className="speaker-major">
                 <a
                   className="link"
-                  href="https://www.linkedin.com/in/ankushtewari/"
+                  href="https://www.linkedin.com/in/saxenar/"
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Ankush Tewari
+                  Rahul Saxena
                 </a>
               </h1>
               <h2 className="speaker-mini">
-                GT Alumni and Consumer data industry executive specializing in
-                digital identities, data monetization, and privacy regulations.
-                He was General Manager at Lexis Nexis where he led multiple
-                verticals: US and Global Credit Risk, Marketing, Communications,
-                Digital Economy, Collections, and Investigations.
+                After completing his Bachelors in Mechanical Engineering from
+                Georgia Tech in the late 2000s, Rahul completed his MBA at Emory
+                University’s Goizeuta School of Business. He then worked as a
+                venture capitalist and mechatronic engineer in Silicon Valley
+                before returning to Georgia Tech to become the Associate
+                Director of Create-X, that guides and funds student startups in
+                Atlanta.
               </h2>
             </div>
             {/* <div className="speaker-card card-down">
