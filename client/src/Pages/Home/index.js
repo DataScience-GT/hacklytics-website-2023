@@ -61,6 +61,7 @@ import googlecloud from "../../Assets/Images/Sponsors/googlecloud.png";
 import wolfram from "../../Assets/Images/Sponsors/wolfram.png";
 import echo from "../../Assets/Images/Sponsors/echoar.png";
 import microsoft from "../../Assets/Images/Sponsors/microsoft.webp";
+import geico from "../../Assets/Images/Sponsors/geico.png";
 
 import Footer from "../../Components/Footer";
 import EventScheduleSection from "../../Components/EventScheduleSection";
@@ -671,6 +672,14 @@ const Home = (params) => {
                 className="sponsor"
                 src={echo}
                 alt="echoAR"
+              />
+            </a>
+            <a className="sponsor" href="https://www.geico.com/">
+              <LazyLoadImage
+                effect="blur"
+                className="sponsor"
+                src={geico}
+                alt="Geico"
               />
             </a>
           </div>
